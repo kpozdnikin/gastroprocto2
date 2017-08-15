@@ -1,0 +1,62 @@
+'use strict';
+
+angular.module("ngLocale", [], ["$provide", function ($provide) {
+  var PLURAL_CATEGORY = { ZERO: "zero", ONE: "one", TWO: "two", FEW: "few", MANY: "many", OTHER: "other" };
+  $provide.value("$locale", {
+    "DATETIME_FORMATS": {
+      "AMPMS": ["\u04AE\u04E8", "\u04AE\u0425"],
+      "DAY": ["\u043D\u044F\u043C", "\u0434\u0430\u0432\u0430\u0430", "\u043C\u044F\u0433\u043C\u0430\u0440", "\u043B\u0445\u0430\u0433\u0432\u0430", "\u043F\u04AF\u0440\u044D\u0432", "\u0431\u0430\u0430\u0441\u0430\u043D", "\u0431\u044F\u043C\u0431\u0430"],
+      "ERANAMES": ["\u043C\u0430\u043D\u0430\u0439 \u044D\u0440\u0438\u043D\u0438\u0439 \u04E9\u043C\u043D\u04E9\u0445", "\u043C\u0430\u043D\u0430\u0439 \u044D\u0440\u0438\u043D\u0438\u0439"],
+      "ERAS": ["\u041C\u042D\u04E8", "\u041C\u042D"],
+      "FIRSTDAYOFWEEK": 6,
+      "MONTH": ["\u041D\u044D\u0433\u0434\u04AF\u0433\u044D\u044D\u0440 \u0441\u0430\u0440", "\u0425\u043E\u0451\u0440\u0434\u0443\u0433\u0430\u0430\u0440 \u0441\u0430\u0440", "\u0413\u0443\u0440\u0430\u0432\u0434\u0443\u0433\u0430\u0430\u0440 \u0441\u0430\u0440", "\u0414\u04E9\u0440\u04E9\u0432\u0434\u04AF\u0433\u044D\u044D\u0440 \u0441\u0430\u0440", "\u0422\u0430\u0432\u0434\u0443\u0433\u0430\u0430\u0440 \u0441\u0430\u0440", "\u0417\u0443\u0440\u0433\u0430\u0434\u0443\u0433\u0430\u0430\u0440 \u0441\u0430\u0440", "\u0414\u043E\u043B\u0434\u0443\u0433\u0430\u0430\u0440 \u0441\u0430\u0440", "\u041D\u0430\u0439\u043C\u0434\u0443\u0433\u0430\u0430\u0440 \u0441\u0430\u0440", "\u0415\u0441\u0434\u04AF\u0433\u044D\u044D\u0440 \u0441\u0430\u0440", "\u0410\u0440\u0430\u0432\u0434\u0443\u0433\u0430\u0430\u0440 \u0441\u0430\u0440", "\u0410\u0440\u0432\u0430\u043D \u043D\u044D\u0433\u0434\u04AF\u0433\u044D\u044D\u0440 \u0441\u0430\u0440", "\u0410\u0440\u0432\u0430\u043D \u0445\u043E\u0451\u0440\u0434\u0443\u0433\u0430\u0430\u0440 \u0441\u0430\u0440"],
+      "SHORTDAY": ["\u041D\u044F", "\u0414\u0430", "\u041C\u044F", "\u041B\u0445", "\u041F\u04AF", "\u0411\u0430", "\u0411\u044F"],
+      "SHORTMONTH": ["1-\u0440 \u0441\u0430\u0440", "2-\u0440 \u0441\u0430\u0440", "3-\u0440 \u0441\u0430\u0440", "4-\u0440 \u0441\u0430\u0440", "5-\u0440 \u0441\u0430\u0440", "6-\u0440 \u0441\u0430\u0440", "7-\u0440 \u0441\u0430\u0440", "8-\u0440 \u0441\u0430\u0440", "9-\u0440 \u0441\u0430\u0440", "10-\u0440 \u0441\u0430\u0440", "11-\u0440 \u0441\u0430\u0440", "12-\u0440 \u0441\u0430\u0440"],
+      "STANDALONEMONTH": ["\u041D\u044D\u0433\u0434\u04AF\u0433\u044D\u044D\u0440 \u0441\u0430\u0440", "\u0425\u043E\u0451\u0440\u0434\u0443\u0433\u0430\u0430\u0440 \u0441\u0430\u0440", "\u0413\u0443\u0440\u0430\u0432\u0434\u0443\u0433\u0430\u0430\u0440 \u0441\u0430\u0440", "\u0414\u04E9\u0440\u04E9\u0432\u0434\u04AF\u0433\u044D\u044D\u0440 \u0441\u0430\u0440", "\u0422\u0430\u0432\u0434\u0443\u0433\u0430\u0430\u0440 \u0441\u0430\u0440", "\u0417\u0443\u0440\u0433\u0430\u0434\u0443\u0433\u0430\u0430\u0440 \u0441\u0430\u0440", "\u0414\u043E\u043B\u0434\u0443\u0433\u0430\u0430\u0440 \u0441\u0430\u0440", "\u041D\u0430\u0439\u043C\u0434\u0443\u0433\u0430\u0430\u0440 \u0441\u0430\u0440", "\u0415\u0441\u0434\u04AF\u0433\u044D\u044D\u0440 \u0441\u0430\u0440", "\u0410\u0440\u0430\u0432\u0434\u0443\u0433\u0430\u0430\u0440 \u0441\u0430\u0440", "\u0410\u0440\u0432\u0430\u043D \u043D\u044D\u0433\u0434\u04AF\u0433\u044D\u044D\u0440 \u0441\u0430\u0440", "\u0410\u0440\u0432\u0430\u043D \u0445\u043E\u0451\u0440\u0434\u0443\u0433\u0430\u0430\u0440 \u0441\u0430\u0440"],
+      "WEEKENDRANGE": [5, 6],
+      "fullDate": "EEEE, y '\u043E\u043D\u044B' MM '\u0441\u0430\u0440\u044B\u043D' d",
+      "longDate": "y '\u043E\u043D\u044B' MM '\u0441\u0430\u0440\u044B\u043D' d",
+      "medium": "y MMM d HH:mm:ss",
+      "mediumDate": "y MMM d",
+      "mediumTime": "HH:mm:ss",
+      "short": "y-MM-dd HH:mm",
+      "shortDate": "y-MM-dd",
+      "shortTime": "HH:mm"
+    },
+    "NUMBER_FORMATS": {
+      "CURRENCY_SYM": "\u20AE",
+      "DECIMAL_SEP": ".",
+      "GROUP_SEP": ",",
+      "PATTERNS": [{
+        "gSize": 3,
+        "lgSize": 3,
+        "maxFrac": 3,
+        "minFrac": 0,
+        "minInt": 1,
+        "negPre": "-",
+        "negSuf": "",
+        "posPre": "",
+        "posSuf": ""
+      }, {
+        "gSize": 3,
+        "lgSize": 3,
+        "maxFrac": 2,
+        "minFrac": 2,
+        "minInt": 1,
+        "negPre": "-\xA4\xA0",
+        "negSuf": "",
+        "posPre": "\xA4\xA0",
+        "posSuf": ""
+      }]
+    },
+    "id": "mn",
+    "localeID": "mn",
+    "pluralCat": function pluralCat(n, opt_precision) {
+      if (n == 1) {
+        return PLURAL_CATEGORY.ONE;
+      }return PLURAL_CATEGORY.OTHER;
+    }
+  });
+}]);
+
+//# sourceMappingURL=angular-locale_mn-compiled.js.map

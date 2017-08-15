@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /medogram/*
+Disallow: /develop/*
+
+User-agent: Yandex
+Disallow: /medogram/*
+Disallow: /develop/*
+Host: gastroprocto.ru
+
+Sitemap: https://gastroprocto.ru/sitemap.xml

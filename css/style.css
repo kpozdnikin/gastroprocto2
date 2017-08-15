@@ -1,0 +1,1068 @@
+body{
+    background: #1b1c1d;
+    color: #565656;
+}
+h1, h2, h3, h4, h5 {
+    color:#565656;
+}
+.pusher {
+    width: 100%;
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
+
+@media only screen and (min-width: 1200px){
+    .pusher {
+        width: 1200px;
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+}
+@media only screen and (min-width: 1400px){
+    .pusher {
+        width: 1400px;
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+}
+
+a{
+    color:#21BA45;
+}
+a:hover{
+    color:#00b2f3;
+}
+.hidden.menu {
+    display: none;
+}
+.ui.large.menu {
+    font-size: 1.2rem;
+}
+.ui.segment {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    background: #f8f8f8;
+}
+.masthead.segment {
+    min-height: 700px;
+    padding: 2.5em 0;
+}
+@media (max-width: 700px) {
+    .masthead.segment {
+        padding: 3em 0;
+    }
+}
+.masthead .logo.item img {
+    margin-right: 1em;
+}
+.masthead .ui.menu .ui.button {
+    margin-left: 0.5em;
+}
+.masthead h1.ui.header {
+    margin-top: 3em;
+    margin-bottom: 0;
+    font-size: 4.5em;
+    font-weight: normal;
+}
+.masthead h2 {
+    font-size: 1.7em;
+    font-weight: normal;
+}
+
+.ui.vertical.stripe {
+    padding: 8em 0;
+}
+.ui.vertical.stripe h3 {
+    font-size: 2em;
+}
+.ui.vertical.stripe .button + h3{
+    margin-top: 3em;
+}
+.ui.vertical.stripe .floated.image {
+    clear: both;
+}
+.ui.vertical.stripe p {
+    font-size: 1.33em;
+}
+.ui.vertical.stripe .horizontal.divider {
+    margin: 2em 0;
+}
+
+.quote.stripe.segment {
+    padding: 0;
+}
+.quote.stripe.segment .grid .column {
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.ui.inverted.vertical.footer.segment {
+    padding: 0 5rem 0 5rem;
+}
+@media (max-width: 700px) {
+    .ui.inverted.vertical.footer.segment {
+        padding: 0 1rem 0 1rem;
+    }
+}
+.footer .three.column.row.center.aligned .column {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+}
+
+.circle-block{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-right: 2rem;
+}
+
+.circle {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #4d87ac;
+    position: relative;
+    width: 40%;
+    margin: 0 auto;
+}
+.circle:before{
+    content: "";
+    display: block;
+    padding-top: 100%; 	/* initial ratio of 1:1*/
+}
+.circle .content{
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.footer .three.column.row.center.aligned .column h3, .footer .three.column.row.center.aligned .column .ui.inverted.link.list {
+    z-index: 1;
+    position: relative;
+}
+.footer .three.column.row.center.aligned .column h3 {
+    margin-top: 4rem;
+}
+.footer .three.column.row.center.aligned .column h3:after{
+    content: " ";
+    background: rgba(12, 22, 31, 0.23);
+    height: 1px;
+    width: 40%;
+    display: block;
+    margin: 1rem auto;
+    visibility: inherit;
+}
+
+.footer .three.column.row.center.aligned .column .list a{
+    padding: 1rem 0 1rem 0;
+}
+
+.secondary.pointing.menu .toc.item {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .ui.fixed.menu {
+        display: none !important;
+    }
+    .secondary.pointing.menu .item,
+    .secondary.pointing.menu .menu {
+        display: none;
+    }
+    .secondary.pointing.menu .toc.item {
+        display: block;
+    }
+    .masthead.segment {
+        min-height: 350px;
+    }
+    .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+    }
+    .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+    }
+}
+
+.ui.vertical.segment.top-header{
+    background-image: url("/img/front-page-left-top.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.ui.vertical.segment.blog-top-header{
+    min-height: 0;
+    background-position: 50% 50%;
+    overflow: hidden;
+}
+.ui.vertical.segment.blog-top-header .ui.header, .ui.vertical.segment.services-top-header .ui.header{
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+}
+.ui.vertical.segment.services-top-header div.sub{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding-bottom: 2em;
+}
+.line-border{
+    border-bottom: 1px solid #00b2f3;
+    width: 15%;
+    margin: 0 auto;
+}
+
+.ui.vertical.segment.services-top-header{
+    min-height: 580px;
+    border-bottom: none;
+    background: url("/img/background.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.ui.cards>.card{
+    margin: .875em auto;
+}
+.ui.secondary.pointing.menu {
+    border-bottom: none;
+    margin-bottom: 7rem;
+    padding: 0 10%;
+}
+.index .top-header-info:before{
+    content: " ";
+    background: url(/img/round-small.png);
+    background-size: 100%;
+    height: 700px;
+    width: 700px;
+    position: absolute;
+    left: 24%;
+    top: -30%;
+    opacity: 0.5;
+}
+.ui.secondary.pointing.menu .item {
+    padding: 0.1rem 0;
+    margin-right: 3rem;
+}
+.ui.secondary.pointing.menu .item.right{
+    margin-right: 0;
+}
+.ui.secondary.pointing.menu .item.active, .ui.secondary.pointing.menu .item:hover{
+    border-bottom: 1px solid #92aec4;
+    font-weight: 400;
+    position: relative;
+    background: url("/img/round-big.png");
+}
+.ui.secondary.pointing.menu .item.right:hover{
+    border-bottom: none;
+}
+.ui.secondary.pointing.menu .item.active:after {
+    background: url("/img/round-big.png");
+    position: absolute;
+    width: 100%;
+    content: "¶ ";
+}
+.ui.menu:not(.vertical) .item>.button {
+    padding: 1.2rem 2.2rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.ui.steps{
+    position: relative;
+    border: none;
+}
+.ui.steps .step, .ui.steps .disabled.step{
+    padding-left: 1em;
+    padding-right: 1em;
+    display: block;
+    width: 25%;
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.33);
+}
+.ui.steps .step:after{
+    background: rgba(255, 255, 255, 0.33);
+}
+.ui.steps .step span{
+    display: block;
+    width:100%;
+}
+.ui.steps .step span{
+    display: block;
+    width:100px;
+    height: 100px;
+    margin: 1rem auto;
+    background: white;
+    border-radius: 50px;
+    font-size: 70px;
+    line-height: 100px;
+}
+.ui.steps .step.active span{
+    background: #21ba45;
+    color: white;
+}
+.ui.steps .step.active:hover span{
+
+}
+.ui.steps .step:first-child {
+    padding-left: 1em;
+    background: white;
+}
+.ui.steps .step:first-child:after{
+    background: white;
+}
+.steps-block{
+    position: relative;
+    top: -180px;
+    z-index: 1;
+    height: 90px;
+}
+@media (max-width: 700px) {
+    .steps-block{
+        height:auto;
+        top: 0;
+    }
+}
+.steps-block header {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.steps-block .ui.steps .step .title{
+    font-size: 1.4rem;
+    font-weight:700;
+    padding: 1rem;
+}
+.steps-block .ui.steps .step .description, .steps-block .ui.steps .step .description p{
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    margin: 0;
+}
+.alena-icon{
+    width: 100%;
+}
+.alena-icon path {
+
+}
+.alena-icon path, .alena-icon circle, .alena-icon ellipse, .alena-icon line{
+    stroke-width: 1!important;
+    stroke:#00b2f3 !important;
+    fill: white;
+}
+.service-block h2{
+    font-size: 3rem !important;
+    font-weight: 400 !important;
+}
+.service-block.second{
+    background: url(/img/second.jpg);
+    background-size: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+@media (max-width: 700px) {
+    .service-block.second{
+        background-size: 200%;
+    }
+    .service-block .three.column.row .column{
+        width: 100% !important;
+        padding: 1rem;
+    }
+}
+p.small{
+    font-size: 1.4rem !important;
+    line-height: 4rem;
+}
+@media (max-width: 700px) {
+    p.small{
+        line-height: 2rem;
+    }
+
+}
+.content.service p {
+    font-size: 1.2rem;
+}
+.services {
+    background: url(/img/round-small.png);
+    background-size: 60%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    padding-bottom: 100px;
+}
+@media (max-width: 700px) {
+    .services{
+        background-size: 100%;
+        background-position: center;
+    }
+}
+.services .content.service {
+    padding-top: 7rem;
+}
+.services .service .ui.icon.header .content {
+    height: 90px !important;
+}
+@media (max-width: 700px) {
+    .services .service .ui.icon.header .content {
+        height: 110px !important;
+    }
+}
+@media (max-width: 1200px) {
+    .service-block .ui.icon.header .content {
+        height: 250px !important;
+    }
+    .service-block .icon-header .svg-icon {
+        min-height: 200px;
+    }
+}
+.ui.icon.header .content{
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-weight: 700;
+    height: 160px;
+}
+.ui.icon.header.icon-header:after{
+    content: " ";
+    background: #00b2f3;
+    height: 1px;
+    width: 50%;
+    display: block;
+    margin: 1rem auto;
+    visibility: inherit;
+}
+.ui.icon.header .content .sub.header{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+.service .ui.positive.button{
+    padding-bottom: 1em;
+    padding-top: 1em;
+    font-size: 1.2rem;
+}
+.service .icon.header:hover .ui.positive.button.advice {
+    -webkit-box-shadow: 0px 10px 49px -8px rgba(33,186,69,1);
+    -moz-box-shadow: 0px 10px 49px -8px rgba(33,186,69,1);
+    box-shadow: 0px 10px 49px -8px rgba(33,186,69,1);
+}
+.ui.steps .step:nth-child(2){
+    background: white;
+    border-right: 1px solid rgba(34, 36, 38, 0.06);
+}
+.ui.steps .step:nth-child(2):after{
+    background: white;
+}
+.ui.steps .step:after{
+    width: 2.5em;
+    height: 2.5em;
+}
+.ui.grid>.column:not(.row), .ui.grid>.row>.column{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.svg-icon-first{
+    width: 8rem;
+    margin: 0 auto;
+}
+.svg-icon {
+    width: 70%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.38);
+    border-radius: 14rem;
+}
+.svg-icon .alena-icon{
+    width:70% !important;
+}
+.ui.icon.header.icon-header{
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+}
+.ui.icon.header.icon-header .svg-icon:hover {
+    background: rgba(255, 255, 255, 0.68);
+}
+.ui.icon.header.icon-header .svg-icon:hover .alena-icon path,
+.ui.icon.header.icon-header .svg-icon:hover .alena-icon line,
+.ui.icon.header.icon-header .svg-icon:hover .alena-icon circle,
+.ui.icon.header.icon-header .svg-icon:hover .alena-icon ellipse{
+    stroke: #21BA45 !important;
+}
+.ui.header.long{
+    font-size: 2.8rem !important;
+}
+.ui.inverted.segment, .ui.primary.inverted.segment{
+    background: #5683a4;
+}
+.svg-icon-last{
+    width: 25%;
+    margin: 0 auto;
+    position: relative;
+}
+.svg-icon-last .alena-icon-1 path,
+.svg-icon-last .alena-icon-1 line,
+.svg-icon-last .alena-icon-1 circle,
+.svg-icon-last .alena-icon-1 ellipse {
+    stroke: white !important;
+}
+
+.service .icon.header:hover .svg-icon-first .alena-icon-1 path,
+.service .icon.header:hover .svg-icon-first .alena-icon-1 line,
+.service .icon.header:hover .svg-icon-first .alena-icon-1 circle,
+.service .icon.header:hover .svg-icon-first .alena-icon-1 ellipse {
+    stroke: white !important;
+}
+.footer .column p{
+    width: 80%;
+    margin: 0 auto;
+}
+.footer .column p.consult:before {
+    content: " ";
+    background: rgba(12, 22, 31, 0.23);
+    height: 1px;
+    width: 40%;
+    display: block;
+    margin: 1rem auto;
+    visibility: inherit;
+}
+.footer .column .button{
+    margin-top: 1rem;
+    position: relative;
+    border-width: 1px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    width: 70%;
+    font-size: 1.2rem;
+    box-shadow: 0 0 0 1px #FFF inset!important;
+    -webkit-box-shadow: 0 0 0 1px #FFF inset!important;
+    -moz-box-shadow: 0 0 0 1px #FFF inset!important;
+}
+.footer .column .button:hover {
+    color: #5683a4;
+}
+.top-contacts{
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    color:#30546a !important;
+    opacity: 0.3;
+}
+.vcard{
+    text-align: left !important;
+    color:#30546a;
+}
+@media (max-width: 700px) {
+    .ui.grid.vcard .wide.column{
+        width: 100% !important;
+    }
+}
+.vcard .footer-photo{
+    position: relative;
+    width: 50%;
+    left: 25%;
+    margin-top: 15%;
+    opacity: 0.3;
+}
+.vcard .circle{
+    margin: 0 auto;
+    width:80%;
+}
+.vcard .pricerange{
+    width: 80%;
+    margin: 0 auto;
+}
+.vcard .header{
+    color: #30546a;
+    margin-bottom: 1rem !important;
+}
+.sitename{
+    text-align: center !important;
+    position: relative;
+    color:#30546a;
+    font-size: 1.2rem;
+}
+.vcard .ui.inverted.section.divider {
+    width: 80%;
+    margin: 1rem auto;
+}
+.vcard .column {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.abdominalpain .top-header-info .ui.container{
+    text-align: left;
+    width: 100%;
+    padding: 0 10%;
+}
+
+.line-border-left{
+    border-bottom: 1px solid #00b2f3;
+    width: 15%;
+}
+.line-border-right{
+    border-bottom: 1px solid #00b2f3;
+    width: 15%;
+}
+
+.ambulance .line-border-right{
+    float: right;
+}
+
+.ambulance .line-border-left{
+    float: left;
+}
+
+.abdominalpain .top-header-info .ui.grid {
+    margin: 0;
+}
+.abdominalpain .top-header-info h1.ui.header {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+.abdominalpain .top-header-info .left.column {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+@media (max-width: 700px) {
+    .abdominalpain .top-header-info .left.column {
+        width: 100% !important;
+    }
+    .abdominalpain .top-header-info .right.column {
+        width: 100% !important;
+    }
+    .abdominalpain .top-header-info .ava.column img {
+        top: 0!important;
+        position: relative !important;
+    }
+}
+@media (max-width: 1200px) {
+    .abdominalpain .top-header-info .ava.column img {
+        min-width: 35rem;
+        position: absolute;
+        left: -10rem;
+        z-index: 0;
+        top: -12rem;
+    }
+}
+.abdominalpain .top-header-info .left.column,
+.abdominalpain .top-header-info .right.column,
+.abdominalpain .top-header-info .ava.column{
+    padding-left: 0;
+    padding-right: 0;
+}
+.abdominalpain .top-header-info .left.column ul, .abdominalpain .top-header-info .left.column p, .abdominalpain .top-header-info .right.column p{
+    margin: 0;
+}
+.abdominalpain .top-header-info .left.column ul {
+    padding-left: 2rem;
+}
+.abdominalpain .top-header-info .left.column ul>li {
+    color: #d4e1ea;
+}
+.abdominalpain .top-header-info .left.column ul>li>span{
+    color: #565656;
+}
+
+.abdominalpain .top-header-info .right.column {
+    text-align: right;
+    padding-left: 0;
+    padding-top: 9.5rem;
+    z-index: 10;
+}
+.abdominalpain .top-header-info .right.column header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.abdominalpain .top-header-info .right.column header span{
+    white-space:nowrap;
+    display: block;
+}
+.abdominalpain .top-header-info .right.column p {
+    font-size: 0.9rem;
+}
+.abdominalpain .top-header-info .right.column p span {
+    color: #9fa0a2;
+}
+.abdominalpain .big-round {
+    background: url(/img/round-big.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 30%;
+    top: -22rem;
+}
+.abdominalpain .top-header-info .ava.column img{
+    min-width: 30rem;
+    position: absolute;
+    left: -10rem;
+    z-index: 0;
+    top: -9rem;
+}
+
+.diseases {
+    background: #f8f8f8 !important;
+}
+
+.diseases-icons .column{
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+@media (max-width: 700px) {
+    .ui.middle.aligned.stackable.grid.container .diseases-icons .column .icon-header{
+        width: 100% !important;
+    }
+}
+@media (max-width: 768px) {
+    #left-svg-block{
+        display: none;
+    }
+}
+.diseases-icons .column .ui.icon.header .content {
+    height: 60px !important;
+}
+.diseases-icons .column .ui.icon.header.icon-header:after {
+    width: 70% !important;
+    background: #d0dae3 !important;
+}
+.diseases-header h2{
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 3rem;
+}
+.icon-header .svg-icon{
+    margin: 0;
+    width: 100%;
+    background: none;
+}
+.icon-header .svg-icon:hover {
+    background: none !important;
+}
+
+.abdominalpain .services{
+    background-size: 50%;
+}
+
+.abdominalpain .services .content.service{
+    padding-top: 3rem;
+}
+
+.abdominalpain .services .content.service p{
+    margin:0;
+}
+.abdominalpain .segment {
+    box-shadow: none !important;
+}
+.abdominalpain .zones-container .column{
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    overflow: hidden;
+}
+#zones path{
+
+}
+
+.zone h3 {
+    margin-bottom: 0;
+}
+.zone p{
+    margin-bottom: 0.5rem;
+}
+
+.zone h3{
+    margin-top: 2rem;
+}
+p.p-block{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem !important;
+}
+p.p-block.bordered{
+    border: 1px solid #00b2f3;
+    padding: 0.5rem 3rem;
+}
+.zones .ui.blog-green.segment {
+    text-transform: uppercase;
+    padding: 0;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.zones .ui.celled.horizontal.list{
+    margin: 0 0 2rem 0;
+}
+.zones .ui.celled.horizontal.list .item{
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.7rem;
+    border-right: none;
+    color: #00b2f3;
+}
+.red{
+    color: red;
+}
+.do-pain{
+    background-image: url("/img/do-pain.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.to-do-pain h2{
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 3rem;
+}
+.to-do-pain p{
+    text-align: center;
+}
+.pain-to-do .sub.header:before{
+    content: " ";
+    background: rgba(192, 196, 204, 0.29);
+    width: 30%;
+    height: 10rem;
+    display: block;
+    margin: 1rem auto;
+    visibility: inherit;
+    position: absolute;
+    border-radius: 90px;
+    left: 35%;
+    top: 0;
+    z-index: 0;
+}
+.pain-to-do .sub.header{
+    padding-top: 2rem !important;
+}
+.pain-to-do .sub.header .cont{
+    height: 12rem;
+    line-height: 1.8rem !important;
+    z-index: 10;
+    position: relative;
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.do-pain a{
+    margin: 2rem auto !important;
+    padding: 1rem 3rem !important;
+    text-transform: uppercase !important;
+}
+.ambulance .left .block{
+    text-align: right;
+}
+.ambulance .right .block{
+    text-align: left;
+}
+.no-padded{
+    padding: 1rem !important;
+}
+.no-padded img{
+    width: 100%;
+}
+.ambulance .column.left{
+    width: 40% !important;
+    padding: 0 1rem 0 5rem !important;
+}
+.ambulance .column.left .block{
+    float: right;
+}
+.ambulance .column.right{
+    width: 40% !important;
+    padding: 0 5rem 0 1rem !important;
+}
+.ambulance .column.right .block{
+    float: left;
+}
+.ambulance .column.center{
+    width: 20% !important;
+    padding: 0 0 0 0 !important;
+}
+.ambulance .column.center img{
+    width: 100%;
+}
+
+.ambulance .right .line-border-left, .ambulance .left .line-border-right{
+    width: 25%;
+    border-bottom: 1px solid rgb(192, 196, 204);
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+}
+
+.block{
+    font-size: 1.2rem;
+}
+
+.cause-pain .column.header{
+    background: white;
+    background-image: url("/img/cause.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 330px;
+}
+.cause-pain .column.header h3{
+    padding: 1rem;
+    background: rgba(121, 142, 169, 0.36);
+}
+
+.research .diseases-header p{
+    margin-bottom: 0;
+}
+.research .diseases-icons .column .ui.icon.header .content{
+    height: 8rem !important;
+}
+.research .diseases-icons .column .ui.icon.header .svg-icon{
+    height: 20rem;
+    width: 20rem;
+    background: rgb(223, 229, 234);
+    margin: 0 auto;
+}
+.research .diseases-icons .column .ui.icon.header .svg-icon:hover{
+    background: rgb(223, 229, 234);
+}
+
+.research .diseases-icons .column .ui.icon.header.icon-header:after{
+    background: #21ba4a !important;
+}
+
+.ui.segment.target{
+    background: #e7ecef;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.target .button{
+    text-transform: uppercase !important;
+    font-size: 1rem !important;
+    padding: 1.2rem 2rem !important;
+    margin-top: 1rem;
+}
+
+.target-header,
+.target-header p{
+    font-weight: bold !important;
+    font-size: 1.5rem !important;
+}
+
+.target-text{
+    font-size: 1.2rem;
+}
+.team .team-row{
+    padding: 0 !important;
+}
+.team .team-row .team-column.column {
+    padding: 1rem;
+}
+.team-column.doctor {
+    padding-top: 0 !important;
+}
+
+.team .team-column.spaced {
+    padding: 0 !important;
+}
+
+.right-round{
+    background: #e7ecef;
+    height: 2rem;
+    width: 2rem;
+    display: block;
+    float: right;
+    margin-left: 1rem;
+    border-radius: 1rem;
+}
+.doctor .ava{
+    background: #e7ecef;
+    width: 100%;
+    min-height: 21rem;
+}
+.doctor .ava img{
+    position: absolute;
+    right: 50%;
+    bottom: 22%;
+}
+
+.team {
+    border-bottom: none !important;
+}
+
+.team-column {
+    padding-bottom: 12rem !important;
+}
+
+.team-column .name {
+    float: right;
+    text-align: right;
+    position: absolute;
+    width: 35rem;
+    right: 0;
+    bottom: 2rem;
+}
+
+.team-column .name header{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.team-column .name p{
+    font-size: 0.9rem !important;
+    margin-bottom: 0;
+}
+
+.team-column .name p span {
+    color: #9fa0a2;
+}
+
+.mini-logo {
+    opacity: 0.1;
+    width: 3rem;
+    float: right;
+    margin-top: 1rem;
+}
+
+#our-blog-segment{
+    padding: 10% 15% 5% 15%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/img/blog-back.png");
+}
+
+#our-blog-segment:before {
+    content: " ";
+    background: #e7ecef;
+    height: 1px;
+    width: 82%;
+    top: -1rem;
+    left: 0;
+    position: absolute;
+    display: block;
+    margin: 1rem auto;
+    visibility: inherit;
+}
+
+#our-blog{
+    color: #21BA45 !important;
+    font-size: 2rem;
+}
+
+#our-blog:before{
+    content: " ";
+    background: #21BA45;
+    height: 1px;
+    width: 50%;
+    display: block;
+    margin: 1rem auto;
+    visibility: inherit;
+}
+
+.left-svg-block.fixed{
+    position: fixed;
+    top: 2rem;
+}
+
+.shape-about .side{
+    color: #00b2f3 !important;
+}
