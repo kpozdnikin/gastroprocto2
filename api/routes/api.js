@@ -32,7 +32,7 @@ var routesAPI = function(app){
                 return res.status(404).send('Not found');
             }
 
-            const componentHTML = RectDOMServer.renderToString(<RouterContext {...renderProps} />);
+           /* const componentHTML = RectDOMServer.renderToString(<RouterContext {...renderProps} />);
             var article = {};
             article.url = "https://gastroprocto.ru/blog/";
             var metaTitle = "Врачебный блог";
@@ -45,12 +45,12 @@ var routesAPI = function(app){
                 '<meta name="keywords" content="Блог, медицинский, Поздникина О.Ю."> ' +
                 '<meta name="author" content="Поздникина О Ю">' +
                 '<meta name="description" content="Определения, советы, рекомендации, случаи из медицинской практики">';
-            return res.end(renderHTML(componentHTML, metaHeader, metaTitle));
+            return res.end(renderHTML(componentHTML, metaHeader, metaTitle));*/
 
-            /*Resolver
+            Resolver
                 .resolve(() => <RouterContext {...renderProps} /> )
                 .then(({ Resolved, data }) => {
-                    var article = {}
+                    var article = {};
                     article.url = "https://gastroprocto.ru/blog/";
                     var metaTitle = "Врачебный блог";
                     var metaHeader = '<meta property="og:title" prefix="og: http://ogp.me/ns#" content="Врачебный блог" />' +
@@ -64,7 +64,7 @@ var routesAPI = function(app){
                         '<meta name="description" content="Определения, советы, рекомендации, случаи из медицинской практики">';
                     res.send(renderHTML(renderToString(<Resolved />), metaHeader, metaTitle));
                 })
-                .catch((error) => res.status(500).send(error))*/
+                .catch((error) => res.status(500).send(error))
         });
     });
 
@@ -84,7 +84,7 @@ var routesAPI = function(app){
                 return res.status(404).send('Not found');
             }
 
-            const componentHTML = RectDOMServer.renderToString(<RouterContext {...renderProps} />);
+            /*const componentHTML = RectDOMServer.renderToString(<RouterContext {...renderProps} />);
             var article =  data['.0.0'].article;
             var metaTitle = article.name;
             var metaHeader = '<meta property="og:title" prefix="og: http://ogp.me/ns#" content="' + article.name + '" />' +
@@ -96,9 +96,9 @@ var routesAPI = function(app){
                 '<meta name="keywords" content="' + article.name + '"> ' +
                 '<meta name="author" content="Поздникина О Ю">' +
                 '<meta name="description" content="' + article.description + '">';
-            return res.end(renderHTML(componentHTML, metaHeader, metaTitle));
+            return res.end(renderHTML(componentHTML, metaHeader, metaTitle));*/
 
-            /*Resolver
+            Resolver
                 .resolve(() => <RouterContext {...renderProps} /> )
                 .then(({ Resolved, data }) => {
                     var article =  data['.0.0'].article;
@@ -114,7 +114,7 @@ var routesAPI = function(app){
                         '<meta name="description" content="' + article.description + '">';
                     res.send(renderHTML(renderToString(<Resolved />), metaHeader, metaTitle));
                 })
-                .catch((error) => res.status(500).send(error))*/
+                .catch((error) => res.status(500).send(error))
         });
     });
 

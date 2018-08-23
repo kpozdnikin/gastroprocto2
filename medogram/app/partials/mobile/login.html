@@ -43,6 +43,7 @@
       <form name="mySendCodeForm" ng-if="!credentials.phone_code_hash" ng-submit="sendCode()">
         <h3 class="login_form_head" my-i18n="login_sign_in"></h3>
         <p class="login_form_lead" my-i18n="login_enter_number_description"></p>
+        <p>Если вы не зарегистрированы в приложении <a href="https://telegram.org/">telegram</a>, обязательно скачайте и установите его на телефон, иначе вы консультацию получить <strong>не сможете.</strong></p>
 
         <div class="md-input-group md-input-has-value login_phone_country_input_group sr-only" ng-click="chooseCountry()">
           <label class="md-input-label" my-i18n="login_country_select_placeholder"></label>

@@ -1,8 +1,8 @@
-var mongoose = require('mongoose');
-var q = require('q');
-var Schema = mongoose.Schema;
-var fs = require("fs");
-var path = require("path");
+const mongoose = require('mongoose');
+const q = require('q');
+const Schema = mongoose.Schema;
+const fs = require("fs");
+const path = require("path");
 
 //defining schema for articles table
 
@@ -44,7 +44,7 @@ articlesModel.get = function(skip, limit, isDeleted){
 	var results = q.defer();
 
 	skip = parseInt(skip) || 0;
-	limit = parseInt(limit) || 20;
+	limit = parseInt(limit) || 30;
 
 	Article.find({ 'isDeleted': 'false' }, function(err, dbArticles) {
 		if (err){
@@ -115,7 +115,7 @@ articlesModel.insertOne = function(article){
 					if (err) {
 						return console.log(err);
 					}
-					Article.update({_id: resArticle._id }, {
+					Article.update({ _id: resArticle._id }, {
 						mainImg: '/uploads/' + resArticle._id + '.jpg'
 					}, function(error, affected, resp) {
 
