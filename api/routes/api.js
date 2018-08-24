@@ -164,6 +164,7 @@ function renderHTML(componentHTML, headerHTML, titleHTML) {
     <link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="/node_modules/semantic-ui/dist/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="/node_modules/semantic-ui-transition/transition.min.css">
+    <link rel="stylesheet" type="text/css" href="/node_modules/react-trumbowyg/dist/trumbowyg.min.css">
 
     <link rel="stylesheet" type="text/css" href="/css/old/style.css">
     <!-- Yandex.Metrika counter -->
@@ -218,7 +219,7 @@ function renderHTML(componentHTML, headerHTML, titleHTML) {
                 <a class="item active" href="/blog">Блог</a>
                 <div class="right menu">
                     <div class="item">
-                        <a class="ui positive button" href="https://gastroprocto.ru/medogram">Получить консультацию</a>
+                        <a class="ui positive button" href="https://vk.com/gastroprocto">Получить консультацию</a>
                     </div>
                 </div>
             </div>
@@ -229,7 +230,7 @@ function renderHTML(componentHTML, headerHTML, titleHTML) {
             <a class="item" href="/">Главная</a>
             <a class="item" href="/abdominalpain">О боли в животе</a>
             <a class="item active" href="/blog">Блог</a>
-            <a class="item" href="https://gastroprocto.ru/medogram">Получить консультацию</a>
+            <a class="item" href="https://vk.com/gastroprocto">Получить консультацию</a>
         </div>
     
         <div class="pusher">
@@ -245,7 +246,7 @@ function renderHTML(componentHTML, headerHTML, titleHTML) {
                         <a class="item" href="/abdominalpain">О боли в животе</a>
                         <a class="item active" href="/blog">Блог</a>
                         <div class="right item">
-                            <a class="ui basic button" href="https://gastroprocto.ru/medogram">Получить консультацию</a>
+                            <a class="ui basic button" href="https://vk.com/gastroprocto">Получить консультацию</a>
                         </div>
                     </div>
                 </div>
@@ -449,7 +450,7 @@ function renderHTML(componentHTML, headerHTML, titleHTML) {
                                 <a href="https://gastroprocto.ru/blog/58937b52f4b4492fd629d92f/%D0%A4%D0%9A%D0%A1%20(%D1%84%D0%B8%D0%B1%D1%80%D0%BE%D0%BA%D0%BE%D0%BB%D0%BE%D0%BD%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F)" class="item">ФКС (фиброколоноскопия) – осмотр толстой кишки с помощью длинной гибкой трубки с оптическим волокном;</a>
                                 <a href="https://gastroprocto.ru/blog/589343b6f4b4492fd629d92c/%D0%A7%D1%82%D0%BE%20%D1%82%D0%B0%D0%BA%D0%BE%D0%B5%20%D0%91%D0%98%D0%9E%D0%9F%D0%A1%D0%98%D0%AF" class="item">Забор материала на гистологическое и цитологическое исследование (в т.ч. для выявления онкологической патологии) – БИОПСИЯ;</a>
                               </div>
-                              <h4 href="#" class="item">Вы можете получить <a href="https://gastroprocto.ru/medogram">телефонные и онлайн консультации, а так же записаться на прием.</a></h4>
+                              <h4 href="#" class="item">Вы можете получить <a href="https://vk.com/gastroprocto">телефонные и онлайн консультации, а так же записаться на прием.</a></h4>
                             </div>
                         <div class="four wide column vcard" itemscope itemtype="http://schema.org/Organization">
                             <div itemprop="address" class="adr" itemscope itemtype="http://schema.org/PostalAddress">

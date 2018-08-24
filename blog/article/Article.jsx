@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ArticleEditing from './ArticleEditing.jsx';
 import ArticleText from './ArticleText.jsx';
-import { Dimmer, Loader, Image, Segment } from 'semantic-ui-react'
+import { Dimmer, Loader } from 'semantic-ui-react'
 
 
 class Article extends Component {

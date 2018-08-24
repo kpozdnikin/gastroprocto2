@@ -1,5 +1,5 @@
 import React from 'react';
-import 'react-trumbowyg/dist/trumbowyg.min.css';
+// import 'react-trumbowyg/dist/trumbowyg.min.css';
 import Trumbowyg from 'react-trumbowyg';
 
 class ArticleEditing extends React.Component {
