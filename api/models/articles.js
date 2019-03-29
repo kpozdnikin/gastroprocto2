@@ -44,9 +44,9 @@ articlesModel.get = function(skip, limit, isDeleted){
 	var results = q.defer();
 
 	skip = parseInt(skip) || 0;
-	limit = parseInt(limit) || 30;
+	limit = parseInt(limit) || 40;
 
-	Article.find({ 'isDeleted': 'false' }, function(err, dbArticles) {
+	Article.find({ 'isDeleted': 'false' }, null, { sort: '-dateCreate' }, function(err, dbArticles) {
 		if (err){
 			results.reject(err);
 		} 
