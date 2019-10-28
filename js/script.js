@@ -44,7 +44,7 @@ $(document).ready(function() {
                 continuous : true,
                 onPassing  : function(calculations) {
                     var newFontSize = 0.5 + calculations.percentagePassed/2 +'em';
-                    $('#our-blog')
+                    $('#our-blog-old')
                         .css({'font-size': newFontSize});
                 }
             });
@@ -77,17 +77,17 @@ $(document).ready(function() {
             duration: 500
         });
 
-        $('.ui.vertical.masthead.center.aligned.segment.blog-top-header').animate({
+        $('.ui.vertical.masthead.center.aligned.segment.blog-old-top-header').animate({
             minHeight: 0,
             height: 'auto',
             textAlign: 'left',
             paddingBottom: 0
         }, 500, function() {
-            $('#blog-header-block').animate(
+            $('#blog-old-header-block').animate(
                 {
                     height: 0
                 }, 500, function(){
-                    $('#blog-header-block').css({ display: 'none' })
+                    $('#blog-old-header-block').css({ display: 'none' })
                 })
         });
 

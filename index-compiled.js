@@ -19,7 +19,7 @@
 	    <App />,
 	    document.getElementById('app')
 	);
-	*/_reactDom2.default.render(_react2.default.createElement('h1',null,'Hello, world!'),document.getElementById('blog-segment'));/***/},/* 1 *//***/function(module,exports,__webpack_require__){'use strict';module.exports=__webpack_require__(2);/***/},/* 2 *//***/function(module,exports,__webpack_require__){/* WEBPACK VAR INJECTION */(function(process){/**
+	*/_reactDom2.default.render(_react2.default.createElement('h1',null,'Hello, world!'),document.getElementById('blog-old-segment'));/***/},/* 1 *//***/function(module,exports,__webpack_require__){'use strict';module.exports=__webpack_require__(2);/***/},/* 2 *//***/function(module,exports,__webpack_require__){/* WEBPACK VAR INJECTION */(function(process){/**
 	 * Copyright 2013-present, Facebook, Inc.
 	 * All rights reserved.
 	 *

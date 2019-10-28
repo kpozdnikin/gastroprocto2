@@ -9,12 +9,12 @@ var RectDOMServer = require('react-dom/server');
 
 import { renderToString } from "react-dom/server";
 import { match, RouterContext } from 'react-router';
-import routes from '../../blog/routes';
+import routes from '../../blog-old/routes';
 
 import { Resolver } from "react-resolver";
 
 var routesAPI = function(app){
-    app.get('/blog',  (req, res) => {
+    app.get('/blog-old',  (req, res) => {
     //  res.sendFile(path.join(__dirname, 'public', 'index.html'))
         match({ routes, location: req.url }, (error, redirectLocation, renderProps) => {
 
@@ -53,7 +53,7 @@ var routesAPI = function(app){
                     var metaTitle = "Врачебный блог";
                     var metaHeader = '<meta property="og:title" prefix="og: http://ogp.me/ns#" content="Врачебный блог" />' +
                         '<meta property="og:type" prefix="og: http://ogp.me/ns#" content="article" /> ' +
-                        '<meta property="og:url" prefix="og: http://ogp.me/ns#" content="https://gastroprocto.ru/blog" /> ' +
+                        '<meta property="og:url" prefix="og: http://ogp.me/ns#" content="https://gastroprocto.ru/blog-old" /> ' +
                         '<meta property="og:image" prefix="og: http://ogp.me/ns#" content="https://gastroprocto.ru/img/footer.png" /> ' +
                         '<meta property="og:description" prefix="og: http://ogp.me/ns#" content="Информация о лечении заболеваний пищеварительного тракта." /> ' +
                         '<meta property="og:site_name" prefix="og: http://ogp.me/ns#" content="болитживот.рф" />' +
@@ -66,7 +66,7 @@ var routesAPI = function(app){
         });
     });
 
-    app.get('/blog/:articleId/:articleName',  (req, res) => {
+    app.get('/blog-old/:articleId/:articleName',  (req, res) => {
         //res.sendFile(path.join(__dirname, 'public', 'index.html'))
         match({ routes, location: req.url }, (error, redirectLocation, renderProps) => {
 
@@ -214,7 +214,7 @@ function renderHTML(componentHTML, headerHTML, titleHTML) {
             <div class="ui container">
                 <a class="item" href="/">Главная</a>
                 <a class="item" href="/abdominalpain">О боли в животе</a>
-                <a class="item active" href="/blog">Блог</a>
+                <a class="item active" href="/blog-old">Блог</a>
                 <div class="right menu">
                     <div class="item">
                         <a class="ui positive button" href="https://vk.com/gastroprocto">Получить консультацию</a>
@@ -227,7 +227,7 @@ function renderHTML(componentHTML, headerHTML, titleHTML) {
         <div class="ui vertical sidebar menu">
             <a class="item" href="/">Главная</a>
             <a class="item" href="/abdominalpain">О боли в животе</a>
-            <a class="item active" href="/blog">Блог</a>
+            <a class="item active" href="/blog-old">Блог</a>
             <a class="item" href="https://vk.com/gastroprocto">Получить консультацию</a>
         </div>
     
@@ -242,7 +242,7 @@ function renderHTML(componentHTML, headerHTML, titleHTML) {
                         </a>
                         <a class="item" href="/">Главная</a>
                         <a class="item" href="/abdominalpain">О боли в животе</a>
-                        <a class="item active" href="/blog">Блог</a>
+                        <a class="item active" href="/blog-old">Блог</a>
                         <div class="right item">
                             <a class="ui basic button" href="https://vk.com/gastroprocto">Получить консультацию</a>
                         </div>

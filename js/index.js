@@ -80,11 +80,11 @@
 	    _react2.default.createElement(
 	        _reactRouter.Route,
 	        { path: '/', component: _App2.default },
-	        _react2.default.createElement(_reactRouter.Route, { path: 'blog', component: _Articles2.default }),
-	        _react2.default.createElement(_reactRouter.Route, { path: 'blog/:articleId/:articleName', component: _Article2.default }),
+	        _react2.default.createElement(_reactRouter.Route, { path: 'blog-old', component: _Articles2.default }),
+	        _react2.default.createElement(_reactRouter.Route, { path: 'blog-old/:articleId/:articleName', component: _Article2.default }),
 	        _react2.default.createElement(_reactRouter.Route, { path: '*', component: _NotMatch2.default })
 	    )
-	), document.getElementById('blog-content'));
+	), document.getElementById('blog-old-content'));
 
 /***/ }),
 /* 1 */
@@ -28169,7 +28169,7 @@
 	                        { className: 'ui breadcrumb' },
 	                        _react2.default.createElement(
 	                            'a',
-	                            { href: '/blog', className: 'section' },
+	                            { href: '/blog-old', className: 'section' },
 	                            '\u0411\u043B\u043E\u0433'
 	                        ),
 	                        _react2.default.createElement('i', { className: 'right angle icon divider' })
@@ -44175,7 +44175,7 @@
 	        key: 'cancelArticle',
 	        value: function cancelArticle() {
 	            this.setState({ status: 'read' });
-	            location.href = '#blog-content';
+	            location.href = '#blog-old-content';
 	        }
 	    }, {
 	        key: 'render',
@@ -44194,7 +44194,7 @@
 	                        _react2.default.createElement(
 	                            _reactAddonsCssTransitionGroup2.default,
 	                            {
-	                                transitionName: 'blog-animation',
+	                                transitionName: 'blog-old-animation',
 	                                transitionAppear: true,
 	                                transitionAppearTimeout: 1000,
 	                                transitionEnter: false,
@@ -44219,7 +44219,7 @@
 	                    null,
 	                    _react2.default.createElement(
 	                        _semanticUiReact.Dimmer,
-	                        { className: 'blog-dimmer', active: true, inverted: true },
+	                        { className: 'blog-old-dimmer', active: true, inverted: true },
 	                        _react2.default.createElement(
 	                            _semanticUiReact.Loader,
 	                            { inverted: true },
@@ -44237,7 +44237,7 @@
 	function BlogArticles(props) {
 	    return _react2.default.createElement(
 	        'div',
-	        { className: 'article-blog-item', itemScope: true, itemType: 'http://schema.org/BlogPosting' },
+	        { className: 'article-blog-old-item', itemScope: true, itemType: 'http://schema.org/BlogPosting' },
 	        _react2.default.createElement(
 	            'div',
 	            { className: 'ui small image' },
@@ -44248,7 +44248,7 @@
 	            { className: 'content' },
 	            _react2.default.createElement(
 	                'a',
-	                { className: 'header', href: '/blog/' + props.article._id + '/' + props.article.name },
+	                { className: 'header', href: '/blog-old/' + props.article._id + '/' + props.article.name },
 	                _react2.default.createElement(
 	                    'h3',
 	                    { itemProp: 'headline' },
@@ -44280,7 +44280,7 @@
 	                    ),
 	                    _react2.default.createElement(
 	                        'a',
-	                        { href: '/blog/' + props.article._id + '/' + props.article.name, className: 'ui right floated positive button' },
+	                        { href: '/blog-old/' + props.article._id + '/' + props.article.name, className: 'ui right floated positive button' },
 	                        '\u0427\u0438\u0442\u0430\u0442\u044C \u0434\u0430\u043B\u0435\u0435',
 	                        _react2.default.createElement('i', { className: 'right chevron icon' })
 	                    )
@@ -44293,7 +44293,7 @@
 	function AddArticle(props) {
 	    if (props.user && props.user.isAdmin) return _react2.default.createElement(
 	        'div',
-	        { id: 'blog-controls', className: 'blog-controls' },
+	        { id: 'blog-old-controls', className: 'blog-old-controls' },
 	        _react2.default.createElement(
 	            'a',
 	            { id: 'add-article-btn', onClick: props.onButtonAddClick },
@@ -89361,16 +89361,16 @@
 	    }, {
 	        key: 'componentDidMount',
 	        value: function componentDidMount() {
-	            $('.ui.vertical.masthead.center.aligned.segment.blog-top-header').animate({
+	            $('.ui.vertical.masthead.center.aligned.segment.blog-old-top-header').animate({
 	                minHeight: 0,
 	                height: 'auto',
 	                textAlign: 'left',
 	                paddingBottom: 0
 	            }, 500, function () {
-	                $('#blog-header-block').animate({
+	                $('#blog-old-header-block').animate({
 	                    height: 0
 	                }, 500, function () {
-	                    $('#blog-header-block').css({ display: 'none' });
+	                    $('#blog-old-header-block').css({ display: 'none' });
 	                });
 	            });
 	
@@ -89428,7 +89428,7 @@
 	                    data: article,
 	                    dataType: 'json',
 	                    success: function (resp) {
-	                        location.href = '/blog/';
+	                        location.href = '../blog-old/';
 	                        return true;
 	                    }.bind(this),
 	                    error: function (status, err) {
@@ -89448,7 +89448,7 @@
 	                    data: article,
 	                    dataType: 'json',
 	                    success: function (resp) {
-	                        location.href = '/blog/';
+	                        location.href = '../blog-old/';
 	                        return true;
 	                    }.bind(this),
 	                    error: function (status, err) {
@@ -89536,11 +89536,11 @@
 	
 	            if (this.state.status === 'edit') {
 	                this.updateArticle(article).promise().done(function (arg) {
-	                    location.href = '/blog/' + article._id + '/' + article.name;
+	                    location.href = '/blog-old/' + article._id + '/' + article.name;
 	                });
 	            } else if (this.state.status === 'add') {
 	                this.addArticle(article).promise().done(function (arg) {
-	                    //location.href = '/blog/' + article._id + '/' + article.name;
+	                    //location.href = '/blog-old/' + article._id + '/' + article.name;
 	                    console.log('Статья добавлена!');
 	                    console.log(arg);
 	                });
@@ -90785,7 +90785,7 @@
 	        key: 'cancelArticle',
 	        value: function cancelArticle() {
 	            this.setState({ status: 'read' });
-	            location.href = '#blog-content';
+	            location.href = '#blog-old-content';
 	        }
 	    }, {
 	        key: 'componentDidMount',
@@ -90839,7 +90839,7 @@
 	                    data: '',
 	                    dataType: 'json',
 	                    success: function (resp) {
-	                        location.href = '/blog/';
+	                        location.href = '../blog-old/';
 	                        return true;
 	                    }.bind(this),
 	                    error: function (status, err) {
@@ -90862,7 +90862,7 @@
 	                    null,
 	                    _react2.default.createElement(
 	                        _semanticUiReact.Dimmer,
-	                        { className: 'blog-dimmer', active: true, inverted: true },
+	                        { className: 'blog-old-dimmer', active: true, inverted: true },
 	                        _react2.default.createElement(
 	                            _semanticUiReact.Loader,
 	                            { inverted: true },
@@ -90955,16 +90955,16 @@
 	    _createClass(ArticleText, [{
 	        key: 'componentDidMount',
 	        value: function componentDidMount() {
-	            $('.ui.vertical.masthead.center.aligned.segment.blog-top-header').animate({
+	            $('.ui.vertical.masthead.center.aligned.segment.blog-old-top-header').animate({
 	                minHeight: 0,
 	                height: 'auto',
 	                textAlign: 'left',
 	                paddingBottom: 0
 	            }, 500, function () {
-	                $('#blog-header-block').animate({
+	                $('#blog-old-header-block').animate({
 	                    height: 0
 	                }, 500, function () {
-	                    $('#blog-header-block').css({ display: 'none' });
+	                    $('#blog-old-header-block').css({ display: 'none' });
 	                });
 	            });
 	            this.getUserAuth();

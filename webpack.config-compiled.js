@@ -6,10 +6,10 @@ var NODE_ENV = process.env.NODE_ENV || 'development';
 var webpack = require('webpack');
 
 var config = {
-    entry: './blog/main.js',
+    entry: './blog-old/main.js',
 
     output: {
-        /*path: './blog/public',
+        /*path: './blog-old/public',
         publicPath: '/',*/
         filename: './js/index.js'
     },
