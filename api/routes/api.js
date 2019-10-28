@@ -1,11 +1,9 @@
 var BabelRegister = require('babel-register');
 var path = require('path');
 var Navigator = require('navigator');
-
 var articles = require('../controllers/articles');
 var users = require('../controllers/users');
 var helpers = require('../helpers/helperFunctions');
-
 var React = require('react');
 var RectDOMServer = require('react-dom/server');
 
