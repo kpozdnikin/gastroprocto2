@@ -1,8 +1,13 @@
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import React, { FormEvent, useState, useEffect, useRef } from 'react';
-import IconButton from '@material-ui/core/IconButton';
-import Button  from '@material-ui/core/Button';
+  import IconButton from '@material-ui/core/IconButton';
+  import Button  from '@material-ui/core/Button';
 import './App.scss';
-
+import Main from './components/main';
+import Nav from './components/nav';
+import Blog from './components/blog';
+import Illnesses from './components/illnesses';
+import Stomachache from './components/stomachache';
 const textareaLineHeight = 24;
 
 const App: React.FC = () => {
@@ -93,48 +98,15 @@ const App: React.FC = () => {
 
   return (
     <div className="app">
-      <h1 className="app-header">Welcome to Nitka test app!</h1>
-      <div className="app-body">
-        {!layout && (
-          <div className="initial-form">
-            <form onSubmit={submit}>
-              <div className="form-group">
-                <label>Please type some text here</label>
-                <textarea
-                  value={initialValue}
-                  onChange={(e) => handleInitialValueChange(e)}
-                  name="initialText"
-                  rows={textAreaRows}
-                />
-              </div>
-              <Button type="submit">
-                Submit
-              </Button>
-            </form>
-          </div>
-        )}
-        {layout && (
-          <div className="layout">
-            <h2>You can use buttons to split layout</h2>
-            <div className="toggle-layout-buttons">
-              <IconButton disabled={layoutValue === 'one'} onClick={() => changeLayout('one')}>1</IconButton>
-              <IconButton disabled={layoutValue === 'two'} onClick={() => changeLayout('two')}>2</IconButton>
-              <IconButton disabled={layoutValue === 'three'} onClick={() => changeLayout('three')}>3</IconButton>
-            </div>
-            <div className={`layout-text ${layoutValue}`}>
-              { initialValue.map((valItem, index) => (
-                <textarea
-                  key={`${valItem}-${index}`}
-                  ref={refs.current[index]}
-                  onBlur={(e) => handleValueBlur(e, index)}
-                  rows={textAreaRows}
-                  onChange={handleValueChange}
-                />
-              ))}
-            </div>
-          </div>
-        )}
-      </div>
+        <Router>
+              <Nav/>
+                <Switch>
+                    <Route exact path='/' component={Main}/>
+                    <Route path='/illnesses' component={Illnesses}/>
+                    <Route path='/stomachache' component={Stomachache}/>
+                    <Route path='/blog' component={Blog}/>
+                </Switch>
+        </Router>
     </div>
   );
 };

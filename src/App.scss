@@ -11,6 +11,19 @@
   ::-webkit-scrollbar {
     width: 5px;
   }
+  .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+
+    a{
+      text-decoration: none;
+    }
+    a:hover{
+      color: white;
+    }
+  }
 
   .app-header {
     min-height: 10vh;

@@ -1,6 +1,6 @@
 {
   "name": "gastroprocto-new-design",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "private": false,
   "dependencies": {
     "@babel/core": "7.6.0",
@@ -10,6 +10,7 @@
     "@types/node": "12.7.12",
     "@types/react": "16.9.5",
     "@types/react-dom": "16.9.1",
+    "@types/react-router-dom": "^5.1.1",
     "@typescript-eslint/eslint-plugin": "^2.2.0",
     "@typescript-eslint/parser": "^2.2.0",
     "babel-eslint": "10.0.3",
@@ -52,6 +53,7 @@
     "react-app-polyfill": "^1.0.4",
     "react-dev-utils": "^9.1.0",
     "react-dom": "^16.10.2",
+    "react-router-dom": "^5.1.2",
     "resolve": "1.12.0",
     "resolve-url-loader": "3.1.0",
     "sass-loader": "^7.2.0",
@@ -138,5 +140,6 @@
     "presets": [
       "react-app"
     ]
-  }
+  },
+  "devDependencies": {}
 }
