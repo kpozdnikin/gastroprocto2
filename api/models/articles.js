@@ -128,6 +128,7 @@ articlesModel.insertOne = function(article){
 			}
 		});
 	}
+	//КОстя!
 	return results.promise;
 };
 
