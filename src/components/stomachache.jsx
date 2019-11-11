@@ -1,7 +1,9 @@
 import React from 'react';
-
+import Nav from './nav';
 export default class Stomachache extends React.Component{
     render(){
-        return <h2>О боли в животе</h2>;
+        return <div>
+            <Nav/>
+        </div>;
     }
 }

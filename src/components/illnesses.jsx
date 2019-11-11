@@ -1,7 +1,10 @@
 import React from 'react';
+import Nav from './nav';
 
 export default class Illnesses extends React.Component{
     render(){
-        return <h2>Заболевания ЖКТ</h2>;
+        return <div>
+            <Nav/>
+            Заболевания ЖКТ</div>;
     }
 }

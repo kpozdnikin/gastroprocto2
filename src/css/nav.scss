@@ -1,0 +1,29 @@
+.nav {
+  margin: 47px 157px 0 150px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+  font-family: $myFont;
+  max-width: 1133px;
+  height: 29px;
+  color: $myColor;
+
+  a {
+    text-decoration: none;
+    color: $myColor;
+    z-index: 100;
+  }
+  a:hover {
+    color: gray;
+    border-bottom: solid $myColor;
+  }
+  .label-top {
+    z-index: 100;
+  }
+}
+
+@media (max-width: 920px) {
+  //80%
+  font-size: 10px;
+  width: 80%;
+}

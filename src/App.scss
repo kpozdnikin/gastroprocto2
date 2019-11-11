@@ -1,100 +1,61 @@
-.app {
-  text-align: center;
-  background: url('background.jpg');
-  background-size: cover;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-size: 24px;
-  padding: 1rem;
+@import "./css/fonts";
 
+$myFont: Montserrat, Lato, Rubic-One, Sans-serif;
+$myColor: #070707;
+$myFontSize: 18px;
+$btnColor: #07837E;
+$myBgColor: #FFFFFF;
+$bgColorLilac: #CDD5F0;
+$bgColorTurquoise: #B3DDC6;
+@import "./css/header";
+@import "./css/nav";
+@import "./css/quote";
+
+body {
+  *{margin: 0; padding: 0;}
+  font-family: $myFont;
+  font-size: $myFontSize;
+  color: $myColor;
+  background-color: #E5E5E5;
+}
+  .main{
+    margin: 0 auto;
+    max-width: 1440px;
+    min-width: 320px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 700px 701px 95px 654px 291px;
+    height: 100vh;
+    grid-template-areas: "h"
+                          "w"
+                          "q"
+                          "t"
+                          "m"
+                          "f";
+  }
+  .welcome{
+    grid-area: w;
+    background-color: #09d3ac;
+  }
+  .quote{
+    grid-area: q;
+  }
+  .task-for-me{
+    grid-area: t;
+    background-color: beige;
+  }
+  .map{
+    grid-area: m;
+    background-color: aquamarine;
+  }
+  footer{
+    grid-area: f;
+    background-color: #496766;
+    height: 291px;
+  }
   ::-webkit-scrollbar {
     width: 5px;
   }
-  .nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: #fff;
-
-    a{
-      text-decoration: none;
-    }
-    a:hover{
-      color: white;
-    }
-  }
-
-  .app-header {
-    min-height: 10vh;
-    align-items: center;
-    justify-content: center;
-    color: white;
-  }
-
-  .app-body {
-    overflow: auto;
-
-    .initial-form {
-      width: 400px;
-      margin: 0 auto;
-      background-color: white;
-      padding: 10px;
-      border-radius: .25rem;
-
-      form {
-        width: 100%;
-
-        textarea {
-          width: 100%;
-        }
-      }
-    }
-
-    textarea {
-      line-height: 24px;
-    }
-
-    .layout {
-      width: 1200px;
-      margin: 0 auto;
-      height: 90vh;
-      padding: 10px;
-      background-color: white;
-      border-radius: .25rem;
-      overflow-x: hidden;
-      overflow-y: auto;
-
-      .layout-text {
-        display: grid;
-        grid-gap: 10px;
-
-        textarea {
-          overflow:hidden;
-          border: none;
-          outline: none;
-          -webkit-box-shadow: none;
-          -moz-box-shadow: none;
-          box-shadow: none;
-          resize: none;
-          text-align: justify;
-        }
-
-        &.one {
-          grid-template-columns: 1fr;
-        }
-
-        &.two {
-          grid-template-columns: 1fr 1fr;
-        }
-
-        &.three {
-          grid-template-columns: 1fr 1fr 1fr;
-        }
-      }
-    }
-  }
-}
 
 .app-link {
   color: #09d3ac;

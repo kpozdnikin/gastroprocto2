@@ -1,10 +1,9 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import React, { FormEvent, useState, useEffect, useRef } from 'react';
-  import IconButton from '@material-ui/core/IconButton';
-  import Button  from '@material-ui/core/Button';
+ // import IconButton from '@material-ui/core/IconButton';
+ // import Button  from '@material-ui/core/Button';
 import './App.scss';
 import Main from './components/main';
-import Nav from './components/nav';
 import Blog from './components/blog';
 import Illnesses from './components/illnesses';
 import Stomachache from './components/stomachache';
@@ -99,13 +98,12 @@ const App: React.FC = () => {
   return (
     <div className="app">
         <Router>
-              <Nav/>
-                <Switch>
-                    <Route exact path='/' component={Main}/>
-                    <Route path='/illnesses' component={Illnesses}/>
-                    <Route path='/stomachache' component={Stomachache}/>
-                    <Route path='/blog' component={Blog}/>
-                </Switch>
+            <Switch>
+                <Route exact path='/' component={Main}/>
+                <Route path='/illnesses' component={Illnesses}/>
+                <Route path='/stomachache' component={Stomachache}/>
+                <Route path='/blog' component={Blog}/>
+            </Switch>
         </Router>
     </div>
   );
