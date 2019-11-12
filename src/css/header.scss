@@ -9,6 +9,7 @@
 
     .doctorText {
       display: flex;
+
       .doctorName {
         position: absolute;
         width: 648px;
@@ -96,9 +97,8 @@
     }
     .photo_doctor{
       position: absolute;
-      width: 511px;
       height: 614px;
-      right: 118px;
+      right: 100px;
       bottom: 0;
       padding: 0;
       margin: 0;
