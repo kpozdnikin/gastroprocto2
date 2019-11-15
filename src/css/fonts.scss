@@ -13,8 +13,7 @@
 }
 @font-face {
     font-family: 'Rubic-One';
-    src: url('./css/fonts/RubikMonoOne-Regular.woff2') format('woff2'),
-            url('./css/fonts/RubikMonoOne-Regular.woff') format('woff');
+    src: url('./css/fonts/RubikOne-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -22,6 +21,13 @@
     font-family: 'Caveat';
     src: url('./css/fonts/Caveat-Regular.woff2') format('woff2'),
     url('./css/fonts/Caveat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Playfair Display';
+    src: url("./css/fonts/playfairdisplay.woff2") format('woff2'),
+    url("./css/fonts/playfairdisplay.woff") format('woff');
     font-weight: normal;
     font-style: normal;
 }
