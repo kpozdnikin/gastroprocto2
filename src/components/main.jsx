@@ -1,7 +1,13 @@
 import React from 'react';
 import Nav from './nav';
 import Button from './button';
-
+import PhotoDoctor from '../assets/img/photo_doctor.png';
+import Bottom from '../assets/img/bottom.svg';
+import YouTube from '../assets/img/youtube.svg';
+import VK from '../assets/img/vk.svg';
+import DocWithFolder from '../assets/img/doc_with_folder.png';
+import FooterYoutube from '../assets/img/footer_youtube.svg';
+import FooterVK from '../assets/img/footer_vk.svg';
 
 export default class Main extends React.Component{
     render(){
@@ -14,31 +20,40 @@ export default class Main extends React.Component{
                         <div className='yourDoctor'>Ваш персональный доктор</div>
                     <Button text='получить консультацию' style='button'/>
                     </div>
-                    <div className="photo_doctor"><img src='./img/photo_doctor.png'/></div>
-                    <div className='rectangle10'></div>
-                    <div className='rectangle9'></div>
+                    <div className="photo_doctor">
+                        <img src={PhotoDoctor} alt="pozdnikina" />
+                    </div>
+                    <div className='rectangle10'/>
+                    <div className='rectangle9'/>
                     <div className='rectangle8'>
                         <div>
                             <div>Следите за нами</div>
-                            <img className='header_bottom' src="/img/bottom.svg"/>
-                            <a href="#"><img src="/img/youtube.svg"/></a>
-                            <a href="#"><img src="/img/vk.svg"/></a>
+                            <img className='header_bottom' src={Bottom} alt="header_bottom" />
+                            <a href="#">
+                                <img src={YouTube} alt="youtube" />
+                            </a>
+                            <a href="#">
+                                <img src={VK} alt="vk" />
+                            </a>
                         </div>
                     </div>
-                    <div className='rectangle7'></div>
-                    <div className='rectangle5'></div>
+                    <div className='rectangle7'/>
+                    <div className='rectangle5'/>
 
                 </div>
             </header>
 
             <section className='welcome'>
                 <div className='welcome_top'>
-                    <p>Добро пожаловать на мой сайт</p><div className='rec_20'></div>
+                    <p>Добро пожаловать на мой сайт</p>
+                    <div className='rec_20' />
                 </div>
                 <div className='doc_with_folder'>
-                    <div className='rec_11'></div>
-                    <div className='rec_10'> <img className='doc_with_folder_photo' src='./img/doc_with_folder.png' alt='фото доктора'></img></div>
-                    <div className='rec_11_bot'></div>
+                    <div className='rec_11'/>
+                    <div className='rec_10'>
+                        <img className='doc_with_folder_photo' src={DocWithFolder} alt='фото доктора' />
+                    </div>
+                    <div className='rec_11_bot'/>
 
 
                 </div>
@@ -55,7 +70,7 @@ export default class Main extends React.Component{
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco
                     </div>
                 </div>
-                <div className='rectangle_11'></div>
+                <div className='rectangle_11' />
             </section>
 
             <section className='quote'>
@@ -63,19 +78,18 @@ export default class Main extends React.Component{
                     Медицина – это не услуга. Это сочетание своего рода чуда и профессиональных навыков
                 </div>
             </section>
-
             <section className='task-for-me'>Четвертый блок</section>
-
-            <section className='map'>Карта
-
-            </section>
-
+            <section className='map'>Карта</section>
             <footer className='footer'>
                 <div className='footer_container'>
                     <div className='item1'><p>Болит Живот</p>
                         <div className='social'>
-                            <a href="#"><img src="/img/footer_youtube.svg" alt='Ютуб'/></a>
-                            <a href="#"><img src="/img/footer_vk.svg" alt='Vk'/></a>
+                            <a href="#">
+                                <img src={FooterYoutube} alt='Ютуб' />
+                            </a>
+                            <a href="#">
+                                <img src={FooterVK} alt='Vk'/>
+                            </a>
                         </div>
                         <p>Политика конфиденциальности</p>
                     </div>
@@ -94,7 +108,6 @@ export default class Main extends React.Component{
                             <p>Все права защищены</p>
                         </ul>
                     </div>
-
                 </div>
             </footer>
         </div>;

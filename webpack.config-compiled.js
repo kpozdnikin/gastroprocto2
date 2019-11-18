@@ -45,18 +45,17 @@ var config = {
         }, {
             test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
             loader: "url?limit=10000&mimetype=image/svg+xml"
-        }
-
-        /*{
-            test: /\.css$/,
-            include: /node_modules/,
-            loader: "style!css"
         },
         {
             test: /\.(png|jpg|svg|ttf|eot|woff|woff2)$/,
             include: /node_modules/,
             loader: "file?name=[name].[ext]"
-        }*/
+        },
+        /*{
+            test: /\.css$/,
+            include: /node_modules/,
+            loader: "style!css"
+        },*/
         ]
     },
     //watch for changes with timeout
