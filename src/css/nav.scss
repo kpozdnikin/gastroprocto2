@@ -1,7 +1,7 @@
 .nav {
   margin: 47px 157px 0 150px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 16px;
   font-family: $myFont;
   max-width: 1133px;
@@ -20,6 +20,7 @@
     z-index: 100;
   }
 }
+
 
 @media (max-width: 920px) {
   //80%

@@ -1,0 +1,76 @@
+.task-for-me{
+  background: #FFFFFF;
+  display: grid;
+  grid-template-columns: 1fr 7.2fr 5.8fr;
+  grid-column-gap: 62px;
+  font-family: $myFont;
+
+  .tfm_rec11{
+    width: 97px;
+    height: 336px;
+    background: $bgColorTurquoise;
+    margin-top: 186px;
+    mix-blend-mode: normal;
+  }
+  .tfm_text{
+    width: 651px;
+    height: 158px;
+    font-family: $myFont;
+    font-size: 16px;
+    line-height: 170%;
+    color: rgba(7, 7, 7, 0.8);
+    margin-top: 186px;
+    p{
+      width: 470px;
+      height: 36px;
+      font-family: Playfair Display;
+      font-size: 30px;
+      line-height: 120%;
+      /* identical to box height, or 36px */
+      letter-spacing: 0.1em;
+      color: $myColor;
+      padding-bottom: 70px;
+    }
+    .text{
+      width: 651px;
+      height: 158px;
+      font-size: 16px;
+      line-height: 170%;
+      color: rgba(7, 7, 7, 0.8);
+      padding-bottom: 62px;
+    }
+
+  }
+  .doc_hands{
+    display: grid;
+    justify-items: end;
+    width: 530px;
+    height: 654px;
+    //transform: matrix(-1, 0, 0, 1, 0, 0);
+    .doc_hands_rec_11{
+      //-15px до края
+      width: 271px;
+      height: 109px;
+      background: $bgColorTurquoise;
+      //margin-right: 24px;
+    }
+    .doc_hands_rec_10{
+      width: 493px;
+      height: 523px;
+      background: $bgColorLilac;
+      margin-right: 37px;
+      img{
+       margin: -54px 0 0 32.38px;
+      }
+    }
+    .doc_hands_rec_10_1{
+      width: 271px;
+      height: 22px;
+      background: $bgColorTurquoise;
+      margin-right: 235px;
+    }
+
+
+
+  }
+}

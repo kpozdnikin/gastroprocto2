@@ -1,0 +1,21 @@
+.button {
+    width: 257.51px;
+    height: 46px;
+    background-color: $btnColor;
+    font-family: $myFont;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 19px;
+    color: #FFFFFF;
+  }
+  .button_shadow {
+    margin: -41px 0 0 7px;
+    width: 257.51px;
+    height: 46px;
+    border: 1px solid #07837E;
+    box-sizing: border-box;
+  }
+

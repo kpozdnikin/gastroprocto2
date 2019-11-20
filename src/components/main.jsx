@@ -8,25 +8,19 @@ import VK from '../assets/img/vk.svg';
 import DocWithFolder from '../assets/img/doc_with_folder.png';
 import FooterYoutube from '../assets/img/footer_youtube.svg';
 import FooterVK from '../assets/img/footer_vk.svg';
+import DocHands from '../assets/img/doc_hands.png';
+
 
 export default class Main extends React.Component{
     render(){
         return <div className='main'>
             <header className='header'>
                 <Nav/>
-                <div className='container'>
                     <div className='doctorText'>
                         <div className='doctorName'>Поздникина Ольга</div>
                         <div className='yourDoctor'>Ваш персональный доктор</div>
-                    <Button text='получить консультацию' style='button'/>
-                    </div>
-                    <div className="photo_doctor">
-                        <img src={PhotoDoctor} alt="pozdnikina" />
-                    </div>
-                    <div className='rectangle10'/>
-                    <div className='rectangle9'/>
-                    <div className='rectangle8'>
-                        <div>
+                        <Button text='получить консультацию' style='button'/>
+                        <div className='rectangle8'>
                             <div>Следите за нами</div>
                             <img className='header_bottom' src={Bottom} alt="header_bottom" />
                             <a href="#">
@@ -37,10 +31,19 @@ export default class Main extends React.Component{
                             </a>
                         </div>
                     </div>
-                    <div className='rectangle7'/>
-                    <div className='rectangle5'/>
 
-                </div>
+                    <div className='container_for_rec'>
+                        <div className="photo_doctor">
+                            <img src={PhotoDoctor} alt="pozdnikina" />
+                        </div>
+                        <div className='rectangle10'/>
+                        <div className='rectangle9'/>
+
+                        <div className='rectangle7'/>
+                        <div className='rectangle5'/>
+                    </div>
+
+
             </header>
 
             <section className='welcome'>
@@ -54,7 +57,6 @@ export default class Main extends React.Component{
                         <img className='doc_with_folder_photo' src={DocWithFolder} alt='фото доктора' />
                     </div>
                     <div className='rec_11_bot'/>
-
 
                 </div>
                 <div className='welcome_info'>
@@ -78,8 +80,39 @@ export default class Main extends React.Component{
                     Медицина – это не услуга. Это сочетание своего рода чуда и профессиональных навыков
                 </div>
             </section>
-            <section className='task-for-me'>Четвертый блок</section>
-            <section className='map'>Карта</section>
+            <section className='task-for-me'>
+                <div className='tfm_rec11'>
+                </div>
+                <div className='tfm_text'>
+                    <p>Главная задача для меня</p>
+                    <div className='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcoonsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
+                    <Button text='получить консультацию' style='button'/>
+                </div>
+                <div className='doc_hands'>
+                    <div className='doc_hands_rec_11'></div>
+                    <div className='doc_hands_rec_10'>
+                        <img src={DocHands} alt='фото доктора'/>
+                    </div>
+                    <div className='doc_hands_rec_10_1'></div>
+                </div>
+            </section>
+
+            <section className='map'>
+                <div className='contacts'>
+                    <div className='small_rec'>
+                    </div>
+                    <div className='text_container'>
+                        <p>Контакты</p>
+                        <ul>
+                            <li>Петрозаводск, Первомайский пр, 17</li>
+                            <li>(8142) 71-44-48, <br/> 8 911 400-43-40</li>
+                            <li>будни с 08:00 до 19:00</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+
             <footer className='footer'>
                 <div className='footer_container'>
                     <div className='item1'><p>Болит Живот</p>

@@ -1,0 +1,51 @@
+.map{
+  background: url("./assets/img/map.svg");
+  //background: #FFFFFF;
+  display: block;
+  height: 876px;
+  width: 100%;
+
+  .contacts{
+    position: relative;
+    width: 366px;
+    height: 342px;
+    background: #496766;
+    margin: 168px 0 0 230px;
+
+    .text_container {
+      padding: 8px 67px 58px 80px;
+      width: 219px;
+      height: 222px;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 170%;
+      color: #FBF6F6;
+
+      p {
+        font-family: Playfair Display;
+        font-size: 32px;
+        line-height: 130%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+      ul{
+        list-style-type: none;
+        color: rgba(248, 248, 248, 0.8);
+        li{
+          padding-top: 21px;
+        }
+      }
+    }
+    .small_rec {
+      position: relative;
+      top: -20px;
+      left: -20px;
+      width: 45px;
+      height: 44px;
+      background: #B3DDC6;
+      mix-blend-mode: normal;
+    }
+  }
+}
