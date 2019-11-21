@@ -10,7 +10,6 @@ import FooterYoutube from '../assets/img/footer_youtube.svg';
 import FooterVK from '../assets/img/footer_vk.svg';
 import DocHands from '../assets/img/doc_hands.png';
 
-
 export default class Main extends React.Component{
     render(){
         return <div className='main'>
@@ -42,8 +41,6 @@ export default class Main extends React.Component{
                         <div className='rectangle7'/>
                         <div className='rectangle5'/>
                     </div>
-
-
             </header>
 
             <section className='welcome'>
@@ -57,7 +54,6 @@ export default class Main extends React.Component{
                         <img className='doc_with_folder_photo' src={DocWithFolder} alt='фото доктора' />
                     </div>
                     <div className='rec_11_bot'/>
-
                 </div>
                 <div className='welcome_info'>
                     <div className='welcome_menu'>
