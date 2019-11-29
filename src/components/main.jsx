@@ -9,12 +9,14 @@ import DocWithFolder from '../assets/img/doc_with_folder.png';
 import FooterYoutube from '../assets/img/footer_youtube.svg';
 import FooterVK from '../assets/img/footer_vk.svg';
 import DocHands from '../assets/img/doc_hands.png';
+import Ellipse from '../assets/img/Ellipse.svg';
 
 export default class Main extends React.Component{
     render(){
         return <div className='main'>
             <header className='header'>
                 <Nav/>
+
                     <div className='doctorText'>
                         <div className='doctorName'>Поздникина Ольга</div>
                         <div className='yourDoctor'>Ваш персональный доктор</div>
@@ -51,7 +53,7 @@ export default class Main extends React.Component{
                 <div className='doc_with_folder'>
                     <div className='rec_11'/>
                     <div className='rec_10'>
-                        <img className='doc_with_folder_photo' src={DocWithFolder} alt='фото доктора' />
+                        <img src={DocWithFolder} alt='фото доктора' />
                     </div>
                     <div className='rec_11_bot'/>
                 </div>
@@ -76,6 +78,7 @@ export default class Main extends React.Component{
                     Медицина – это не услуга. Это сочетание своего рода чуда и профессиональных навыков
                 </div>
             </section>
+
             <section className='task-for-me'>
                 <div className='tfm_rec11'>
                 </div>
@@ -105,7 +108,15 @@ export default class Main extends React.Component{
                             <li>будни с 08:00 до 19:00</li>
                         </ul>
                     </div>
+                    <div className='map_pointer'>
+                        <div className="ellipse">
+                            <img src={Ellipse} alt='адрес'/>
+                        </div>
+                        <div className='circle'>
+                        </div>
+                    </div>
                 </div>
+
 
             </section>
 
@@ -126,8 +137,7 @@ export default class Main extends React.Component{
                         <ul>
                             <li>185001, Республика Карелия, город Петрозаводск</li>
                             <li>Первомайский проспект, дом 17</li>
-                            <li>НУЗ Отделенческая клиническая больница на ст.</li>
-                            <li>Петрозаводск</li>
+                            <li>НУЗ Отделенческая клиническая больница на ст. Петрозаводск</li>
                         </ul>
                     </div>
                     <div className='item3'>Режим работы:

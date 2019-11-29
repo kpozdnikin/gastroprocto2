@@ -1,11 +1,10 @@
 .map{
   background: url("./assets/img/map.svg");
-  //background: #FFFFFF;
-  display: block;
   height: 876px;
-  width: 100%;
-
-  .contacts{
+  max-width: 100%;
+  min-width: 420px;
+  overflow: hidden;
+  .contacts {
     position: relative;
     width: 366px;
     height: 342px;
@@ -30,10 +29,10 @@
         letter-spacing: 0.05em;
         text-transform: uppercase;
       }
-      ul{
+      ul {
         list-style-type: none;
         color: rgba(248, 248, 248, 0.8);
-        li{
+        li {
           padding-top: 21px;
         }
       }
@@ -46,6 +45,40 @@
       height: 44px;
       background: #B3DDC6;
       mix-blend-mode: normal;
+    }
+  }
+  .map_pointer {
+    position: relative;
+    width: 59px;
+    height: 83px;
+    top: -170px;
+    left: 875px;
+
+    .ellipse {
+      position: absolute;
+    }
+    .circle {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: $bgColorTurquoise;
+      margin: 12px 14px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .map {
+    .contacts {
+      margin: 17% 10% 30% 23%;
+    }
+  }
+}
+@media (max-width: 700px) {
+  .map {
+    .contacts {
+      margin: 17% auto;
     }
   }
 }

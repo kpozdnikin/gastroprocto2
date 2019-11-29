@@ -1,5 +1,4 @@
 @import "./css/fonts";
-
 $myFont: Montserrat, Lato, Rubic-One, Sans-serif;
 $myColor: #070707;
 $myFontSize: 18px;
@@ -23,16 +22,14 @@ body {
   color: $myColor;
   background-color: #E5E5E5;
 }
-
   .main {
     background-color: #FFFFFF;
     margin: 0 auto;
     max-width: 1440px;
     min-width: 320px;
     display: grid;
-    grid-template-columns: 1fr;
-    //grid-template-rows: 700px 701px 95px 654px 291px;
-    grid-template-rows: 700px 807px 246px 654px 746px 291px;
+    grid-template-columns: minmax(320px, 1fr);
+    //grid-template-rows: 700px 807px 246px 100vh 746px 291px;
     height: 100vh;
     grid-template-areas: "h" "w" "q" "t" "m" "f";
   }
@@ -55,7 +52,6 @@ body {
   .footer {
     grid-area: f;
     background-color: #496766;
-    height: 291px;
   }
   ::-webkit-scrollbar {
     width: 5px;

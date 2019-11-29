@@ -1,14 +1,15 @@
 .welcome{
-  margin-top: 106px;
-  position: relative;
+
   display: grid;
-  grid-template-columns: 5fr 6fr 0.9fr;
+  grid-template-columns: 5fr 7fr 7%;
+  grid-column-gap: 60px;
   font-family: Montserrat;
+  min-width: 420px;
 
   .welcome_top{
+    padding-top: 106px;
     grid-column: 1/4;
     height: 36px;
-    width: 100%;
     grid-row: 1/1;
     p{
       padding-left: 64px;
@@ -23,59 +24,56 @@
     .rec_20{
       margin-top: -54px;
       float: right;
-      width: 484px;
+      width: 33.6%;
       height: 76px;
       background: #B3DDC6;
       mix-blend-mode: normal;
     }
   }
-
   .doc_with_folder{
-    width: 530px;
-    height: 654px;
+    max-width: 530px;
+    min-width: 320px;
+    margin-left: 43px;
+
     .rec_11{
-      width: 271px;
+      width: 51%;
       height: 109px;
       background: $bgColorTurquoise;
-      margin-left: 43px;
       mix-blend-mode: normal;
     }
     .rec_10{
-      width: 480px;
-      height: 523px;
-      margin-left: 93px;
+      max-width: 480px;
+      width: 85.5%;
+      max-height: 523px;
+      margin-left: 50px;
       background: $bgColorLilac;
       mix-blend-mode: normal;
-      .doc_with_folder_photo{
+      img{
         max-width: 388.62px;
-        max-height: 557px;
-        margin-top: -49px;
-        margin-left: 47px;
-        background: #B3BCDD;
-       //mix-blend-mode: multiply;
-
+        width: 78%;
+        margin: -49px 0 15px 47px;
       }
     }
     .rec_11_bot{
       float: right;
-      width: 271px;
+      width: 51%;
       height: 22px;
       background-color: $bgColorTurquoise;
-      margin-right: 24px;
+      margin-right: 9%;
     }
-
   }
   .welcome_info {
     margin-top: 100px;
-    margin-left: 30px;
+    min-width: 310px;
+    margin-left: 20px;
 
     .welcome_menu {
-      width: 502px;
+      max-width: 502px;
       height: 17px;
       font-family: Montserrat;
       font-size: 16px;
       line-height: 170%;
-
+      margin-right: 40px;
       ul{
         display: flex;
         flex-wrap: nowrap;
@@ -84,13 +82,11 @@
         a {
           padding-top: 11px;
           text-decoration: none;
-
           color: rgba(0, 0, 0, 0.8);
         }
         a:hover {
           border-top: 1px solid $myColor;
         }
-
       }
     }
     .welcome_text {
@@ -107,13 +103,105 @@
     }
   }
   .rectangle_11{
+    max-width: 143px;
+    min-width: 40px;
     margin-top: 150px;
-
-
     height: 228px;
     background: $bgColorTurquoise;
     mix-blend-mode: normal;
   }
+}
 
+@media (max-width: 1020px)  {
+  .welcome{
+    grid-template-columns: 1fr 8%;
+    .welcome_top{
+      grid-column: 1/3;
+    }
+    .doc_with_folder{
+      margin-top: 40px;
 
+      grid-column: 1/3;
+      grid-row: 3;
+    }
+    .welcome_info{
+      margin: 80px 20px 20px 80px;
+      align-self: center;
+      //width: 90%;
+      .welcome_text{
+        max-width: 900px;
+      }
+    }
+    .rectangle_11{
+      align-self: end;
+    }
+  }
+}
+@media (max-width: 850px)  {
+  .welcome{
+    grid-column-gap: 50px;
+    .welcome_top{
+      p{
+        font-size: 26px;
+      }
+    }
+  }
+}
+@media (max-width: 620px)  {
+  .welcome{
+    grid-column-gap: 30px;
+    .welcome_top{
+      p{
+        font-size: 24px;
+      }
+    }
+    .welcome_info{
+      margin-left: 50px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .welcome{
+    grid-column-gap: 0;
+
+    .welcome_top{
+      p{
+        font-size: 22px;
+      }
+    }
+    .welcome_info{
+      //max-width: 200px;
+      .welcome_text{
+        padding-right: 0;
+        font-size: 15px;
+      }
+    }
+    .rectangle_11{
+      min-width: 10px;
+    }
+    .doc_with_folder{
+      max-width: 500px;
+    }
+  }
+}
+@media (max-width: 520px) {
+  .welcome {
+    .welcome_top {
+      p {
+        padding: 0;
+        font-size: 18px;
+      }
+    }
+    .welcome_info{
+      .welcome_menu{
+        ul{
+          font-size: 15px;
+        }
+      }
+    }
+      .doc_with_folder {
+        max-width: 433px;
+        margin-left: 0;
+      }
+  }
 }

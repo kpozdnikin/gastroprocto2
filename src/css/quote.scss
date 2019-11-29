@@ -8,19 +8,37 @@
   font-weight: normal;
  // line-height: 170%;  /* or 61px */
   color: rgba(0, 0, 0, 0.8);
+  min-width: 420px;
 
   .text_quote{
     display: block;
-    width: 970px;
+    max-width: 970px;
     height: 95px;
     margin: 99px auto 52px auto;
     padding: 0 100px;
   }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1023px){
   .quote{
     font-size: 32px;
+  .text_quote{
+    margin-top: 72px;
   }
-
+  }
+}
+@media (max-width: 700px) {
+  .quote{
+    .text_quote{
+      margin-top: 62px;
+    }
+  }
+}
+@media (max-width: 550px){
+  .quote{
+    font-size: 28px;
+  .text_quote{
+    padding: 0 50px;
+  }
+  }
 }
