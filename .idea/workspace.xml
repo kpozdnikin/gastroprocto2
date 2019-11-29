@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a62deac-2959-4ea5-9431-c14da357e814" name="Default" comment="update #2">
-      <change afterPath="$PROJECT_DIR$/src/assets/img/Ellipse.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/circle.svg" afterDir="false" />
+    <list default="true" id="8a62deac-2959-4ea5-9431-c14da357e814" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/map.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/map.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/nav.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/quote.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/quote.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/task-for-me.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/task-for-me.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/welcome.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/welcome.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,7 +25,7 @@
             <entry file="file://$PROJECT_DIR$/src/css/header.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="527">
-                  <caret line="106" column="19" lean-forward="true" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
+                  <caret line="106" column="19" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -63,7 +52,7 @@
             <entry file="file://$PROJECT_DIR$/src/components/main.jsx">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="306">
-                  <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+                  <caret line="18" selection-start-line="18" selection-end-line="18" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -84,7 +73,7 @@
             <entry file="file://$PROJECT_DIR$/src/css/nav.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="306">
-                  <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+                  <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
@@ -114,8 +103,8 @@
           <file leaf-file-name="header.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/css/header.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="351">
-                  <caret line="194" column="21" selection-start-line="194" selection-start-column="21" selection-end-line="194" selection-end-column="21" />
+                <state relative-caret-position="96">
+                  <caret line="208" column="17" lean-forward="true" selection-start-line="208" selection-start-column="17" selection-end-line="208" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
@@ -133,7 +122,7 @@
             <entry file="file://$PROJECT_DIR$/src/css/task-for-me.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="-821">
-                  <caret line="42" column="12" lean-forward="true" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+                  <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
@@ -422,7 +411,7 @@
       <workItem from="1574836112094" duration="19952000" />
       <workItem from="1574923180589" duration="26165000" />
       <workItem from="1574967184046" duration="8854000" />
-      <workItem from="1575007859560" duration="20448000" />
+      <workItem from="1575007859560" duration="20742000" />
     </task>
     <task id="LOCAL-00001" summary="telegram deleted">
       <created>1535011222993</created>
@@ -466,11 +455,18 @@
       <option name="project" value="LOCAL" />
       <updated>1574316246985</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Almost all #2">
+      <created>1575034849114</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1575034849114</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="260614000" />
+    <option name="totallyTimeSpent" value="260908000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -483,7 +479,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="14" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12539515" />
@@ -556,7 +551,8 @@
     <MESSAGE value="BugFix #1" />
     <MESSAGE value="to be continued #2" />
     <MESSAGE value="update #2" />
-    <option name="LAST_COMMIT_MESSAGE" value="update #2" />
+    <MESSAGE value="Almost all #2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Almost all #2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -758,7 +754,7 @@
     <entry file="file://$PROJECT_DIR$/src/css/task-for-me.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-821">
-          <caret line="42" column="12" lean-forward="true" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -772,7 +768,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/main.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -789,14 +785,14 @@
     <entry file="file://$PROJECT_DIR$/src/css/nav.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="194" column="21" selection-start-line="194" selection-start-column="21" selection-end-line="194" selection-end-column="21" />
+        <state relative-caret-position="96">
+          <caret line="208" column="17" lean-forward="true" selection-start-line="208" selection-start-column="17" selection-end-line="208" selection-end-column="17" />
         </state>
       </provider>
     </entry>
