@@ -7,7 +7,6 @@ import MainMenu from '../components/MainMenu';
 export default class Nav extends React.Component{
     render() {
         return <div className='nav'>
-
                 <strong className='label-top'>
                     Болит живот
                     <NavState>

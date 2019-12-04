@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a62deac-2959-4ea5-9431-c14da357e814" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/HamburgerButton.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MainMenu.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SideMenu.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/navState.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/onClickOutside.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/nav.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -127,8 +115,8 @@
           <file leaf-file-name="HamburgerButton.jsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/HamburgerButton.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-446">
-                  <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+                <state relative-caret-position="234">
+                  <caret line="62" column="14" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
                   <folding>
                     <element signature="e#0#42#0" expanded="true" />
                   </folding>
@@ -462,7 +450,7 @@
       <workItem from="1575060755447" duration="3689000" />
       <workItem from="1575274946947" duration="611000" />
       <workItem from="1575358647589" duration="16885000" />
-      <workItem from="1575441386217" duration="7616000" />
+      <workItem from="1575441386217" duration="7980000" />
     </task>
     <task id="LOCAL-00001" summary="telegram deleted">
       <created>1535011222993</created>
@@ -527,11 +515,18 @@
       <option name="project" value="LOCAL" />
       <updated>1575064285236</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Almost all update #2">
+      <created>1575450428343</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1575450428343</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="289958000" />
+    <option name="totallyTimeSpent" value="290322000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -544,14 +539,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="14" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12486828" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12486828" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32897604" />
-      <window_info anchor="bottom" id="Version Control" order="11" visible="true" weight="0.062015504" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="8" sideWeight="0.50052685" side_tool="true" visible="true" weight="0.062015504" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49947312" visible="true" weight="0.062015504" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.29014397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.17755991" />
@@ -619,7 +613,8 @@
     <MESSAGE value="update #2" />
     <MESSAGE value="Almost all #2" />
     <MESSAGE value="Almost all update #2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Almost all update #2" />
+    <MESSAGE value="Add burger menu for mobile screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add burger menu for mobile screen" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -908,8 +903,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/HamburgerButton.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-446">
-          <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+        <state relative-caret-position="234">
+          <caret line="62" column="14" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
