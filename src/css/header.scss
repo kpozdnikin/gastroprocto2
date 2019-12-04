@@ -20,7 +20,6 @@
       font-size: 100px;
       line-height: 94%;
       color: rgba(7, 7, 7, 0.8);
-
     }
     .yourDoctor {
       width: 396px;
@@ -155,11 +154,6 @@
 }
 @media (max-width: 970px) {
   .header {
-    .nav{
-      margin-left: 80px;
-      margin-right: 80px;
-      font-size: 15px;
-    }
     .doctorText{
       .doctorName{
         font-size: 72px;
@@ -184,9 +178,6 @@
 }
 @media (max-width: 820px) {
   .header{
-    .nav{
-      font-size: 13px;
-    }
     .container_for_rec {
       .photo_doctor {
         min-width: 143.5%;
@@ -198,15 +189,7 @@
     }
   }
 }
-@media (max-width: 750px) {
-  .header{
-    .nav{
-      .label-top{
-        display: none;
-      }
-    }
-  }
-}
+
 @media (max-width: 700px) {
   .header {
     .doctorText {
@@ -228,15 +211,6 @@
           }
         }
       }
-    }
-  }
-}
-@media (max-width: 570px) {
-  .header{
-    .nav{
-      font-size: 13px;
-      margin-left: 8%;
-      margin-right: 8%;
     }
   }
 }

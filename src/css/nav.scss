@@ -1,5 +1,5 @@
 .nav {
-  margin: 47px 157px 0 10%;
+  margin: 47px 8% 0 10%;
   display: flex;
   justify-content: space-between;
   font-size: 16px;
@@ -18,5 +18,22 @@
   }
   .label-top {
     z-index: 100;
+  }
+  .hidden{
+    display: none;
+  }
+    button{
+      display: none;
+    }
+  }
+
+@media (max-width: 900px) {
+  .nav {
+    .topNav{
+        display: none;
+    }
+    button{
+        display: block;
+    }
   }
 }

@@ -11,12 +11,12 @@ import FooterVK from '../assets/img/footer_vk.svg';
 import DocHands from '../assets/img/doc_hands.png';
 import Ellipse from '../assets/img/Ellipse.svg';
 
+
 export default class Main extends React.Component{
     render(){
         return <div className='main'>
             <header className='header'>
                 <Nav/>
-
                     <div className='doctorText'>
                         <div className='doctorName'>Поздникина Ольга</div>
                         <div className='yourDoctor'>Ваш персональный доктор</div>
@@ -39,7 +39,6 @@ export default class Main extends React.Component{
                         </div>
                         <div className='rectangle10'/>
                         <div className='rectangle9'/>
-
                         <div className='rectangle7'/>
                         <div className='rectangle5'/>
                     </div>
@@ -116,8 +115,6 @@ export default class Main extends React.Component{
                         </div>
                     </div>
                 </div>
-
-
             </section>
 
             <footer className='footer'>
