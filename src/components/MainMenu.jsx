@@ -21,6 +21,7 @@ const Navbar = styled.div`
 const MainMenu = () => {
     const node = useRef();
     const { isMenuOpen, toggleMenuMode } = useContext(MenuContext);
+
     useOnClickOutside(node, () => {
         // Only if menu is open
         if (isMenuOpen) {

@@ -14,7 +14,11 @@ const NavState = ({ children }) => {
     }
 
     return (
-        <MenuContext.Provider value={{ isMenuOpen, toggleMenuMode }}>{children}</MenuContext.Provider>
+        <MenuContext.Provider
+          value={{ isMenuOpen, toggleMenuMode }}
+        >
+            {children}
+        </MenuContext.Provider>
     );
 };
 
