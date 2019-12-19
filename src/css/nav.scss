@@ -16,6 +16,9 @@
   a:hover {
     border-bottom: 1px solid $myColor;
   }
+  a:active{
+    border-bottom: 1px solid $myColor;
+  }
   .label-top {
     z-index: 100;
   }

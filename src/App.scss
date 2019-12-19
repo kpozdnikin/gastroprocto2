@@ -14,45 +14,63 @@ $bgColorTurquoise: #B3DDC6;
 @import "./css/map";
 @import "./css/footer";
 @import "./css/button";
-
+@import "./css/blog/my_medical_blog";
+@import "./css/blog/video_symptoms";
+@import "./css/blog/third_screen";
+@import "./css/blog/probiotics";
+@import "./css/blog/article";
 body {
-  *{margin: 0; padding: 0;}
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  margin: 0 auto;
+  max-width: 1440px;
+  min-width: 320px;
   font-family: $myFont;
   font-size: $myFontSize;
   color: $myColor;
   background-color: #E5E5E5;
-}
+
   .main {
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: minmax(320px, 1fr);
+    height: 100vh;
+    grid-template-areas: "h" "w" "q" "t" "m" "f";
+
+
+    .header {
+      grid-area: h;
+    }
+    .welcome {
+      grid-area: w;
+      background-color: #FFFFFF;
+    }
+    .quote {
+      grid-area: q;
+    }
+    .task-for-me {
+      grid-area: t;
+    }
+    .map {
+      grid-area: m;
+    }
+    .footer {
+      grid-area: f;
+    }
+  }
+
+  .blog {
     background-color: #FFFFFF;
     margin: 0 auto;
     max-width: 1440px;
-    min-width: 320px;
+    min-width: 420px;
     display: grid;
     grid-template-columns: minmax(320px, 1fr);
-    //grid-template-rows: 700px 807px 246px 100vh 746px 291px;
-    height: 100vh;
-    grid-template-areas: "h" "w" "q" "t" "m" "f";
   }
-  .header{
-    grid-area: h;
-  }
-  .welcome {
-    grid-area: w;
-    background-color: #FFFFFF;
-  }
-  .quote {
-    grid-area: q;
-  }
-  .task-for-me {
-    grid-area: t;
-  }
-  .map {
-    grid-area: m;
-  }
-  .footer {
-    grid-area: f;
-    background-color: #496766;
-  }
+
   ::-webkit-scrollbar {
     width: 5px;
   }
@@ -60,4 +78,4 @@ body {
   .app-link {
     color: #09d3ac;
   }
-
+}
