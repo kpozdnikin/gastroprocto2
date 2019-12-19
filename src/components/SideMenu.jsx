@@ -13,7 +13,7 @@ const Menu = styled.nav`
   display: block;
   width: 220px;  
   margin-top: 0px;
-  padding-top: 100px;
+  padding-top: 125px;
   padding-right: 0px;
   align-items: stretch;
   background-color: #B3DDC6;  
