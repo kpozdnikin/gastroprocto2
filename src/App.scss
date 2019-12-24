@@ -19,6 +19,8 @@ $bgColorTurquoise: #B3DDC6;
 @import "./css/blog/third_screen";
 @import "./css/blog/probiotics";
 @import "./css/blog/article";
+@import "./css/stomachache/stomachache";
+
 body {
   * {
     margin: 0;
@@ -39,8 +41,6 @@ body {
     grid-template-columns: minmax(320px, 1fr);
     height: 100vh;
     grid-template-areas: "h" "w" "q" "t" "m" "f";
-
-
     .header {
       grid-area: h;
     }
@@ -64,11 +64,14 @@ body {
 
   .blog {
     background-color: #FFFFFF;
-    margin: 0 auto;
-    max-width: 1440px;
-    min-width: 420px;
     display: grid;
     grid-template-columns: minmax(320px, 1fr);
+  }
+  .stomachache{
+    background-color: #FFFFFF;
+    display: grid;
+    min-width: 420px;
+   // grid-template-columns: 1fr;
   }
 
   ::-webkit-scrollbar {

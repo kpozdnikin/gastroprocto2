@@ -87,11 +87,11 @@ export default class Main extends React.Component{
                     <Button text='получить консультацию' style='button'/>
                 </div>
                 <div className='doc_hands'>
-                    <div className='doc_hands_rec_11'></div>
+                    <div className='doc_hands_rec_11'/>
                     <div className='doc_hands_rec_10'>
                         <img src={DocHands} alt='фото доктора'/>
                     </div>
-                    <div className='doc_hands_rec_10_1'></div>
+                    <div className='doc_hands_rec_10_1'/>
                 </div>
             </section>
 
