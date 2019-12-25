@@ -20,6 +20,7 @@ $bgColorTurquoise: #B3DDC6;
 @import "./css/blog/probiotics";
 @import "./css/blog/article";
 @import "./css/stomachache/stomachache";
+@import "./css/illnesses";
 
 body {
   * {
@@ -72,6 +73,11 @@ body {
     display: grid;
     min-width: 420px;
    // grid-template-columns: 1fr;
+  }
+  .illnesses{
+    background-color: #FFFFFF;
+    display: grid;
+    min-width: 420px;
   }
 
   ::-webkit-scrollbar {
