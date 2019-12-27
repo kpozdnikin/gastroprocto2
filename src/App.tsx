@@ -44,7 +44,7 @@ const App: React.FC = () => {
   }
 
   function changeLayout(layoutValue: string) {
-    let newInitialValue = null;
+      let newInitialValue = null;
     let initialValueString = initialValue.join(' ');
     let newValueArr = null;
     switch (layoutValue) {

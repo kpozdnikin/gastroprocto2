@@ -1,5 +1,5 @@
 .top_ill{
-  margin-top: 44px;
+  margin-top: 64px;
   h1{
     font-family: Playfair Display;
     font-style: normal;
@@ -10,6 +10,7 @@
     text-transform: uppercase;
     color: #070707;
     text-align: center;
+    //padding: 0 20px;
   }
   .rec20{
     background: $bgColorTurquoise;
@@ -127,11 +128,119 @@
       margin-top: -57px;
       float: right;
     }
+    h2{
+      margin-top: 46px;
+      //margin-left: 18px;
+    }
+    p{
+      //margin-left: 18px;
+    }
     img{
       margin-top: -29px;
       margin-left: 143px;
     }
+  }
+}
+.ill_text{
+  display: grid;
+  grid-template-columns: minmax(100px, 0.51fr) minmax(320px, 1fr);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 170%;
+  color: rgba(7, 7, 7, 0.8);
 
+  img{
+    max-width: 446px;
+    width: 100%;
+    min-width: 300px;
+    mix-blend-mode: hard-light;
+    margin-top: 30px;
+  }
+  .illnesses_list{
+    .active, .collapsible:hover{
+      background: $bgColorTurquoise;
+    }
+    .collapsible{
+      height: 55px;
+      width: 100%;
+      background: $bgColorLilac;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 25px;
+      line-height: 170%;
+      color: rgba(7, 7, 7, 0.8);
+      text-align: left;
+      padding-left: 58px;
+    }
+    .content{
+      margin-bottom: 27px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      p{
+        margin: 56px 10% 70px 58px;
+      }
+    }
+
+  }
+}
+@media(max-width: 1339px){
+  .inspection{
+    .fgds{
+      .rec21{
+        margin-left: -150px;
+      }
+      .rec20, img{
+        margin-left: 0;
+      }
+      h2, p, .button{
+        margin-left: 0;
+      }
+      .button_shadow{
+        margin-left: 6px;
+      }
+    }
+    .fks{
+      margin-top: 35px;
+      max-width: 348px;
+      .rec24{
+        float: none;
+        margin-left: 27.72%;
+        overflow: hidden;
+
+      }
+    }
+  }
+}
+@media(max-width: 905px){
+  .top_ill{
+    h1{
+      font-size: 26px;
+    }
+  }
+  .ill_text{
+    grid-template-columns: minmax(320px, 1fr);
+  }
+}
+@media(max-width: 783px){
+  .top_ill{
+    h1{
+      font-size: 22px;
+    }
+  }
+}
+@media(max-width: 500px ){
+  .ill_text{
+    .illnesses_list{
+      .collapsible{
+        font-size: 22px;
+        padding-left: 30px;
+      }
+    }
   }
 
 }
