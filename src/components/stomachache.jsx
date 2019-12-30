@@ -5,6 +5,7 @@ import PainStomachache from '../assets/img/pain_stomachache.svg';
 import Button from "./button";
 import Vector from '../assets/img/blog_vector.svg';
 import Organs from '../assets/img/organs.svg';
+import Illnesses from "./illnesses";
 
 export default class Stomachache extends React.Component {
     render() {
