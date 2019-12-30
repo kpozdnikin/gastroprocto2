@@ -7,9 +7,9 @@ import Fks from '../assets/img/fks.png';
 import Button from "./button";
 import Organs from '../assets/img/organs.svg';
 
-
 export default class Illnesses extends React.Component{
-    render(){
+
+render(){
         return <div className='illnesses'>
             <Nav/>
             <div className='top_ill'>

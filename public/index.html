@@ -33,6 +33,7 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Болит живот</title>
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -47,8 +48,10 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
   </body>
-  <script>
+  <script defer>
+
       let coll = document.getElementsByClassName('collapsible');
       for(let i=0; i< coll.length; i++){
           coll[i].addEventListener('click',function () {
@@ -61,5 +64,6 @@
               }
           })
       }
+
   </script>
 </html>

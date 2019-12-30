@@ -93,7 +93,8 @@ const App: React.FC = () => {
     }
   }, [layout, layoutValue, initialValue]);
 
-  return (
+
+    return (
     <div className="app">
         <Router>
             <Switch>

@@ -10,7 +10,6 @@
     text-transform: uppercase;
     color: #070707;
     text-align: center;
-    //padding: 0 20px;
   }
   .rec20{
     background: $bgColorTurquoise;
@@ -81,6 +80,7 @@
     }
     p{
       margin-left: 154px;
+      min-width: 299.33px;
     }
     .button{
       margin-left: 154px;
@@ -130,10 +130,6 @@
     }
     h2{
       margin-top: 46px;
-      //margin-left: 18px;
-    }
-    p{
-      //margin-left: 18px;
     }
     img{
       margin-top: -29px;
@@ -185,7 +181,6 @@
         margin: 56px 10% 70px 58px;
       }
     }
-
   }
 }
 @media(max-width: 1339px){
@@ -211,7 +206,6 @@
         float: none;
         margin-left: 27.72%;
         overflow: hidden;
-
       }
     }
   }
@@ -224,6 +218,9 @@
   }
   .ill_text{
     grid-template-columns: minmax(320px, 1fr);
+    img{
+      justify-self: center;
+    }
   }
 }
 @media(max-width: 783px){
