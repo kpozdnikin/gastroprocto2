@@ -5,7 +5,6 @@ import PainStomachache from '../assets/img/pain_stomachache.svg';
 import Button from "./button";
 import Vector from '../assets/img/blog_vector.svg';
 import Organs from '../assets/img/organs.svg';
-import Illnesses from "./illnesses";
 
 export default class Stomachache extends React.Component {
     render() {
@@ -28,7 +27,7 @@ export default class Stomachache extends React.Component {
                     </ul>
 
                     <div className='more_details'>
-                        <Button text='записаться' style='button'/>
+                        <Button text='записаться' myStyle='button'/>
                         <a href='#'>причины боли в животе</a>
                         <img src={Vector} alt='more details'/>
                     </div>
@@ -50,32 +49,32 @@ export default class Stomachache extends React.Component {
                             <br/><br/>При плохой работе пищеводно-желудочного клапана - недостаточности кардии - болевые ощущения могут распространяться на область за грудиной, имитировать сердечный приступ. Неприятным сюрпризом может быть запах изо рта.
                             <br/><br/> При остром отравлении продуктами, не предназначенными для приема в пищу или недоброкачественными, боль в животе может быть острой - острый гастрит. Интенсивные и длительные боли позволяют заподозрить не просто острый гастрит, но язву желудка.
                             <br/><br/>ЛЮБАЯ ОСТРАЯ БОЛЬ, ВОЗНИКШАЯ ВПЕРВЫЕ, ТРЕБУЕТ НЕЗАМЕДЛИТЕЛЬНОГО ОБРАЩЕНИЯ К ВРАЧУ ДЛЯ ПОСЛЕДУЮЩЕГО ОБСЛЕДОВАНИЯ</p>
-                        <Button text='Записаться' style='button'/>
+                        <Button text='Записаться' myStyle='button'/>
                     </div>
                     <button className='collapsible'>Болит справа вверху живота, ближе к ребрам.<br/>(область правого подреберья)</button>
                     <div className='content'>
                         <p>Какой-то текст</p>
-                        <Button text='Записаться' style='button'/>
+                        <Button text='Записаться' myStyle='button'/>
                     </div>
                     <button className='collapsible'>Болит справа или слева сбоку живота. Колет в боку.<br/> (правая или левая боковая область)</button>
                     <div className='content'>
                         <p>Какой-то текст</p>
-                        <Button text='Записаться' style='button'/>
+                        <Button text='Записаться' myStyle='button'/>
                     </div>
                     <button className='collapsible'>Болит слева или справа внизу живота<br/> (подвздошная область справа или слева)</button>
                     <div className='content'>
                         <p>Какой-то текст</p>
-                        <Button text='Записаться' style='button'/>
+                        <Button text='Записаться' myStyle='button'/>
                     </div>
                     <button className='collapsible'>Болит низ живота по середине<br/>(надлобковая область)</button>
                     <div className='content'>
                         <p>Какой-то текст</p>
-                        <Button text='Записаться' style='button'/>
+                        <Button text='Записаться' myStyle='button'/>
                     </div>
                     <button className='collapsible'>Болит в середине живота<br/>(околопупочная область)</button>
                     <div className='content'>
                         <p>Какой-то текст</p>
-                        <Button text='Записаться' style='button'/>
+                        <Button text='Записаться' myStyle='button'/>
                     </div>
                 </div>
             </div>

@@ -40,7 +40,7 @@ render(){
                     <img src={Fgds} alt='ФГДС'/>
                     <h2>фгдс</h2>
                     <p>Осмотр пищевода, желудка и начального отдела (луковицы) двенадцатиперстной кишки</p>
-                    <Button text='записаться' style='button'/>
+                    <Button text='записаться' myStyle='button'/>
                 </div>
                 <div className='rrs'>
                     <div className='rec22'/>
@@ -48,7 +48,7 @@ render(){
                     <img src={Rrc} alt='РРС'/>
                     <h2>ррс</h2>
                     <p>Осмотр прямой кишки и анального канала с помощью тонкой трубки с оптическим волокном.</p>
-                    <Button text='записаться' style='button'/>
+                    <Button text='записаться' myStyle='button'/>
                 </div>
                 <div className='fks'>
                     <div className='rec25'/>
@@ -56,7 +56,7 @@ render(){
                     <div className='rec24'/>
                     <h2>фкс</h2>
                     <p>Осмотр толстой кишки с помощью длинной трубки с оптическим волокном.</p>
-                    <Button text='записаться' style='button'/>
+                    <Button text='записаться' myStyle='button'/>
                 </div>
             </div>
 

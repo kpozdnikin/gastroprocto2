@@ -8,10 +8,10 @@ export default class Footer extends React.Component {
             <div className='footer_container'>
                 <div className='item1'><p>Болит Живот</p>
                     <div className='social'>
-                        <a href="#">
+                        <a href="https://www.youtube.com/channel/UCp8-fpg-BqmVbzE6OV2TU2Q">
                             <img src={FooterYoutube} alt='Ютуб' />
                         </a>
-                        <a href="#">
+                        <a href="https://vk.com/gastroprocto">
                             <img src={FooterVK} alt='Vk'/>
                         </a>
                     </div>

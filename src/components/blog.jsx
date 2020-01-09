@@ -37,7 +37,7 @@ const Blog = () => {
                         близких им людей или знакомых страдал от поздно диагностированной опухоли
                     </div>
                     <div className='blog_more_details'>
-                        <Button text='записаться' style='button'/>
+                        <Button text='записаться' myStyle='button'/>
                         <a href='#article'>читать далее</a>
                         <img src={Vector} alt='more details'/>
                     </div>
@@ -48,11 +48,11 @@ const Blog = () => {
                 <div className='symptoms_left'>
                     <iframe src="https://www.youtube.com/embed/kNJX1CJIWjY" frameBorder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen>
+                            allowFullScreen title='#'>
                         Видео на YouTube
                     </iframe>
-                    <p>Краткое описание о чем видео и для кого оно будет инетеесным</p>
-                    <Button text='посмотреть видео' style='button'/>
+                    <p>Краткое описание о чем видео и для кого оно будет интересным</p>
+                    <Button text='посмотреть видео' myStyle='button'/>
                 </div>
                 <div className='symptoms_right'>
                     <div className='rec15'/>
@@ -96,7 +96,7 @@ const Blog = () => {
                         <div className='rec12'/>
                         <img src={VideoImg_1} alt='исследование желудка'/>
                     </div>
-                    <Button text='посмотреть видео' style='button'/>
+                    <Button text='посмотреть видео' myStyle='button'/>
                 </div>
                 <div className='container_video'>
                     <div className='video2'>
@@ -106,7 +106,7 @@ const Blog = () => {
                         <div className='rec14'/>
                         <div className='rec18'/>
                     </div>
-                    <Button text='посмотреть видео' style='button'/>
+                    <Button text='посмотреть видео' myStyle='button'/>
                 </div>
                 <div className='container_video'>
                     <div className='video3'>
@@ -114,7 +114,7 @@ const Blog = () => {
                         <div className='rec17'/>
                         <img src={VideoImg_3} alt='Симптомы'/>
                     </div>
-                    <Button text='посмотреть видео' style='button'/>
+                    <Button text='посмотреть видео' myStyle='button'/>
                 </div>
             </div>
 
@@ -130,7 +130,7 @@ const Blog = () => {
                         Примером наиболее часто назначаемых пробиотиков могут служить
                     </p>
                     <div className='probiotics_more_info'>
-                        <Button text='записаться' style='button'/>
+                        <Button text='записаться' myStyle='button'/>
                         <a href='#'>читать далее</a>
                         <img src={Vector} alt='more details'/>
                     </div>

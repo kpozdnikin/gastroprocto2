@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import React, { FormEvent, useState, useEffect, useRef } from 'react';
+//import React, { FormEvent, useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './App.scss';
 import Main from './components/main';
 import Blog from './components/blog';
@@ -12,6 +13,7 @@ const App: React.FC = () => {
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
   ]); */
   const [initialValue, setInitialValue] = useState<Array<string>>([]);
+
   const [layout, showLayout] = useState<boolean>(false);
   const [layoutValue, toggleLayout] = useState<string>('one');
   const [textAreaRows, setTextAreaRows] = useState<number>(3);
@@ -20,29 +22,32 @@ const App: React.FC = () => {
     React.createRef<HTMLTextAreaElement>(),
     React.createRef<HTMLTextAreaElement>()
   ]);
-
+/*
   function submit(e: FormEvent) {
     e.preventDefault();
     showLayout(true);
   }
-
+  */
+/*
   function handleInitialValueChange(event: React.ChangeEvent<HTMLTextAreaElement>) {
     setInitialValue([event.target.value]);
     const currentRows = ~~(event.target.scrollHeight / textareaLineHeight);
     setTextAreaRows(currentRows);
   }
-
+*/
+/*
   function handleValueChange(event: React.ChangeEvent<HTMLTextAreaElement>) {
     const currentRows = ~~(event.target.scrollHeight / textareaLineHeight);
     setTextAreaRows(currentRows);
   }
-
+*/
+/*
   function handleValueBlur(event: React.ChangeEvent<HTMLTextAreaElement>, column: number) {
     const newValue = [...initialValue];
     newValue[column] = event.target.value;
     setInitialValue(newValue);
   }
-
+*//*
   function changeLayout(layoutValue: string) {
       let newInitialValue = null;
     let initialValueString = initialValue.join(' ');
@@ -72,6 +77,7 @@ const App: React.FC = () => {
     }
     toggleLayout(layoutValue);
   }
+  */
 
   useEffect(() => {
     if (layoutValue === 'one' && refs.current[0].current) {
