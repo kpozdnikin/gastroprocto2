@@ -58,9 +58,9 @@ export default class Main extends React.Component{
                 <div className='welcome_info'>
                     <div className='welcome_menu'>
                         <ul>
-                            <li><a href='#'>Обо мне</a></li>
-                            <li><a href='#'>Мои сертификаты</a></li>
-                            <li><a href='#'>Отзывы</a></li>
+                            <li><a href='/'>Обо мне</a></li>
+                            <li><a href='/'>Мои сертификаты</a></li>
+                            <li><a href='/'>Отзывы</a></li>
                         </ul>
                     </div>
                     <div className='welcome_text'>Меня зовут Поздникина Ольга Юрьевна. Я колопроктолог, врач-эндоскопист высшей квалификационной категории.

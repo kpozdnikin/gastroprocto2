@@ -11,7 +11,7 @@ import Proctolog from '../assets/img/proctologs.svg';
 import VideoImg_1 from '../assets/img/video_img_1.svg';
 import VideoImg_2 from '../assets/img/video_img_2.svg';
 import VideoImg_3 from '../assets/img/video_img_3.svg';
-import Sad from '../assets/img/sad.svg';
+import Sad from '../assets/img/sad.png';
 
 const Blog = () => {
     return (
@@ -46,11 +46,14 @@ const Blog = () => {
 
             <div className='video_symptoms'>
                 <div className='symptoms_left'>
-                    <iframe src="https://www.youtube.com/embed/kNJX1CJIWjY" frameBorder="0"
+                           <iframe title='myFrame' src="https://www.youtube.com/embed/kNJX1CJIWjY" frameBorder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen title='#'>
                         Видео на YouTube
                     </iframe>
+
+
+
                     <p>Краткое описание о чем видео и для кого оно будет интересным</p>
                     <Button text='посмотреть видео' myStyle='button'/>
                 </div>
@@ -131,7 +134,7 @@ const Blog = () => {
                     </p>
                     <div className='probiotics_more_info'>
                         <Button text='записаться' myStyle='button'/>
-                        <a href='#'>читать далее</a>
+                        <a href='/blog'>читать далее</a>
                         <img src={Vector} alt='more details'/>
                     </div>
                 </div>
@@ -175,7 +178,7 @@ const Blog = () => {
                     </p>
                 </div>
                 <div className='return_back'>
-                    <a href='#'>вернуться назад</a>
+                    <a href='/blog'>вернуться назад</a>
                     <img src={Vector} alt='стрелка'/>
                 </div>
             </div>

@@ -12,11 +12,20 @@ const App: React.FC = () => {
   /* const [initialValue, setInitialValue] = useState<Array<string>>([
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
   ]); */
+
   const [initialValue, setInitialValue] = useState<Array<string>>([]);
+  //const [initialValue] = useState<Array<string>>([]);
 
   const [layout, showLayout] = useState<boolean>(false);
+  //const [layout] = useState<boolean>(false);
+
   const [layoutValue, toggleLayout] = useState<string>('one');
-  const [textAreaRows, setTextAreaRows] = useState<number>(3);
+  //  const [layoutValue] = useState<string>('one');
+
+
+//const [, setTextAreaRows] = useState<number>(3);
+const [textAreaRows, setTextAreaRows] = useState<number>(3);
+
   const refs = useRef([
     React.createRef<HTMLTextAreaElement>(),
     React.createRef<HTMLTextAreaElement>(),

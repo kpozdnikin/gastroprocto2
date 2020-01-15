@@ -28,7 +28,7 @@ export default class Stomachache extends React.Component {
 
                     <div className='more_details'>
                         <Button text='записаться' myStyle='button'/>
-                        <a href='#'>причины боли в животе</a>
+                        <a href='/stomachache'>причины боли в животе</a>
                         <img src={Vector} alt='more details'/>
                     </div>
                 </div>
