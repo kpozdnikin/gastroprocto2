@@ -1,0 +1,37 @@
+import React from 'react';
+import FooterYoutube from '../assets/img/footer_youtube.svg';
+import FooterVK from '../assets/img/footer_vk.svg';
+
+const Footer: React.FunctionComponent = () => {
+  return <footer className='footer'>
+    <div className='footer_container'>
+      <div className='item1'><p>Болит Живот</p>
+        <div className='social'>
+          <a href="https://www.youtube.com/channel/UCp8-fpg-BqmVbzE6OV2TU2Q">
+            <img src={FooterYoutube} alt='Ютуб' />
+          </a>
+          <a href="https://vk.com/gastroprocto">
+            <img src={FooterVK} alt='Vk'/>
+          </a>
+        </div>
+        <p>Политика конфиденциальности</p>
+      </div>
+      <div className='item2'>Контакты:
+        <ul>
+          <li>185001, Республика Карелия, город Петрозаводск</li>
+          <li>Первомайский проспект, дом 17</li>
+          <li>НУЗ Отделенческая клиническая больница на ст. Петрозаводск</li>
+        </ul>
+      </div>
+      <div className='item3'>Режим работы:
+        <ul>
+          <li>будни с 08:00 до 19:00</li>
+          <li>сб, вс выходные</li>
+          <p>Все права защищены</p>
+        </ul>
+      </div>
+    </div>
+  </footer>
+};
+
+export default Footer;
