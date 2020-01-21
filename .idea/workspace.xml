@@ -1,41 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34c70f1c-3b3e-4fe4-9646-b70c4b15fbe2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/img/Ellipse.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/Man_with_folder.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/blog_vector.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/bottom.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/circle.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/doc_hands.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/doc_with_folder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/doc_with_folder.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/fgds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/fks.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/footer_vk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/footer_youtube.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/grbs.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/man_smell.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/map.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/map.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/organs.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/pain_stomachache.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/photo_doctor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/proctologs.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/read_button.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/rrs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/sad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/video_img_1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/video_img_2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/video_img_3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/vk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/youtube.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+    <list default="true" id="34c70f1c-3b3e-4fe4-9646-b70c4b15fbe2" name="Default Changelist" comment="img loader for next">
+      <change afterPath="$PROJECT_DIR$/components/Button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/HamburgerButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/MainMenu.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Nav.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NavState.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/SideMenu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/onClickOutside.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next-env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +72,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -108,11 +86,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kpozdnikin\Documents\WebstormProjects\gastroprocto2\components" />
       <recent name="C:\Users\kpozdnikin\Documents\WebstormProjects\gastroprocto2" />
       <recent name="D:\coder\gastroprocto2\src\assets\img" />
       <recent name="D:\coder\gastroprocto2\public\img" />
       <recent name="D:\coder\gastroprocto2\src\css\fonts" />
-      <recent name="D:\coder\gastroprocto2\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kpozdnikin\Documents\WebstormProjects\gastroprocto2" />
@@ -253,7 +231,7 @@
       <workItem from="1579432449875" duration="4868000" />
       <workItem from="1579438675057" duration="66000" />
       <workItem from="1579438752619" duration="8000" />
-      <workItem from="1579591739913" duration="4104000" />
+      <workItem from="1579591739913" duration="6763000" />
     </task>
     <task id="LOCAL-00001" summary="telegram deleted">
       <created>1535011222993</created>
@@ -388,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579593759935</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="img loader for next">
+      <created>1579596356661</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1579596356661</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView">
@@ -402,6 +387,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -440,6 +435,7 @@
     <MESSAGE value="fix bag ilnesses &amp; stomachache" />
     <MESSAGE value="next.js with typescript" />
     <MESSAGE value="main page" />
-    <option name="LAST_COMMIT_MESSAGE" value="main page" />
+    <MESSAGE value="img loader for next" />
+    <option name="LAST_COMMIT_MESSAGE" value="img loader for next" />
   </component>
 </project>
