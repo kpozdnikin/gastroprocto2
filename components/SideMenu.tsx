@@ -4,6 +4,10 @@ import styled, { css } from 'styled-components';
 import Link from 'next/link';
 import { MenuContext } from './NavState';
 
+interface MenuProps {
+  open: boolean;
+}
+
 const Menu = styled.nav`
   position: absolute;
   top: 0px;
@@ -19,13 +23,7 @@ const Menu = styled.nav`
   background-color: #B3DDC6;  
   transform: translateX(-100%);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-
-  ${props =>
-  props.open &&
-  css`
-      transform: translateX(0);
-    `}
-`;
+  ${(props: MenuProps) => props.open && css`transform: translateX(0);`}`;
 
 export const MenuLink = styled.div`
   position: relative;
@@ -41,10 +39,16 @@ export const MenuLink = styled.div`
   font-weight: 500;
 `;
 
-export const SideMenu = ({ children }) => {
+export const SideMenu = (props: any) => {
+  const { children } = props;
   const { isMenuOpen } = useContext(MenuContext);
-
-  return <Menu open={isMenuOpen}>{children}</Menu>;
+  return (
+    <Menu
+      open={isMenuOpen}
+    >
+      {children}
+    </Menu>
+  );
 };
 
 SideMenu.propTypes = {

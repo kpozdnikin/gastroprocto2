@@ -64,7 +64,7 @@ const Bar = styled.span`
 `;
 
 const HamburgerButton = () => {
-  const { isMenuOpen, toggleMenuMode } = useContext(MenuContext);
+  const { isMenuOpen, toggleMenu: toggleMenuMode } = useContext(MenuContext);
 
   const clickHandler = () => {
     toggleMenuMode();
