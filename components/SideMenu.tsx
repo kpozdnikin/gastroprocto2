@@ -58,10 +58,10 @@ SideMenu.propTypes = {
 SideMenu.defaultProps = {
   children: (
     <>
-      <MenuLink><Link href="/">Главная</Link></MenuLink>
-      <MenuLink><Link href="/blog">Мой блог</Link></MenuLink>
-      <MenuLink><Link href="/stomachache">О боли в животе</Link></MenuLink>
-      <MenuLink><Link href="/illnesses">Заболевания ЖКТ</Link></MenuLink>
+      <MenuLink><Link href='/'><a>Главная</a></Link></MenuLink>
+      <MenuLink><Link href="/blog"><a>Мой блог</a></Link></MenuLink>
+      <MenuLink><Link href="/stomachache"><a>О боли в животе</a></Link></MenuLink>
+      <MenuLink><Link href="/illnesses"><a>Заболевания ЖКТ</a></Link></MenuLink>
     </>
   ),
 };
