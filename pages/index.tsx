@@ -2,7 +2,7 @@ import * as React from 'react';
 // import Link from 'next/link';
 import Layout from '../components/Layout';
 import { NextPage } from 'next';
-import Nav from '../components/Nav';
+//import Nav from '../components/Nav';
 import Button from '../components/Button';
 import Footer from '../components/Footer';
 import Bottom from '../assets/img/bottom.svg';
@@ -13,12 +13,13 @@ import DocHands from '../assets/img/doc_hands.png';
 import Ellipse from '../assets/img/Ellipse.svg';
 import PhotoDoctor from '../assets/img/photo_doctor.png';
 
+
 const IndexPage: NextPage = () => {
   return (
     <Layout title="Болитживот.рф. Главная.">
-      return <div className='main'>
+      <div className='main'>
       <header className='header'>
-        <Nav />
+
         <div className='doctorText'>
           <div className='doctorName'>Поздникина Ольга</div>
           <div className='yourDoctor'>Ваш персональный доктор</div>

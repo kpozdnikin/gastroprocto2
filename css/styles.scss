@@ -1,0 +1,87 @@
+@import "fonts";
+$myFont: Montserrat, Lato, Rubic-One, Sans-serif;
+$myColor: #070707;
+$myFontSize: 18px;
+$btnColor: #07837E;
+$myBgColor: #FFFFFF;
+$bgColorLilac: #CDD5F0;
+$bgColorTurquoise: #B3DDC6;
+@import "header";
+@import "nav";
+@import "welcome";
+@import "quote";
+@import "task-for-me";
+@import "map";
+@import "footer";
+@import "button";
+@import "blog/my_medical_blog";
+@import "blog/video_symptoms";
+@import "blog/third_screen";
+@import "blog/probiotics";
+@import "blog/article";
+@import "stomachache/stomachache";
+@import "illnesses";
+
+body {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  margin: 0 auto;
+  max-width: 1440px;
+  min-width: 420px;
+  font-family: $myFont;
+  font-size: $myFontSize;
+  color: $myColor;
+  background-color: #E5E5E5;
+
+  .main {
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: minmax(320px, 1fr);
+    height: 100vh;
+    grid-template-areas: "h" "w" "q" "t" "m" "f";
+    .header {
+      grid-area: h;
+    }
+    .welcome {
+      grid-area: w;
+      background-color: #FFFFFF;
+    }
+    .quote {
+      grid-area: q;
+    }
+    .task-for-me {
+      grid-area: t;
+    }
+    .map {
+      grid-area: m;
+    }
+    .footer {
+      grid-area: f;
+    }
+  }
+
+  .blog {
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: minmax(320px, 1fr);
+  }
+  .stomachache{
+    background-color: #FFFFFF;
+    display: grid;
+    min-width: 420px;
+  }
+  .illnesses{
+    background-color: #FFFFFF;
+    display: grid;
+    min-width: 420px;
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  .app-link {
+    color: #09d3ac;
+  }
+}
