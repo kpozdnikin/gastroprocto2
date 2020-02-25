@@ -7,13 +7,16 @@ import Fks from '../assets/img/fks.png';
 import Button from "../components/Button";
 import Organs from '../assets/img/organs.svg';
 import Layout from "../components/Layout";
+import Nav from "../components/Nav"
 
 const Illnesses = () => {
 
         return (
             <Layout title='Болит живот. Заболевания ЖКТ'>
             <div className='illnesses'>
+                <Nav/>
             <div className='top_ill'>
+
                 <h1>Заболевания желудочно-кишечного тракта</h1>
                 <div className='rec20'/>
                 <p>Эндоскопические методы исследования, позволяющие осмотреть пищевод, желудок, кишечник изнутри, со стороны слизистой оболочки.</p>

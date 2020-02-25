@@ -1,26 +1,4 @@
-@import "fonts";
-$myFont: Montserrat, Lato, Rubic-One, Sans-serif;
-$myColor: #070707;
-$myFontSize: 18px;
-$btnColor: #07837E;
-$myBgColor: #FFFFFF;
-$bgColorLilac: #CDD5F0;
-$bgColorTurquoise: #B3DDC6;
-@import "header";
-@import "nav";
-@import "welcome";
-@import "quote";
-@import "task-for-me";
-@import "map";
-@import "footer";
-@import "button";
-@import "blog/my_medical_blog";
-@import "blog/video_symptoms";
-@import "blog/third_screen";
-@import "blog/probiotics";
-@import "blog/article";
-@import "stomachache/stomachache";
-@import "illnesses";
+@import "../css/styleVariables";
 
 body {
   * {

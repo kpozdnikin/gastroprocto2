@@ -5,11 +5,13 @@ import Button from "../components/Button";
 import Vector from '../assets/img/blog_vector.svg';
 import Organs from '../assets/img/organs.svg';
 import Layout from "../components/Layout";
+import Nav from "../components/Nav"
 
 const Stomachache = () => {
         return (
             <Layout title='Болит живот. О боли в животе'>
             <div className='stomachache'>
+                <Nav/>
             <div className='top_stomachache'>
                 <div className='top'>
                     <p>О боли в животе</p>

@@ -1,5 +1,7 @@
+@import "./styleVariables";
+
 .map{
-  background: url("./assets/img/map.svg");
+  background: url("../assets/img/map.svg");
   height: 876px;
   max-width: 100%;
   min-width: 420px;

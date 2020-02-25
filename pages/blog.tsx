@@ -12,13 +12,14 @@ import VideoImg_2 from '../assets/img/video_img_2.svg';
 import VideoImg_3 from '../assets/img/video_img_3.svg';
 import Sad from '../assets/img/sad.png';
 import Layout from "../components/Layout";
+import Nav from "../components/Nav"
 
 const Blog = () => {
     return (
         <Layout title="Болит живот. Блог">
         <div className='blog'>
             <div className='my_medical_blog'>
-
+                <Nav/>
                 <div className='blog_top'>
                     <p>Мой врачебный блог</p>
                     <div className='rec20'/>
