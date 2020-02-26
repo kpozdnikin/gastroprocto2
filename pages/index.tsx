@@ -11,14 +11,14 @@ import VK from '../assets/img/vk.svg';
 import DocWithFolder from '../assets/img/doc_with_folder.png';
 import DocHands from '../assets/img/doc_hands.png';
 import Ellipse from '../assets/img/Ellipse.svg';
-import PhotoDoctor from '../assets/img/photo_doctor.png';
+import PhotoDoctor from "../assets/img/photo_doctor.png"
 
 const IndexPage: NextPage = () => {
   return (
     <Layout title="Болитживот.рф. Главная.">
-      return <div className='main'>
+      <div className='main'>
       <header className='header'>
-        <Nav />
+          <Nav/>
         <div className='doctorText'>
           <div className='doctorName'>Поздникина Ольга</div>
           <div className='yourDoctor'>Ваш персональный доктор</div>
@@ -54,7 +54,7 @@ const IndexPage: NextPage = () => {
         <div className='doc_with_folder'>
           <div className='rec_11'/>
           <div className='rec_10'>
-            <img src={DocWithFolder} alt='фото доктора' />
+            <img src={DocWithFolder} alt='фото доктора'/>
           </div>
           <div className='rec_11_bot'/>
         </div>
@@ -121,7 +121,7 @@ const IndexPage: NextPage = () => {
 
       <Footer />
 
-    </div>;
+    </div>
     </Layout>
   )
 };

@@ -1,0 +1,129 @@
+@import "../styleVariables";
+
+#article{
+  .article_top{
+    width: 100%;
+    p{
+      margin: 0 auto;
+      max-width: 657px;
+      height: 66px;
+      font-size: 30px;
+      line-height: 120%;
+      text-align: center;
+      letter-spacing: 0.1em;
+    }
+    .rec20{
+      margin-top: -68px;
+      width: 43.2%;
+      height: 76px;
+      background: $bgColorTurquoise;
+      float: right;
+    }
+  }
+  .container{
+    position: relative;
+    max-width: 497px;
+    width: 100%;
+    min-width: 320px;
+    height: 464px;
+    float: left;
+    margin-right: 118px;
+    margin-top: 65px;
+    margin-bottom: 10px;
+    img{
+      position: absolute;
+      max-width: 321.77px;
+      width: 64.58%;
+      top: 22px;
+      //left: 152px;
+      left: 28%;
+      z-index: 2;
+    }
+    .rec11{
+      position: absolute;
+      width: 36.6%;
+      height: 50px;
+      background: $bgColorTurquoise;
+      left: 45px;
+    }
+    .rec10{
+      position: absolute;
+      background: $bgColorLilac;
+      width: 84.5%;
+      height: 378px;
+      left: 20px;
+      top: 50px;
+      z-index: 1;
+    }
+    .rec12{
+      position: absolute;
+      height: 82px;
+      width: 58.3%;
+      background: $bgColorTurquoise;
+      right: 0;
+      bottom: 0;
+    }
+  }
+  .article_text{
+    margin: 65px 60px 60px 60px;
+    font-size: 18px;
+    line-height: 170%;
+    color: rgba(7, 7, 7, 0.8);
+
+  }
+  .return_back{
+    margin-left: 60px;
+    margin-bottom: 100px;
+    a{
+      margin-right: 15px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 19px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #A87768;
+    }
+  }
+}
+@media (max-width: 700px){
+  #article{
+    .article_top{
+      p{
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px){
+  #article{
+    .article_top{
+      p{
+        font-size: 22px;
+      }
+    }
+  }
+}
+@media (max-width: 495px){
+  #article{
+    .article_top{
+      p{
+        font-size: 20px;
+      }
+    }
+    .article_text{
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  }
+}
+@media (max-width: 450px){
+  #article{
+    .article_top{
+      p{
+        font-size: 18px;
+      }
+    }
+  }
+}

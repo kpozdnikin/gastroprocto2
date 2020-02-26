@@ -1,0 +1,121 @@
+@import "styleVariables";
+.footer {
+  font-family: $myFont;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 170%;
+  color: rgba(248, 248, 248, 0.8);
+  min-width: 420px;
+  max-height: 291px;
+  background-color: #496766;
+  .footer_container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-column-gap: 40px;
+    max-width: 1220px;
+    min-width: 400px;
+    margin: 46px auto 0 auto;
+    .item1 {
+      min-width: 274px;
+      margin-left: 40px;
+      .social{
+        display: flex;
+        margin-top: 26px;
+        a {
+          display: flex;
+          align-items: center;
+          img {
+            padding-right: 23px;
+          }
+        }
+      }
+      p{
+        margin-top: 135px;
+      }
+      p:first-child{
+        margin-top: 0;
+        font-family: Rubic-One;
+        line-height: 170%;
+        font-size: 16px;
+        opacity: 0.8;
+      }
+    }
+    .item2 {
+      max-width: 420px;
+      min-width: 150px;
+    }
+    .item3 {
+      min-width: 186px;
+      margin-right: 40px;
+      p{
+        margin-top: 99px;
+      }
+    }
+    ul{
+      margin: 26px 0;
+      list-style-type: none;
+    }
+  }
+}
+@media (max-width: 1035px){
+  .footer{
+    .footer_container{
+      .item1{
+        min-width: 160px;
+        p{
+          margin-top: 110px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 765px){
+  .footer{
+    .footer_container{
+      font-size: 15px;
+      grid-gap: 20px;
+    }
+  }
+}
+@media (max-width: 720px){
+  .footer{
+    .footer_container{
+      font-size: 14px;
+      .item1{
+        margin-left: 20px;
+      }
+      .item3{
+        margin-right: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 635px) {
+  .footer {
+    max-height: 100vh;
+    .footer_container {
+      font-size: 16px;
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 0;
+      .item1{
+        max-width: 240px;
+        margin-left: 40px;
+        P{
+          font-size: 15px;
+        }
+      }
+      .item2 {
+        grid-row: 1;
+        grid-column: 1/3;
+        margin-left: 40px;
+        margin-right: 20px;
+      }
+      .item3{
+        P{
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+

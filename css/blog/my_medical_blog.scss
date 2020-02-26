@@ -1,0 +1,157 @@
+@import "../styleVariables";
+.my_medical_blog{
+  display: grid;
+  grid-template-columns: 43% 57%;
+  max-width: 1440px;
+  min-width: 320px;
+  font-family: $myFont;
+  font-size: 18px;
+
+  .nav{
+    grid-column: 1/3;
+  }
+  .blog_top{
+    margin-top: 63px;
+    grid-column: 1/3;
+
+    p{
+      text-align: center;
+      font-family: Playfair Display;
+      font-size: 30px;
+      line-height: 120%;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #070707;
+    }
+    .rec20{
+      margin-top: -54px;
+      width: 42.5%;
+      height: 76px;
+      float: right;
+      background: $bgColorTurquoise;
+    }
+  }
+    .blog_content_left {
+      position: relative;
+      max-width: 613px;
+      width: 100%;
+      height: 660px;
+
+      .rec11{
+        position: absolute;
+        width: 60.8%;
+        height: 108px;
+        margin-left: 47px;
+        background: $bgColorTurquoise;
+      }
+      .rec10_big{
+        position: absolute;
+        width: 94%;
+        height: 502px;
+        top: 108px;
+        background: #CDD5F0;
+        z-index: 1;
+      }
+      .rec10{
+        position: absolute;
+        bottom: 13px;
+        right: 0;
+        height: 119px;
+        width: 44.2%;
+        background: $bgColorTurquoise;
+        z-index: 0;
+      }
+      img{
+        position: absolute;
+        z-index: 2;
+        min-width: 380px;
+        width: 82%;
+        max-width: 507px;
+      }
+    }
+    #blog_content_right {
+      margin-left: 20px;
+      margin-right: 40px;
+      p{
+        margin-top: 45px;
+        max-width: 614px;
+        font-size: 30px;
+        line-height: 120%;
+        letter-spacing: 0.1em;
+        color: #070707;
+      }
+      .blog_text{
+        margin-top: 44px;
+        margin-bottom: 79px;
+        max-width: 648px;
+        line-height: 170%;
+        color: rgba(7, 7, 7, 0.8);
+      }
+      .blog_more_details{
+        display: flex;
+        align-items: center;
+        a{
+          margin-left: 60px;
+          margin-right: 47px;
+          max-width: 111px;
+          height: 19px;
+          font-weight: 600;
+          font-size: 11px;
+          line-height: 19px;
+          letter-spacing: 0.15em;
+          text-transform: uppercase;
+          color: #A87768;
+          text-decoration: none;
+        }
+        .button{
+          max-width: 169px;
+        }
+        .button_shadow{
+          max-width: 169px;
+        }
+      }
+    }
+}
+@media (max-width: 900px) {
+  .my_medical_blog {
+    grid-template-columns: 1fr;
+    .nav {
+      grid-row: 1;
+    }
+    .blog_top {
+      grid-row: 2;
+    }
+    .blog_content_left{
+      grid-row: 3;
+      margin-top: 20px;
+      justify-items: stretch;
+      max-width: 100%;
+    }
+    #blog_content_right{
+      margin-left: 47px;
+      grid-row: 4;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .my_medical_blog  {
+    #blog_content_right{
+      p{
+        font-size: 26px;
+      }
+      .blog_text{
+        font-size: 16px;
+      }
+      .blog_more_details{
+        max-width: 350px;
+        flex-wrap: wrap;
+        a{
+          margin-top: 20px;
+        }
+        img{
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

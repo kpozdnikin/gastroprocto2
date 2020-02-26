@@ -1,0 +1,43 @@
+@import "./styleVariables";
+.nav {
+  margin: 47px 8% 0 10%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-family: $myFont;
+  max-width: 1133px;
+  height: 29px;
+  color: $myColor;
+
+  a {
+    text-decoration: none;
+    color: $myColor;
+    z-index: 100;
+  }
+  a:hover {
+    border-bottom: 1px solid $myColor;
+  }
+  a:active{
+    border-bottom: 1px solid $myColor;
+  }
+  .label-top {
+    z-index: 100;
+  }
+  .hidden{
+    display: none;
+  }
+    button{
+      display: none;
+    }
+  }
+
+@media (max-width: 900px) {
+  .nav {
+    .topNav{
+        display: none;
+    }
+    button{
+        display: block;
+    }
+  }
+}

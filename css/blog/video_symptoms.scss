@@ -1,0 +1,111 @@
+@import "../styleVariables";
+
+.video_symptoms{
+  // height: 419px;
+  // min-width: 420px;
+  padding-top: 111px;
+  margin-bottom: 50px;
+  display: grid;
+  background: #FFFFFF;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  overflow: hidden;
+
+  .symptoms_left{
+    //margin-left: 150px;
+    margin-left: 20.8%;
+    margin-top: 33px;
+    iframe{
+     width: 364px;
+     height: 155px;
+    }
+    p{
+      max-width: 322px;
+      font-size: 16px;
+      line-height: 170%;
+      color: rgba(0, 0, 0, 0.8);
+      margin-top: 49px;
+      margin-bottom: 49px;
+    }
+  }
+  .symptoms_right{
+    position: relative;
+    max-width: 708px;
+    //height: 419px;
+    height: 100%;
+    min-height: 419px;
+    overflow: hidden;
+
+    img{
+      position: absolute;
+      margin-top: 5%;
+      margin-left: 45px;
+      margin-right: 10px;
+      max-width: 511px;
+      width: 90%;
+      max-height: 347px;
+      min-width: 400px;
+      z-index: 2;
+    }
+    .rec15{
+      position: absolute;
+      //width: 301px;
+      width: 42.5%;
+      //height: 206px;
+      height: 49%;
+      background: $bgColorTurquoise;
+    }
+    .rec13{
+      position: absolute;
+      top:5px;
+      right: 0;
+      width: 35.4%;
+      //height: 232px;
+      height: 55%;
+      background: $bgColorLilac;
+    }
+    .rec19{
+      position: absolute;
+      left: 34px;
+      bottom: 9px;
+      width: 25.2%;
+      //height: 173px;
+      height: 41.2%;
+      background: $bgColorLilac;
+    }
+    .rec14{
+      position: absolute;
+      bottom: 0;
+      width: 46.3%;
+      //height: 110px;
+      height: 26%;
+      background: $bgColorTurquoise;
+      right: 13%;
+
+    }
+  }
+}
+@media (max-width: 900px) {
+  .video_symptoms{
+    grid-template-columns: 1fr;
+    padding-top: 78px;
+    .symptoms_left{
+      grid-row: 2;
+      margin-left: 47px;
+    }
+    .symptoms_right{
+      grid-row: 1;
+      margin-left:0;
+
+      img{
+        min-width: 250px;
+        width: 88%;
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+ .video_symptoms{
+
+ }
+}
