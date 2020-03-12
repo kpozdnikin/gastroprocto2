@@ -1,5 +1,4 @@
 import * as React from 'react';
-// import Link from 'next/link';
 import Layout from '../components/Layout';
 import { NextPage } from 'next';
 import Nav from '../components/Nav';
@@ -11,9 +10,15 @@ import VK from '../assets/img/vk.svg';
 import DocWithFolder from '../assets/img/doc_with_folder.png';
 import DocHands from '../assets/img/doc_hands.png';
 import Ellipse from '../assets/img/Ellipse.svg';
-import PhotoDoctor from "../assets/img/photo_doctor.png"
+import PhotoDoctor from "../assets/img/photo_doctor.png";
+import Map from '../assets/img/map.svg';
+
+const MapBackground = {
+    backgroundImage: `url(${Map})`
+};
 
 const IndexPage: NextPage = () => {
+
   return (
     <Layout title="Болитживот.рф. Главная.">
       <div className='main'>
@@ -97,7 +102,7 @@ const IndexPage: NextPage = () => {
         </div>
       </section>
 
-      <section className='map'>
+      <section className='map' style={MapBackground}>
         <div className='contacts'>
           <div className='small_rec'>
           </div>

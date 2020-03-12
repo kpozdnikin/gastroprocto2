@@ -10,9 +10,10 @@ import Proctolog from '../assets/img/proctologs.svg';
 import VideoImg_1 from '../assets/img/video_img_1.svg';
 import VideoImg_2 from '../assets/img/video_img_2.svg';
 import VideoImg_3 from '../assets/img/video_img_3.svg';
-import Sad from '../assets/img/sad.png';
 import Layout from "../components/Layout";
 import Nav from "../components/Nav"
+import PostLink from '../components/PostLink';
+
 
 const Blog = () => {
     return (
@@ -39,7 +40,8 @@ const Blog = () => {
                     </div>
                     <div className='blog_more_details'>
                         <Button text='записаться' myStyle='button'/>
-                        <a href='#article'>читать далее</a>
+                        {/* <a href='/article'>читать далее</a> */}
+                        <PostLink id="article"/>
                         <img src={Vector} alt='more details'/>
                     </div>
                 </div>
@@ -47,13 +49,11 @@ const Blog = () => {
 
             <div className='video_symptoms'>
                 <div className='symptoms_left'>
-                    {/*    <iframe title='myFrame' src="https://www.youtube.com/embed/kNJX1CJIWjY" frameBorder="0"
+                    <iframe title='myFrame' src="https://www.youtube.com/embed/kNJX1CJIWjY" frameBorder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen title='#'>
+                            allowFullScreen>
                         Видео на YouTube
                     </iframe>
-*/}
-
 
                     <p>Краткое описание о чем видео и для кого оно будет интересным</p>
                     <Button text='посмотреть видео' myStyle='button'/>
@@ -145,42 +145,6 @@ const Blog = () => {
                     <div className='rec10'/>
                     <div className='rec12'/>
                     <img src={ManWithFolder} alt='Фото врача'/>
-                </div>
-            </div>
-
-            <div id='article'>
-                <div className='article_top'>
-                    <p>Психологическое проецирование болезней других людей на себя</p>
-                    <div className='rec20'/>
-                </div>
-                <div className='container'>
-                    <div className='rec11'/>
-                    <div className='rec10'/>
-                    <div className='rec12'/>
-                    <img src={Sad} alt="фото"/>
-                </div>
-                <div className='article_text'>
-                    <p>В последнее время участились обращения пациентов, самостоятельно решивших обследовать желудок,
-                        кишечник при отсутствии каких-либо жалоб на работу данных органов. На вопрос о причине столь
-                        серьезного решения они отвечают, что длительное время кто-то из близких им людей или знакомых
-                        страдал от поздно диагностированной опухоли.<br/><br/>
-                        Проблемы больного они принимали так близко к сердцу, что, невольно, переносили их на себя.
-                        Возникали опасения заболеть раком, которые , постепенно, перерастали в твердую уверенность
-                        пациента в наличии у них данного заболевания. То есть, проходило «проецирование» - перенос
-                        проблем одного человека на другого. <br/>
-                        Что делать?<br/><br/>
-                        Разумеется, провести исследование. Показаний медицинских нет, но сама по себе ситуация есть
-                        показание (психологическое) к исследованию. <br/> Почему? <br/><br/>
-                        Тут хочется использовать еще один умный термин – «программирование». Не до конца понимаем мы
-                        тонкости человеческой психологии, однако по опыту могу сказать: «Если человек упорно ищет у себя
-                        рак, то возможность заболеть им возрастает многократно». Значит порочную цепочку нужно прервать
-                        – провести обследование (гастроскопию, ректоскопию, колоноскопию), убедиться в отсутствии
-                        болезни и успокоить пациента
-                    </p>
-                </div>
-                <div className='return_back'>
-                    <a href='/blog'>вернуться назад</a>
-                    <img src={Vector} alt='стрелка'/>
                 </div>
             </div>
 
