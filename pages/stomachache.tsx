@@ -11,7 +11,7 @@ const Stomachache = () => {
         return (
             <Layout title='Болит живот. О боли в животе'>
             <div className='stomachache'>
-                <Nav/>
+            <Nav/>
             <div className='top_stomachache'>
                 <div className='top'>
                     <p>О боли в животе</p>
