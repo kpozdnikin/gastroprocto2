@@ -1,9 +1,9 @@
 import React from 'react';
-import Vector from '../../assets/img/blog_vector.svg';
-import Sad from '../../assets/img/sad.png';
-import Layout from "../../components/Layout";
-import Nav from "../../components/Nav"
-import Footer from '../../components/Footer';
+import Vector from '../../../assets/img/blog_vector.svg';
+import Sad from '../../../assets/img/sad.png';
+import Layout from "../../../components/Layout";
+import Nav from "../../../components/Nav"
+import Footer from '../../../components/Footer';
 //import PostLink from '../../components/PostLink';
 
 const Article = () => {
