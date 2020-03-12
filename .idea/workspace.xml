@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a62deac-2959-4ea5-9431-c14da357e814" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/components/PostLink.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/articles/article.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/illnesses.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/illnesses.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/map.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/map.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/blog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blog.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/illnesses.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/illnesses.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/stomachache.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/stomachache.tsx" afterDir="false" />
     </list>
     <ignored path="gastroprocto.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,10 +36,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog.tsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="blog.tsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/blog.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-272">
+            <state relative-caret-position="-680">
               <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
             </state>
           </provider>
@@ -57,8 +48,8 @@
       <file leaf-file-name="PostLink.tsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/PostLink.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+            <state relative-caret-position="85">
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -66,14 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="article.tsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="article.tsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/articles/article.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="41" column="14" lean-forward="true" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -357,7 +345,7 @@
       <workItem from="1582725238620" duration="633000" />
       <workItem from="1582875560646" duration="7996000" />
       <workItem from="1583840103314" duration="1341000" />
-      <workItem from="1584000350677" duration="6636000" />
+      <workItem from="1584000350677" duration="6878000" />
     </task>
     <task id="LOCAL-00001" summary="telegram deleted">
       <created>1535011222993</created>
@@ -380,11 +368,18 @@
       <option name="project" value="LOCAL" />
       <updated>1582642610234</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Добавил статью, хз так ты имел ввиду или нет :)">
+      <created>1584008466408</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584008466408</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194707000" />
+    <option name="totallyTimeSpent" value="194949000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -487,7 +482,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="telegram deleted" />
     <MESSAGE value="Add styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add styles" />
+    <MESSAGE value="Добавил статью, хз так ты имел ввиду или нет :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил статью, хз так ты имел ввиду или нет :)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -777,10 +773,17 @@
     <entry file="file://$PROJECT_DIR$/components/Button.tsx">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/pages/blog.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-680">
+          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/components/PostLink.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        <state relative-caret-position="85">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -789,18 +792,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/articles/article.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="41" column="14" lean-forward="true" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/blog.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+        <state relative-caret-position="17">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="51" />
         </state>
       </provider>
     </entry>
