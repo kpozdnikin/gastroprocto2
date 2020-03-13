@@ -175,6 +175,20 @@
   }
 }
 
+.stomachache-left-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  #zones {
+    width: 100%;
+    path {
+      fill: none;
+      stroke: #b3ddc6;
+    }
+  }
+}
+
 @media(max-width: 1145px){
   .top_stomachache{
     .left_header{
