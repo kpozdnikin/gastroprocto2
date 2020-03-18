@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState,useEffect} from 'react';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
 import Vector from '../assets/img/blog_vector.svg';
@@ -14,8 +14,20 @@ import Layout from "../components/Layout";
 import Nav from "../components/Nav"
 import PostLink from '../components/PostLink';
 
-
 const Blog = () => {
+    const [article, setArticle] = useState(fetch(`https://gastroprocto.ru/api/articles`)
+        .then(response => {
+            return response.json();
+        })
+        .then((data) => {
+            setArticle(data);
+            console.log("article", article);
+        }));
+
+    useEffect(()=>{
+        console.log("useEffect",article);
+    });
+
     return (
         <Layout title="Болит живот. Блог">
         <div className='blog'>
@@ -41,7 +53,7 @@ const Blog = () => {
                     <div className='blog_more_details'>
                         <Button text='записаться' myStyle='button'/>
                         {/* <a href='/article'>читать далее</a> */}
-                        <PostLink id="article"/>
+                        <PostLink id="3434436456445645564" name="Проецирование болезний других людей на себя"/>
                         <img src={Vector} alt='more details'/>
                     </div>
                 </div>
