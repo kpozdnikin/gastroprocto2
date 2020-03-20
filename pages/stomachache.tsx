@@ -4,7 +4,6 @@ import PainStomachache from '../assets/img/pain_stomachache.svg';
 import Button from '../components/Button';
 import Vector from '../assets/img/blog_vector.svg';
 import { BodySvg } from '../components/body';
-// import Organs from '../assets/img/organs.svg';
 import Layout from '../components/Layout';
 import Nav from '../components/Nav';
 import zonesOfPain from '../utils/zonesOfPain';
@@ -17,7 +16,7 @@ const Stomachache = () => {
         } else {
             setOpenedAccordion(index);
         }
-    }
+    };
     return (
             <Layout title="Болит живот. О боли в животе">
             <div className="stomachache">
@@ -66,7 +65,7 @@ const Stomachache = () => {
                                        <div className="text-content">
                                            {zone.text}
                                        </div>
-                                       <Button text="Записаться" myStyle="button"/>
+                                       {/*<Button text="Записаться" myStyle="button"/>*/}
                                    </>
                                )}
                            </div>
