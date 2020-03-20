@@ -1,4 +1,4 @@
-export const zonesOfPain = [
+const zonesOfPain = [
     {
         id: 1,
         title: 'Болит под ложечкой',
@@ -91,3 +91,5 @@ export const zonesOfPain = [
             'ОБЯЗАТЕЛЬНО НЕОБХОДИМО ОБРАТИТЬСЯ К ВРАЧУ. ОСОБЕННО БЫСТРО ЭТО НУЖНО СДЕЛАТЬ ПРИ ПОЯВЛЕНИИ В КАЛОВЫХ МАССАХ ПРИМЕСИ КРОВИ.'
     }
 ];
+
+export default zonesOfPain;

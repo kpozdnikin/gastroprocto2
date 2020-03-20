@@ -165,7 +165,6 @@
       }
       .content{
         margin-bottom: 27px;
-        max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
         p{
@@ -187,6 +186,10 @@
       stroke: #b3ddc6;
     }
   }
+}
+
+.text-content {
+  padding: 20px 0px;
 }
 
 @media(max-width: 1145px){

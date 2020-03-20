@@ -1,26 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Footer from '../components/Footer';
 import PainStomachache from '../assets/img/pain_stomachache.svg';
 import Button from '../components/Button';
 import Vector from '../assets/img/blog_vector.svg';
 import { BodySvg } from '../components/body';
 // import Organs from '../assets/img/organs.svg';
-import Layout from "../components/Layout";
-import Nav from "../components/Nav"
+import Layout from '../components/Layout';
+import Nav from '../components/Nav';
+import zonesOfPain from '../utils/zonesOfPain';
 
 const Stomachache = () => {
-        // @ts-ignore
+    const [openedAccordion, setOpenedAccordion] = useState<number | null>(0);
+    const toggleAccordion = (index: number) => {
+        if (openedAccordion === index) {
+            setOpenedAccordion(null);
+        } else {
+            setOpenedAccordion(index);
+        }
+    }
     return (
-            <Layout title='Болит живот. О боли в животе'>
-            <div className='stomachache'>
+            <Layout title="Болит живот. О боли в животе">
+            <div className="stomachache">
             <Nav/>
-            <div className='top_stomachache'>
-                <div className='top'>
+            <div className="top_stomachache">
+                <div className="top">
                     <p>О боли в животе</p>
-                    <div className='rec20'/>
+                    <div className="rec20"/>
                 </div>
 
-                <div className='left_header'>
+                <div className="left_header">
                     <h2>Когда болит живот</h2>
                     <p>Организм может сигнализировать о временных трудностях:</p>
                     <ul>
@@ -30,61 +38,48 @@ const Stomachache = () => {
                         <li>и о возможном заболевании</li>
                     </ul>
 
-                    <div className='more_details'>
-                        <Button text='записаться' myStyle='button'/>
-                        <a href='/stomachache'>причины боли в животе</a>
-                        <img src={Vector} alt='more details'/>
+                    <div className="more_details">
+                        <Button text="записаться" myStyle="button"/>
+                        <a href="/stomachache">причины боли в животе</a>
+                        <img src={Vector} alt="more details"/>
                     </div>
                 </div>
 
-                <div className='right_header'>
-                    <div className='rec10'/>
-                    <div className='rec12'/>
-                    <div className='rec13'/>
-                    <img src={PainStomachache} alt='Боль в животе'/>
+                <div className="right_header">
+                    <div className="rec10"/>
+                    <div className="rec12"/>
+                    <div className="rec13"/>
+                    <img src={PainStomachache} alt="Боль в животе"/>
                 </div>
             </div>
-            <div className='text_stomachache'>
+            <div className="text_stomachache">
                 <BodySvg />
-                <div className='container'>
-                    <button className='collapsible'>Болит под ложечкой <br/>(эпигастральная область)</button>
-                    <div className='content'>
-                        <p> Боли в животе под ложечкой, ноющего характера, могут характеризоваться пациентом как "дискомфорт", "чувство тяжести", возникающие, после приема пищи, сопровождающиеся изжогой более характерны для хронического гастрита.
-                            <br/><br/>При плохой работе пищеводно-желудочного клапана - недостаточности кардии - болевые ощущения могут распространяться на область за грудиной, имитировать сердечный приступ. Неприятным сюрпризом может быть запах изо рта.
-                            <br/><br/> При остром отравлении продуктами, не предназначенными для приема в пищу или недоброкачественными, боль в животе может быть острой - острый гастрит. Интенсивные и длительные боли позволяют заподозрить не просто острый гастрит, но язву желудка.
-                            <br/><br/>ЛЮБАЯ ОСТРАЯ БОЛЬ, ВОЗНИКШАЯ ВПЕРВЫЕ, ТРЕБУЕТ НЕЗАМЕДЛИТЕЛЬНОГО ОБРАЩЕНИЯ К ВРАЧУ ДЛЯ ПОСЛЕДУЮЩЕГО ОБСЛЕДОВАНИЯ</p>
-                        <Button text='Записаться' myStyle='button'/>
-                    </div>
-                    <button className='collapsible'>Болит справа вверху живота, ближе к ребрам.<br/>(область правого подреберья)</button>
-                    <div className='content'>
-                        <p>Какой-то текст</p>
-                        <Button text='Записаться' myStyle='button'/>
-                    </div>
-                    <button className='collapsible'>Болит справа или слева сбоку живота. Колет в боку.<br/> (правая или левая боковая область)</button>
-                    <div className='content'>
-                        <p>Какой-то текст</p>
-                        <Button text='Записаться' myStyle='button'/>
-                    </div>
-                    <button className='collapsible'>Болит слева или справа внизу живота<br/> (подвздошная область справа или слева)</button>
-                    <div className='content'>
-                        <p>Какой-то текст</p>
-                        <Button text='Записаться' myStyle='button'/>
-                    </div>
-                    <button className='collapsible'>Болит низ живота по середине<br/>(надлобковая область)</button>
-                    <div className='content'>
-                        <p>Какой-то текст</p>
-                        <Button text='Записаться' myStyle='button'/>
-                    </div>
-                    <button className='collapsible'>Болит в середине живота<br/>(околопупочная область)</button>
-                    <div className='content'>
-                        <p>Какой-то текст</p>
-                        <Button text='Записаться' myStyle='button'/>
-                    </div>
+                <div className="container">
+                    { zonesOfPain.map((zone, index) => (
+                       <React.Fragment key={zone.id}>
+                           <button className="collapsible" onClick={() => toggleAccordion(index)}>
+                               {zone.title} <br/>({zone.subTitle})
+                           </button>
+                           <div className="content">
+                               {openedAccordion === index && (
+                                   <>
+                                       <div className="text-content">
+                                           {zone.text}
+                                       </div>
+                                       <Button text="Записаться" myStyle="button"/>
+                                   </>
+                               )}
+                           </div>
+                       </React.Fragment>
+                    ))}
                     <p>Определить насколько серьезно Ваше заболевание может только врач!
                         Просто ознакомиться с материалом данной статьи и аналогичных сообщений в интернете недостаточно.
-                        Каждый человек индивидуален. Болезненные ощущения слабой интенсивности и продолжительности могут сигнализировать о серьезных проблемах.
-                        И наооборот - сильные боли быть признаком функциональных нарушений или кратковременных расстройств, легко поддающихся лекарственной терапии.
-                        Только сочетание знаний и клинического опыта, данных обследования – залог правильной диагностики, правильного лечения.</p>
+                        Каждый человек индивидуален. Болезненные ощущения слабой интенсивности
+                        и продолжительности могут сигнализировать о серьезных проблемах.
+                        И наооборот - сильные боли быть признаком функциональных нарушений или
+                        кратковременных расстройств, легко поддающихся лекарственной терапии.
+                        Только сочетание знаний и клинического опыта, данных обследования
+                        – залог правильной диагностики, правильного лечения.</p>
                 </div>
             </div>
 
