@@ -167,15 +167,18 @@
         margin-bottom: 27px;
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.2s ease-out;
+        //transition: max-height 0.2s ease-out;
+        opacity: 0;
+        visibility: hidden;
+        transition: .95s opacity, .95s visibility;
         p{
           margin: 56px 10% 70px 34px;
         }
       }
       .show {
-        overflow: visible;
         max-height: 100%;
-        transition: 0.5ms;
+        opacity: 1;
+        visibility: visible;
       }
   }
 }
