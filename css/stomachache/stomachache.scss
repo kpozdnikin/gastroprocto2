@@ -172,6 +172,11 @@
           margin: 56px 10% 70px 34px;
         }
       }
+      .show {
+        overflow: visible;
+        max-height: 100%;
+        transition: 0.5ms;
+      }
   }
 }
 

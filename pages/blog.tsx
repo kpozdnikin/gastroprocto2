@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react';
+import React from 'react';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
 import Vector from '../assets/img/blog_vector.svg';
@@ -12,21 +12,25 @@ import VideoImg_2 from '../assets/img/video_img_2.svg';
 import VideoImg_3 from '../assets/img/video_img_3.svg';
 import Layout from "../components/Layout";
 import Nav from "../components/Nav"
-import PostLink from '../components/PostLink';
+//import PostLink from '../components/PostLink';
+//import ArticleItem from './blog/ArticleItem';
+//import {artData} from "./blog/[articleId]/[articleName]";
 
 const Blog = () => {
-    const [article, setArticle] = useState(fetch(`https://gastroprocto.ru/api/articles`)
+    {/*  const [article, setArticle] = useState(fetch(`https://gastroprocto.ru/api/articles`)
         .then(response => {
+            console.log("article", article);
             return response.json();
         })
         .then((data) => {
             setArticle(data);
-            console.log("article", article);
+            console.log("newWrticle", article);
         }));
 
     useEffect(()=>{
-        console.log("useEffect",article);
+        console.log("useEffect", article);
     });
+    */}
 
     return (
         <Layout title="Болит живот. Блог">
@@ -52,21 +56,23 @@ const Blog = () => {
                     </div>
                     <div className='blog_more_details'>
                         <Button text='записаться' myStyle='button'/>
-                        {/* <a href='/article'>читать далее</a> */}
-                        <PostLink id="3434436456445645564" name="Проецирование болезний других людей на себя"/>
+                         <a href='/article'>читать далее</a>
+                        {/* <PostLink id="3434436456445645564" name="Проецирование болезний других людей на себя"/>*/}
                         <img src={Vector} alt='more details'/>
                     </div>
                 </div>
             </div>
 
+
+
             <div className='video_symptoms'>
                 <div className='symptoms_left'>
-                    <iframe title='myFrame' src="https://www.youtube.com/embed/kNJX1CJIWjY" frameBorder="0"
+                    {/*       <iframe title='myFrame' src="https://www.youtube.com/embed/kNJX1CJIWjY" frameBorder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen>
                         Видео на YouTube
                     </iframe>
-
+                     */}
                     <p>Краткое описание о чем видео и для кого оно будет интересным</p>
                     <Button text='посмотреть видео' myStyle='button'/>
                 </div>
@@ -131,32 +137,6 @@ const Blog = () => {
                         <img src={VideoImg_3} alt='Симптомы'/>
                     </div>
                     <Button text='посмотреть видео' myStyle='button'/>
-                </div>
-            </div>
-
-            <div className='probiotics'>
-                <div className='rec21'/>
-
-                <div className='probiotics_text'>
-                    <h2>Пробиотики и Пребиотики</h2>
-                    <p>Пробиотики – препараты, содержащие микроорганизмы, в норме проживающие в различных органах
-                        человека, способные губительно воздействовать на вредные бактерии и восстанавливать,
-                        при необходимости, нормальную микрофлору. Наиболее часто пробиотики назначаются терапевтом или
-                        гастроэнтерологом после проведения антибактериальной терапии, при синдроме раздраженной кишки.
-                        Примером наиболее часто назначаемых пробиотиков могут служить
-                    </p>
-                    <div className='probiotics_more_info'>
-                        <Button text='записаться' myStyle='button'/>
-                        <a href='/blog'>читать далее</a>
-                        <img src={Vector} alt='more details'/>
-                    </div>
-                </div>
-
-                <div className='probiotics_doc_with_folder'>
-                    <div className='rec11'/>
-                    <div className='rec10'/>
-                    <div className='rec12'/>
-                    <img src={ManWithFolder} alt='Фото врача'/>
                 </div>
             </div>
 

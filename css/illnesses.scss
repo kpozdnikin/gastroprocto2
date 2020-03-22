@@ -183,6 +183,10 @@
         margin: 56px 10% 70px 28px;
       }
     }
+    .show {
+      overflow: visible;
+      max-height: 100%;
+    }
   }
 }
 @media(max-width: 1339px){
