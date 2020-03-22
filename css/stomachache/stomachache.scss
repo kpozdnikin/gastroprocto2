@@ -165,7 +165,6 @@
       }
       .content{
         margin-bottom: 27px;
-        max-height: 0;
         overflow: hidden;
         //transition: max-height 0.2s ease-out;
         opacity: 0;
@@ -185,8 +184,9 @@
 
 .stomachache-left-block {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  position: relative;
 
   #zones {
     width: 100%;
@@ -195,6 +195,10 @@
       stroke: #b3ddc6;
     }
   }
+}
+
+.text-content {
+  padding: 20px 0px;
 }
 
 @media(max-width: 1145px){

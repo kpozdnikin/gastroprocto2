@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Footer from '../components/Footer';
 import PainStomachache from '../assets/img/pain_stomachache.svg';
 import Button from '../components/Button';
@@ -10,30 +10,6 @@ import Nav from "../components/Nav"
 
 const Stomachache = () => {
         // @ts-ignore
-    const [active, setActive] = useState("");
-    const [active2, setActive2] = useState("");
-    const [active3, setActive3] = useState("");
-    const [active4, setActive4] = useState("");
-    const [active5, setActive5] = useState("");
-    const [active6, setActive6] = useState("");
-
-    function openClose(num:number){
-        switch (num){
-            case 1: setActive(active===""?"show":"");
-                break;
-            case 2: setActive2(active2===""?"show":"");
-                break;
-            case 3: setActive3(active3===""?"show":"");
-                break;
-            case 4: setActive4(active4===""?"show":"");
-                break;
-            case 5: setActive5(active5===""?"show":"");
-                break;
-            case 6: setActive6(active6===""?"show":"");
-                break;
-        }
-    }
-
     return (
             <Layout title='Болит живот. О боли в животе'>
             <div className='stomachache'>
@@ -71,36 +47,36 @@ const Stomachache = () => {
             <div className='text_stomachache'>
                 <BodySvg />
                 <div className='container'>
-                    <button className='collapsible' onClick={()=> {openClose(1)}}>Болит под ложечкой <br/>(эпигастральная область)</button>
-                    <div className={`content ${active}`} >
+                    <button className='collapsible'>Болит под ложечкой <br/>(эпигастральная область)</button>
+                    <div className='content'>
                         <p> Боли в животе под ложечкой, ноющего характера, могут характеризоваться пациентом как "дискомфорт", "чувство тяжести", возникающие, после приема пищи, сопровождающиеся изжогой более характерны для хронического гастрита.
                             <br/><br/>При плохой работе пищеводно-желудочного клапана - недостаточности кардии - болевые ощущения могут распространяться на область за грудиной, имитировать сердечный приступ. Неприятным сюрпризом может быть запах изо рта.
                             <br/><br/> При остром отравлении продуктами, не предназначенными для приема в пищу или недоброкачественными, боль в животе может быть острой - острый гастрит. Интенсивные и длительные боли позволяют заподозрить не просто острый гастрит, но язву желудка.
                             <br/><br/>ЛЮБАЯ ОСТРАЯ БОЛЬ, ВОЗНИКШАЯ ВПЕРВЫЕ, ТРЕБУЕТ НЕЗАМЕДЛИТЕЛЬНОГО ОБРАЩЕНИЯ К ВРАЧУ ДЛЯ ПОСЛЕДУЮЩЕГО ОБСЛЕДОВАНИЯ</p>
                         <Button text='Записаться' myStyle='button'/>
                     </div>
-                    <button className='collapsible' onClick={()=>{openClose(2)}}>Болит справа вверху живота, ближе к ребрам.<br/>(область правого подреберья)</button>
-                    <div className={`content ${active2}`}>
+                    <button className='collapsible'>Болит справа вверху живота, ближе к ребрам.<br/>(область правого подреберья)</button>
+                    <div className='content'>
                         <p>Какой-то текст</p>
                         <Button text='Записаться' myStyle='button'/>
                     </div>
-                    <button className='collapsible' onClick={()=>{openClose(3)}}>Болит справа или слева сбоку живота. Колет в боку.<br/> (правая или левая боковая область)</button>
-                    <div className={`content ${active3}`}>
+                    <button className='collapsible'>Болит справа или слева сбоку живота. Колет в боку.<br/> (правая или левая боковая область)</button>
+                    <div className='content'>
                         <p>Какой-то текст</p>
                         <Button text='Записаться' myStyle='button'/>
                     </div>
-                    <button className='collapsible' onClick={()=>{openClose(4)}}>Болит слева или справа внизу живота<br/> (подвздошная область справа или слева)</button>
-                    <div className={`content ${active4}`}>
+                    <button className='collapsible'>Болит слева или справа внизу живота<br/> (подвздошная область справа или слева)</button>
+                    <div className='content'>
                         <p>Какой-то текст</p>
                         <Button text='Записаться' myStyle='button'/>
                     </div>
-                    <button className='collapsible' onClick={()=>{openClose(5)}}>Болит низ живота по середине<br/>(надлобковая область)</button>
-                    <div className={`content ${active5}`}>
+                    <button className='collapsible'>Болит низ живота по середине<br/>(надлобковая область)</button>
+                    <div className='content'>
                         <p>Какой-то текст</p>
                         <Button text='Записаться' myStyle='button'/>
                     </div>
-                    <button className='collapsible' onClick={()=>{openClose(6)}}>Болит в середине живота<br/>(околопупочная область)</button>
-                    <div className={`content ${active6}`}>
+                    <button className='collapsible'>Болит в середине живота<br/>(околопупочная область)</button>
+                    <div className='content'>
                         <p>Какой-то текст</p>
                         <Button text='Записаться' myStyle='button'/>
                     </div>
