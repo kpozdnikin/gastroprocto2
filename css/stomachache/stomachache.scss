@@ -203,7 +203,21 @@
   }
 }
 
-@media (max-width: 1088px){
+@media (max-width: 1024px){
+  .text_stomachache {
+    display: flex;
+
+    .container {
+      padding: 0 15px;
+
+      .text-content {
+        text-align: justify;
+      }
+    }
+  }
+  .stomachache-left-block {
+    display: none;
+  }
   .top_stomachache{
     .left_header{
       h2{
