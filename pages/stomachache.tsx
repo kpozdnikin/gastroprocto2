@@ -3,18 +3,29 @@ import Footer from '../components/Footer';
 import PainStomachache from '../assets/img/pain_stomachache.svg';
 import Button from '../components/Button';
 import Vector from '../assets/img/blog_vector.svg';
-import { BodySvg } from '../components/body';
+import BodySvg, { PathStyleInterface } from '../components/bodySvg';
 import Layout from '../components/Layout';
 import Nav from '../components/Nav';
 import zonesOfPain from '../utils/zonesOfPain';
 
+interface ZoneInterface {
+    id: number;
+    title: string;
+    subTitle: string;
+    zones: Array<number>;
+}
+
 const Stomachache = () => {
-    const [openedAccordion, setOpenedAccordion] = useState<number | null>(0);
-    const toggleAccordion = (index: number) => {
-        if (openedAccordion === index) {
+    const [openedAccordion, setOpenedAccordion] = useState<ZoneInterface | null>(zonesOfPain[0]);
+    const selectedPathStyle: PathStyleInterface = {
+        stroke: '#CDD5F0',
+        fill: 'CDD5F0',
+    };
+    const toggleAccordion = (zone: ZoneInterface) => {
+        if (openedAccordion?.id === zone.id) {
             setOpenedAccordion(null);
         } else {
-            setOpenedAccordion(index);
+            setOpenedAccordion(zone);
         }
     };
     return (
@@ -52,15 +63,18 @@ const Stomachache = () => {
                 </div>
             </div>
             <div className="text_stomachache">
-                <BodySvg />
+                <BodySvg
+                    zones={openedAccordion ? openedAccordion.zones : []}
+                    selectedPathStyle={selectedPathStyle}
+                />
                 <div className="container">
-                    { zonesOfPain.map((zone, index) => (
+                    { zonesOfPain.map(zone => (
                        <React.Fragment key={zone.id}>
-                           <button className="collapsible" onClick={() => toggleAccordion(index)}>
+                           <button className="collapsible" onClick={() => toggleAccordion(zone)}>
                                {zone.title} <br/>({zone.subTitle})
                            </button>
                            <div className="content">
-                               {openedAccordion === index && (
+                               {openedAccordion?.id === zone.id && (
                                    <>
                                        <div className="text-content">
                                            {zone.text}
