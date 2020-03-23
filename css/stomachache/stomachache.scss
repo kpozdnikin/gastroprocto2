@@ -166,18 +166,10 @@
       .content{
         margin-bottom: 27px;
         overflow: hidden;
-        //transition: max-height 0.2s ease-out;
-        opacity: 0;
-        visibility: hidden;
-        transition: .95s opacity, .95s visibility;
+        transition: max-height 0.2s ease-out;
         p{
           margin: 56px 10% 70px 34px;
         }
-      }
-      .show {
-        max-height: 100%;
-        opacity: 1;
-        visibility: visible;
       }
   }
 }
