@@ -12,26 +12,14 @@ import VideoImg_2 from '../assets/img/video_img_2.svg';
 import VideoImg_3 from '../assets/img/video_img_3.svg';
 import Layout from "../components/Layout";
 import Nav from "../components/Nav"
+
 //import PostLink from '../components/PostLink';
 //import ArticleItem from './blog/ArticleItem';
 //import {artData} from "./blog/[articleId]/[articleName]";
+//import 'isomorphic-fetch';
+import fetch from 'isomorphic-unfetch';
 
 const Blog = () => {
-    {/*  const [article, setArticle] = useState(fetch(`https://gastroprocto.ru/api/articles`)
-        .then(response => {
-            console.log("article", article);
-            return response.json();
-        })
-        .then((data) => {
-            setArticle(data);
-            console.log("newWrticle", article);
-        }));
-
-    useEffect(()=>{
-        console.log("useEffect", article);
-    });
-    */}
-
     return (
         <Layout title="Болит живот. Блог">
         <div className='blog'>
@@ -56,23 +44,22 @@ const Blog = () => {
                     </div>
                     <div className='blog_more_details'>
                         <Button text='записаться' myStyle='button'/>
-                         <a href='/article'>читать далее</a>
+                         <a href='/articleId'>читать далее</a>
                         {/* <PostLink id="3434436456445645564" name="Проецирование болезний других людей на себя"/>*/}
                         <img src={Vector} alt='more details'/>
                     </div>
                 </div>
             </div>
 
-
-
             <div className='video_symptoms'>
                 <div className='symptoms_left'>
-                    {/*       <iframe title='myFrame' src="https://www.youtube.com/embed/kNJX1CJIWjY" frameBorder="0"
+                    {/*<iframe title='myFrame' src="https://www.youtube.com/embed/kNJX1CJIWjY" frameBorder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen>
                         Видео на YouTube
                     </iframe>
                      */}
+                    <h2>Видео на YouTube</h2>
                     <p>Краткое описание о чем видео и для кого оно будет интересным</p>
                     <Button text='посмотреть видео' myStyle='button'/>
                 </div>
@@ -146,5 +133,20 @@ const Blog = () => {
     );
 };
 
+{/*Blog.getInitialProps = async function(){
+    const res = await fetch('https://api.tvmaze.com/search/shows?q=batman');
+    const data = await res.json();
+    console.log(`Show data fetched. Count: ${data.length}`);
+    return {
+        shows: data.map((entry: any)  => entry.show)
+    };
+};
+*/}
+Blog.getInitialProps = async function(){
+  const res = await fetch('https://gastroprocto.ru/api/articles');
+  const data = await res.json();
+  //console.log(`Show data from GastroProcto2: ${data.lenght}`);
+    return data;
+};
 export default Blog;
 

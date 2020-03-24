@@ -13,7 +13,7 @@ const ArticleItem = (props) => {
               <div className='rec11'/>
               <div className='rec10'/>
               <div className='rec12'/>
-              <img src={props.artdata.authorImg} alt="фото"/>
+              <img src={props.artdata.mainImg} alt="фото"/>
           </div>
 
           <div className='article_text'>

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { MenuContext } from './NavState';
 
 interface MenuProps {
-  open: boolean;
+    open: boolean;
 }
 
 const Menu = styled.nav`
@@ -40,28 +40,28 @@ export const MenuLink = styled.div`
 `;
 
 export const SideMenu = (props: any) => {
-  const { children } = props;
-  const { isMenuOpen } = useContext(MenuContext);
-  return (
-    <Menu
-      open={isMenuOpen}
-    >
-      {children}
-    </Menu>
-  );
+    const { children } = props;
+    const { isMenuOpen } = useContext(MenuContext);
+    return (
+        <Menu
+            open={isMenuOpen}
+        >
+            {children}
+        </Menu>
+    );
 };
 
 SideMenu.propTypes = {
-  children: PropTypes.node,
+    children: PropTypes.node,
 };
 
 SideMenu.defaultProps = {
-  children: (
-    <>
-      <MenuLink><Link href='/'><a>Главная</a></Link></MenuLink>
-      <MenuLink><Link href="/blog"><a>Мой блог</a></Link></MenuLink>
-      <MenuLink><Link href="/stomachache"><a>О боли в животе</a></Link></MenuLink>
-      <MenuLink><Link href="/illnesses"><a>Заболевания ЖКТ</a></Link></MenuLink>
-    </>
-  ),
+    children: (
+        <>
+            <MenuLink><Link href='/'><a>Главная</a></Link></MenuLink>
+            <MenuLink><Link href="/blog"><a>Мой блог</a></Link></MenuLink>
+            <MenuLink><Link href="/stomachache"><a>О боли в животе</a></Link></MenuLink>
+            <MenuLink><Link href="/illnesses"><a>Заболевания ЖКТ</a></Link></MenuLink>
+        </>
+    ),
 };
