@@ -4,7 +4,14 @@
 //
 // import User from 'path/to/interfaces';
 
-export type User = {
-  id: number
-  name: string
+export interface PathStyleInterface {
+  stroke: string;
+  fill: string;
+}
+
+export interface ZoneInterface {
+  id: number;
+  title: string;
+  subTitle: string;
+  zones: Array<number>;
 }

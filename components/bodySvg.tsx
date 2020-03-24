@@ -1,10 +1,6 @@
 import React, {useRef} from 'react';
 import useSvgBodyStyle from '../hooks/useSvgBodyStyle';
-
-export interface PathStyleInterface {
-	stroke: string;
-	fill: string;
-}
+import { PathStyleInterface } from '../interfaces';
 
 export const BodySvg: React.FC<{zones: Array<number>, selectedPathStyle: PathStyleInterface}> = (props) => {
 	const { zones, selectedPathStyle } = props;

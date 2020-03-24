@@ -8,6 +8,7 @@ interface MenuProps {
     open: boolean;
 }
 
+// @ts-ignore
 const Menu = styled.nav`
   position: absolute;
   top: 0px;
@@ -15,7 +16,7 @@ const Menu = styled.nav`
   bottom: 0px;
   z-index: 293;
   display: block;
-  width: 220px;  
+  width: 220px;
   margin-top: 0px;
   padding-top: 125px;
   padding-right: 0px;
@@ -58,7 +59,7 @@ SideMenu.propTypes = {
 SideMenu.defaultProps = {
     children: (
         <>
-            <MenuLink><Link href='/'><a>Главная</a></Link></MenuLink>
+            <MenuLink><Link href="/"><a>Главная</a></Link></MenuLink>
             <MenuLink><Link href="/blog"><a>Мой блог</a></Link></MenuLink>
             <MenuLink><Link href="/stomachache"><a>О боли в животе</a></Link></MenuLink>
             <MenuLink><Link href="/illnesses"><a>Заболевания ЖКТ</a></Link></MenuLink>

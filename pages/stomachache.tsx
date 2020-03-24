@@ -3,17 +3,11 @@ import Footer from '../components/Footer';
 import PainStomachache from '../assets/img/pain_stomachache.svg';
 import Button from '../components/Button';
 import Vector from '../assets/img/blog_vector.svg';
-import BodySvg, { PathStyleInterface } from '../components/bodySvg';
+import BodySvg from '../components/bodySvg';
 import Layout from '../components/Layout';
 import Nav from '../components/Nav';
 import zonesOfPain from '../utils/zonesOfPain';
-
-interface ZoneInterface {
-    id: number;
-    title: string;
-    subTitle: string;
-    zones: Array<number>;
-}
+import { PathStyleInterface, ZoneInterface } from '../interfaces';
 
 const Stomachache = () => {
     const [openedAccordion, setOpenedAccordion] = useState<ZoneInterface | null>(zonesOfPain[0]);
