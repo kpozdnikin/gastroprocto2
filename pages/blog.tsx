@@ -12,7 +12,7 @@ import VideoImg_2 from '../assets/img/video_img_2.svg';
 import VideoImg_3 from '../assets/img/video_img_3.svg';
 import Layout from '../components/Layout';
 import Nav from '../components/Nav';
-import fetch from 'isomorphic-unfetch';
+import unfetch from 'isomorphic-unfetch';
 
 // import PostLink from '../components/PostLink';
 // import ArticleItem from './blog/ArticleItem';
@@ -143,11 +143,13 @@ const Blog = () => {
 };
 */}
 
-Blog.getInitialProps = async function() {
-  const res = await fetch('https://gastroprocto.ru/api/articles');
-  const data = await res.json();
-  // console.log(`Show data from GastroProcto2: ${data.lenght}`);
+Blog.getInitialProps = async function(context) {
+    console.log('context', context);
+    const res = await unfetch('https://gastroprocto.ru/api/articles');
+    const data = await res.json();
+    // console.log(`Show data from GastroProcto2: ${data}`, data);
     return data;
 };
+
 export default Blog;
 
