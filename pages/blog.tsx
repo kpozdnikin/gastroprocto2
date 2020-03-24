@@ -133,21 +133,11 @@ const Blog = () => {
     );
 };
 
-{/*Blog.getInitialProps = async function(){
-    const res = await fetch('https://api.tvmaze.com/search/shows?q=batman');
-    const data = await res.json();
-    console.log(`Show data fetched. Count: ${data.length}`);
-    return {
-        shows: data.map((entry: any)  => entry.show)
-    };
-};
-*/}
-
 Blog.getInitialProps = async function(context) {
     console.log('context', context);
     const res = await unfetch('https://gastroprocto.ru/api/articles');
     const data = await res.json();
-    // console.log(`Show data from GastroProcto2: ${data}`, data);
+    console.log(`Show data from GastroProcto2: ${data}`, data);
     return data;
 };
 
