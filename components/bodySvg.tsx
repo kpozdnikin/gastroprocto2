@@ -7,7 +7,7 @@ export const BodySvg: React.FC<{zones: Array<number>, selectedPathStyle: PathSty
 	const bodySvgRef = useRef<HTMLDivElement>(null);
 	const svgStyles = useSvgBodyStyle(bodySvgRef.current);
 	return (
-		<div className="stomachache-left-block" ref={bodySvgRef}>
+		<div className="svg-left-block" ref={bodySvgRef}>
 			<svg version="1.1" id="zones" x="0px" y="0px"
 				 style={svgStyles}
 				 viewBox="250 100 1000 1500" xmlSpace="preserve">

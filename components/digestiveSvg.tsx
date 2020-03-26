@@ -1,11 +1,13 @@
-import React from 'react';
-import { PathStyleInterface } from '../interfaces';
+import React, {useRef} from 'react';
+import useSvgBodyStyle from '../hooks/useSvgBodyStyle';
 
-export const DigestiveSvg: React.FC<{zones: Array<number>, selectedPathStyle: PathStyleInterface}> = (props) => {
-    console.log('props', props);
+export const DigestiveSvg: React.FC = () => {
+    const bodySvgRef = useRef<HTMLDivElement>(null);
+    const svgStyles = { maxWidth: '300px', ...useSvgBodyStyle(bodySvgRef.current)};
     return (
-        <div className="stomachache-left-block">
+        <div className="svg-left-block" ref={bodySvgRef}>
             <svg version="1.1" id="digestive" x="0px" y="0px"
+                 style={svgStyles}
                  viewBox="300 220 400 800">
 
                 <path id="path10680" className="st0" d="M439.2,387.5

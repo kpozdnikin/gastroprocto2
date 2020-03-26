@@ -63,3 +63,16 @@ body {
     color: #09d3ac;
   }
 }
+
+/*************************/
+.svg-left-block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+
+  path {
+    fill: none;
+    stroke: #b3ddc6;
+  }
+}
