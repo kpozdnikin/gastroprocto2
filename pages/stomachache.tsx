@@ -50,9 +50,6 @@ const Stomachache = () => {
                 </div>
 
                 <div className="right_header">
-                    <div className="rec10"/>
-                    <div className="rec12"/>
-                    <div className="rec13"/>
                     <img src={PainStomachache} alt="Боль в животе"/>
                 </div>
             </div>

@@ -174,21 +174,6 @@
   }
 }
 
-.stomachache-left-block {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  position: relative;
-
-  #zones {
-    width: 100%;
-    path {
-      fill: none;
-      stroke: #b3ddc6;
-    }
-  }
-}
-
 .text-content {
   padding: 20px 0px;
 }
