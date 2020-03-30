@@ -1,8 +1,19 @@
 @import "../styleVariables";
 
+body{
+  background-color: #FFFFFF;
+  max-width: 1440px;
+  min-width: 320px;
+  font-family: $myFont;
+  font-size: 18px;
+  .nav{
+
+  }
 #article{
+  height: 600px;
   .article_top{
     width: 100%;
+    margin-top: 40px;
     p{
       margin: 0 auto;
       max-width: 657px;
@@ -85,6 +96,7 @@
       color: #A87768;
     }
   }
+}
 }
 @media (max-width: 700px){
   #article{

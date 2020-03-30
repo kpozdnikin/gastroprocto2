@@ -13,7 +13,6 @@
   .blog_top{
     margin-top: 63px;
     grid-column: 1/3;
-
     p{
       text-align: center;
       font-family: Playfair Display;
@@ -72,7 +71,7 @@
     #blog_content_right {
       margin-left: 20px;
       margin-right: 40px;
-      p{
+      .top{
         margin-top: 45px;
         max-width: 614px;
         font-size: 30px;
@@ -84,8 +83,12 @@
         margin-top: 44px;
         margin-bottom: 79px;
         max-width: 648px;
+        max-height: 175px;
+        overflow: hidden;
+        text-overflow: ellipsis;
         line-height: 170%;
         color: rgba(7, 7, 7, 0.8);
+        font-size: 18px;
       }
       .blog_more_details{
         display: flex;

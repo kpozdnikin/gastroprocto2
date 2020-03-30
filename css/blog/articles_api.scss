@@ -1,0 +1,65 @@
+@import "../styleVariables";
+.articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+  grid-gap: 60px 50px;
+  font-family: $myFont;
+  font-size: 23px;
+  line-height: 120%;
+  letter-spacing: 0.1em;
+  margin-left: 5%;
+  margin-right: 4%;
+  margin-bottom: 40px;
+
+  .container {
+    .art_img {
+      position: relative;
+      width: 100%;
+      height: 402px;
+      .rec13 {
+        position: absolute;
+        width: 72%;
+        height: 59.5%;
+        background: $bgColorLilac;
+      }
+      img {
+        position: absolute;
+        z-index: 1;
+        max-height: 360px;
+        width: 75%;
+        object-fit: cover;
+        margin: auto;
+        left: 18px;
+        top: 18px;
+        bottom: 0;
+        right: 0;
+      }
+      .rec12 {
+        position: absolute;
+        background: $bgColorTurquoise;
+        width: 70%;
+        height: 31.55%;
+        bottom: 0;
+        right: 0;
+      }
+    }
+    .text {
+      width: 98%;
+      height: 150px;
+      margin-top: 23px;
+      p {
+        height: 85px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      .button {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+  @media (max-width: 819px) {
+    .third_screen {
+      margin: 0 auto;
+    }
+  }
