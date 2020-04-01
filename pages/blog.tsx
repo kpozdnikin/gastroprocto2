@@ -83,7 +83,7 @@ const Blog = (props: any) => {
                         </div>
                         <div className="text">
                             <p>{article.name}</p>
-                            <Link href={`/blog/${article._id}/${article.name}`} as={`/blog/${article._id}/${article.name}`}>
+                            <Link href={`/${article._id}/${article.name}`} as={`/blog/${article._id}/${article.name}`}>
                                 <a> {/*//Кривое решение, нужно разобраться как сделать правильно */}
                                     <Button text="посмотреть статью" myStyle="button"/>
                                 </a>
