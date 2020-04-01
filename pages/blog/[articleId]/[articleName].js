@@ -4,10 +4,11 @@ import React from 'react';
 import Layout from "../../../components/Layout";
 import Nav from "../../../components/Nav"
 import Footer from '../../../components/Footer';
-// import {useRouter} from "next/router";
-// import unfetch from 'isomorphic-unfetch';
+import {useRouter} from "next/router";
+import unfetch from 'isomorphic-unfetch';
 // import ArticleItem from "../ArticleItem";
 // import PostLink from '../../components/PostLink';
+
 const artData = {
     _id: "5c6ebb000860a0029f72edf4",
     text: "В последнее время участились обращения пациентов, самостоятельно решивших обследовать желудок, кишечник при отсутствии каких-либо жалоб на работу данных органов. ↵↵На вопрос о причине столь серьезного решения они отвечают, что длительное время кто-то из близких им людей или знакомых страдал от поздно диагностированной опухоли.&nbsp;</p><p>&nbsp;Проблемы больного они принимали так близко к сердцу, что, невольно, переносили их на себя. Возникали опасения заболеть раком, которые , постепенно, перерастали в твердую уверенность пациента в наличии у них данного заболевания. То есть, проходило  - перенос проблем одного человека на другогоести исследование. Показаний медицинских нет, но сама по себе ситуация есть показание (психологическое) к исслед",
@@ -32,14 +33,14 @@ const artData = {
     ratings: []
 };
 
-  const Article = () =>{
+  const Article = (props) =>{
 
       return (
           <Layout>
-              <Nav/>
               <div id='article'>
+                  <Nav/>
                   <div className='article_top'>
-                      <p className='article_mt'>{artData.description}</p>
+                      <p>{artData.description}</p>
                       <div className='rec20'/>
                   </div>
                   <div className='container'>
@@ -53,23 +54,23 @@ const artData = {
                           {artData.text}
                       </p>
                   </div>
-
+                  <Footer/>
               </div>
-              <Footer/>
           </Layout>
       )
   };
 
-{/*
-Article.getInitialProps = async function() {
-    //console.log('gETINITIAL ',router.query.articleId);
-    const res = await unfetch('https://gastroprocto.ru/api/articles');
-    console.log(`до Json: ${res}`, res);
-    const data = res.json();
-    console.log(`Получена конкретная статья: ${data}`, data);
-    console.log(`Cтатья: `, data.name);
+    Article.getInitialProps = async function(context) {
+
+        const { articleId } = context.query;
+        console.log("id: ", articleId);
+        const res = await unfetch(`https://gastroprocto.ru/api/article?articleId=${articleId}`);
+        const data = res.json();
+
+        console.log(`Cтатья: ${data}`, data);
+
     return { article: data }
     };
-*/}
+
 
 export default Article;
