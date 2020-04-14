@@ -10,27 +10,38 @@ import VK from '../assets/img/vk.svg';
 import DocWithFolder from '../assets/img/doc_with_folder.png';
 import DocHands from '../assets/img/doc_hands.png';
 import Ellipse from '../assets/img/Ellipse.svg';
-import PhotoDoctor from "../assets/img/photo_doctor.png";
+import PhotoDoctor from '../assets/img/photo_doctor.png';
 import Map from '../assets/img/map.svg';
+import {useState} from 'react';
+import Cert_1 from '../assets/img/certif_1.png';
+import Cert_2 from '../assets/img/certif_2.png';
+import Cert_3 from '../assets/img/certif_3.png';
+import Cert_4 from '../assets/img/certif_4.png';
+import Cert_5 from '../assets/img/certif_5.png';
+import Cert_6 from '../assets/img/certif_6.png';
+import Cert_7 from '../assets/img/certif_6.png';
+import Cert_8 from '../assets/img/certif_6.png';
 
 const MapBackground = {
     backgroundImage: `url(${Map})`
 };
 
 const IndexPage: NextPage = () => {
+  // Для переключения вкладок
+  const [tabIndex, setTabIndex] = useState(0);
 
   return (
     <Layout title="Болитживот.рф. Главная.">
-      <div className='main'>
-      <header className='header'>
+      <div className="main">
+      <header className="header">
           <Nav/>
-        <div className='doctorText'>
-          <div className='doctorName'>Поздникина Ольга</div>
-          <div className='yourDoctor'>Ваш персональный доктор</div>
-          <Button text='получить консультацию' myStyle='button'/>
-          <div className='rectangle8'>
+        <div className="doctorText">
+          <div className="doctorName">Поздникина Ольга</div>
+          <div className="yourDoctor">Ваш персональный доктор</div>
+          <Button text="получить консультацию" myStyle="button"/>
+          <div className="rectangle8">
             <div>Следите за нами</div>
-            <img className='header_bottom' src={Bottom} alt="header_bottom" />
+            <img className="header_bottom" src={Bottom} alt="header_bottom" />
             <a href="https://www.youtube.com/channel/UCp8-fpg-BqmVbzE6OV2TU2Q">
               <img src={YouTube} alt="youtube" />
             </a>
@@ -40,73 +51,96 @@ const IndexPage: NextPage = () => {
           </div>
         </div>
 
-        <div className='container_for_rec'>
+        <div className="container_for_rec">
           <div className="photo_doctor">
             <img src={PhotoDoctor} alt="pozdnikina" />
           </div>
-          <div className='rectangle10'/>
-          <div className='rectangle9'/>
-          <div className='rectangle7'/>
-          <div className='rectangle5'/>
+          <div className="rectangle10"/>
+          <div className="rectangle9"/>
+          <div className="rectangle7"/>
+          <div className="rectangle5"/>
         </div>
       </header>
 
-      <section className='welcome'>
-        <div className='welcome_top'>
+      <section className="welcome">
+        <div className="welcome_top">
           <p>Добро пожаловать на мой сайт</p>
-          <div className='rec_20' />
+          <div className="rec_20" />
         </div>
-        <div className='doc_with_folder'>
-          <div className='rec_11'/>
-          <div className='rec_10'>
-            <img src={DocWithFolder} alt='фото доктора'/>
+        <div className="doc_with_folder">
+          <div className="rec_11"/>
+          <div className="rec_10">
+            <img src={DocWithFolder} alt="фото доктора"/>
           </div>
-          <div className='rec_11_bot'/>
+          <div className="rec_11_bot"/>
         </div>
-        <div className='welcome_info'>
-          <div className='welcome_menu'>
+        <div className="welcome_info">
+          <div className="welcome_menu">
             <ul>
-              <li><a href='/'>Обо мне</a></li>
-              <li><a href='/'>Мои сертификаты</a></li>
-              <li><a href='/'>Отзывы</a></li>
+              <li onClick={() => setTabIndex(0)}><a>Обо мне</a></li>
+              <li onClick={() => setTabIndex(1)}><a>Мои сертификаты</a></li>
+              <li onClick={() => setTabIndex(2)}><a>Отзывы</a></li>
             </ul>
           </div>
-          <div className='welcome_text'>Меня зовут Поздникина Ольга Юрьевна. Я колопроктолог, врач-эндоскопист высшей квалификационной категории.
-            Это мой личный сайт, где вы можете узнать о моих услугах и получить бесплатную квалифицированную консультациюLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          <div className="welcome_text">
+              { tabIndex === 0 &&
+                <>  Меня зовут Поздникина Ольга Юрьевна. Я колопроктолог, врач-эндоскопист высшей квалификационной категории.
+                    Это мой личный сайт, где вы можете узнать о моих услугах и получить бесплатную квалифицированную консультациюLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                </>
+                }
+              {
+                tabIndex === 1 &&
+                <div className="certs">
+                    <img src={Cert_1} alt="doctor's certificate" />
+                    <img src={Cert_2} alt="doctor's certificate" />
+                    <img src={Cert_3} alt="doctor's certificate" />
+                    <img src={Cert_4} alt="doctor's certificate" />
+                    <img src={Cert_5} alt="doctor's certificate" />
+                    <img src={Cert_6} alt="doctor's certificate" />
+                    <img src={Cert_7} alt="doctor's certificate" />
+                    <img src={Cert_8} alt="doctor's certificate" />
+                </div>
+              }
+              {
+                tabIndex === 2 &&
+                <>
+                    Отзывы
+                </>
+              }
           </div>
         </div>
-        <div className='rectangle_11' />
+        <div className="rectangle_11" />
       </section>
 
-      <section className='quote'>
-        <div className='text_quote'>
+      <section className="quote">
+        <div className="text_quote">
           Медицина – это не услуга. Это сочетание своего рода чуда и профессиональных навыков
         </div>
       </section>
 
-      <section className='task-for-me'>
-        <div className='tfm_rec11'>
+      <section className="task-for-me">
+        <div className="tfm_rec11">
         </div>
-        <div className='tfm_text'>
+        <div className="tfm_text">
           <p>Главная задача для меня</p>
-          <div className='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcoonsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
-          <Button text='получить консультацию' myStyle='button'/>
+          <div className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcoonsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
+          <Button text="получить консультацию" myStyle="button"/>
         </div>
-        <div className='doc_hands'>
-          <div className='doc_hands_rec_11'/>
-          <div className='doc_hands_rec_10'>
-            <img src={DocHands} alt='фото доктора'/>
+        <div className="doc_hands">
+          <div className="doc_hands_rec_11"/>
+          <div className="doc_hands_rec_10">
+            <img src={DocHands} alt="фото доктора"/>
           </div>
-          <div className='doc_hands_rec_10_1'/>
+          <div className="doc_hands_rec_10_1"/>
         </div>
       </section>
 
-      <section className='map' style={MapBackground}>
-        <div className='contacts'>
-          <div className='small_rec'>
+      <section className="map" style={MapBackground}>
+        <div className="contacts">
+          <div className="small_rec">
           </div>
-          <div className='text_container'>
+          <div className="text_container">
             <p>Контакты</p>
             <ul>
               <li>Петрозаводск, Первомайский пр, 17</li>
@@ -114,11 +148,11 @@ const IndexPage: NextPage = () => {
               <li>будни с 08:00 до 19:00</li>
             </ul>
           </div>
-          <div className='map_pointer'>
+          <div className="map_pointer">
             <div className="ellipse">
-              <img src={Ellipse} alt='адрес'/>
+              <img src={Ellipse} alt="адрес"/>
             </div>
-            <div className='circle'>
+            <div className="circle">
             </div>
           </div>
         </div>

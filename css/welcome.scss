@@ -86,6 +86,7 @@
         }
         a:hover {
           border-top: 1px solid $myColor;
+          cursor: pointer;
         }
       }
     }
@@ -94,12 +95,23 @@
       padding-top: 60px;
       padding-right: 20px;
       max-width: 648px;
-      max-height: 203px;
+      max-height: 420px;
       font-size: 18px;
       line-height: 170%;
       /* or 31px */
       color: rgba(7, 7, 7, 0.8);
       overflow: hidden;
+
+      .certs{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        img {
+          width: 166px;
+          height: 124px;
+          margin-bottom: 20px;
+        }
+      }
     }
   }
   .rectangle_11{
