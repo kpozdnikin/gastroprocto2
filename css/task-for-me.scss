@@ -2,28 +2,29 @@
 .task-for-me{
   background: #FFFFFF;
   display: grid;
-  grid-template-columns: 1fr 7.2fr 5.8fr;
-  grid-column-gap: 62px;
+  grid-template-columns: 0.8fr 7.2fr 6.6fr;
+  grid-column-gap: 42px;
   font-family: $myFont;
   min-width: 420px;
+  padding-top: 100px;
 
   .tfm_rec11{
     max-width: 97px;
     min-width: 50px;
     height: 336px;
-    background: $bgColorTurquoise;
-    margin-top: 186px;
+    background: linear-gradient(247.29deg, #B3DDC6 0%, #7BD1A3 100%);
+    //margin-top: 186px;
     mix-blend-mode: normal;
   }
   .tfm_text{
     max-width: 651px;
     min-width: 420px;
-    height: 158px;
     font-family: $myFont;
     font-size: 16px;
     line-height: 170%;
     color: rgba(7, 7, 7, 0.8);
-    margin-top: 186px;
+    //margin-top: 186px;
+    margin-bottom: 150px;
 
     p{
       max-width: 470px;
@@ -46,38 +47,53 @@
     }
   }
 
-  .doc_hands {
-    align-self: center;
+  .docs_wrap {
+    position: relative;
     margin-right: 39px;
-    margin-bottom: 67px;
-    max-width: 530px;
+    max-width: 526px;
     min-width: 420px;
-    float: right;
+    height: 381px;
 
-    .doc_hands_rec_11{
-      width: 51%;
-      height: 109px;
-      background: $bgColorTurquoise;
-      float: right;
+    .rec_green{
+      position: absolute;
+      width: 53.42%;
+      height: 100%;
+      max-width: 281px;
+      max-height: 179px;
+      background: linear-gradient(149.18deg, #B3DDC6 9.94%, #60CA91 95.39%);
     }
-    .doc_hands_rec_10 {
-      margin-right: 115px;
-      margin-top: 109px;
-      max-width: 493px;
-      width: 93%;
-      max-height: 523px;
-      background-color: $bgColorLilac;
-      img {
-        max-width: 419.24px;
-        width: 80%;
-        margin: -75px 0 41px 90px;
+    .rec_light_blue {
+      position: absolute;
+      right: 0;
+      top: 15px;
+      max-width: 267px;
+      max-height: 149px;
+      width: 50.76%;
+      height: 100%;
+      background: linear-gradient(193.61deg, #CDD5F0 -2.03%, #ADC0FF 100%);
+    }
+    .rec_blue{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      max-width: 338px;
+      max-height: 202px;
+      width: 64.26%;
+      height: 100%;
+      background: linear-gradient(173.7deg, #87A0F2 1.8%, #5374E7 96.98%);
+    }
+    .rec_img{
+      position: absolute;
+      max-width: 458px;
+      max-height: 305px;
+      width: 87.07%;
+      left: 43px;
+      top: 51px;
+      right: 25px;
+      bottom: 25px;
+      img{
+        width: 100%;
       }
-    }
-    .doc_hands_rec_10_1{
-      width: 51%;
-      height: 22px;
-      background: $bgColorTurquoise;
-      margin-left: 24px;
     }
   }
 }
@@ -86,27 +102,38 @@
     grid-column-gap: 50px;
   }
 }
-@media (max-width: 1020px){
-  .task-for-me{
+@media (max-width: 1020px) {
+  .task-for-me {
     grid-template-columns: 1fr 8fr;
-    .tfm_rec11{
+    padding-top: 0;
+
+    .tfm_rec11 {
+      grid-row: 1;
       grid-column: 1/2;
       margin-top: 0;
     }
-    .tfm_text{
+    .tfm_text {
+      grid-row: 1;
       margin-right: 60px;
       grid-column: 2/3;
-      margin-top: 0;
-      height: 460px;
+      margin-bottom: 60px;
     }
-    .doc_hands{
-      max-width: 400px;
-      //width: 100%;
+    .docs_wrap {
+      width: 100%;
       justify-self: center;
       grid-column: 1/3;
-      grid-row: 1;
-      margin-right: 0;
-      margin-left: 0;
+      grid-row: 2;
+      margin-bottom: 60px;
+    }
+  }
+}
+@media(max-width: 650px){
+  .task-for-me{
+    .docs_wrap{
+      max-width: 600px;
+      min-width: 320px;
+      width: 90%;
+      overflow: hidden;
     }
   }
 }
@@ -115,6 +142,7 @@
     grid-column-gap: 30px;
     .tfm_text{
       font-size: 15px;
+      min-width: 320px;
       p{
         font-size: 28px;
         padding-bottom: 40px;
@@ -135,16 +163,6 @@
         max-width: 340px;
         margin-bottom: 50px;
         margin-right: 20px;
-      }
-    }
-    .doc_hands{
-      justify-self: start;
-      margin-left: 20px;
-      .doc_hands_rec_11{
-       margin-right: 20px;
-      }
-      .doc_hands_rec_10{
-        width: 370px;
       }
     }
   }

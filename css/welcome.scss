@@ -1,9 +1,9 @@
 @import "./styleVariables";
 .welcome{
   display: grid;
-  grid-template-columns: 5fr 7fr 7%;
+  grid-template-columns: 6.5fr 7fr 7%;
   grid-column-gap: 60px;
-  font-family: Montserrat;
+  font-family: $myFont;
   min-width: 420px;
 
   .welcome_top{
@@ -30,36 +30,52 @@
       mix-blend-mode: normal;
     }
   }
-  .doc_with_folder{
-    max-width: 530px;
+  .group_docs{
+    max-width: 581px;
     min-width: 320px;
-    margin-left: 43px;
+    height: 443px;
+    position: relative;
+    margin-top: 29px;
 
     .rec_11{
-      width: 51%;
-      height: 109px;
-      background: $bgColorTurquoise;
-      mix-blend-mode: normal;
+      position: absolute;
+      max-width: 415px;
+      width: 89.3%;
+      height: 260px;
+      background: $bgBlueGradient;
+      left: 0;
     }
     .rec_10{
-      max-width: 480px;
-      width: 85.5%;
-      max-height: 523px;
-      margin-left: 50px;
-      background: $bgColorLilac;
-      mix-blend-mode: normal;
+      position: absolute;
+      max-width: 492px;
+      max-height: 339px;
+      top: 64px;
+      left: 47px;
+      right: 42px;
+      bottom: 40px;
       img{
-        max-width: 388.62px;
         width: 100%;
-        margin: -87px 0 -5px 0;
       }
     }
-    .rec_11_bot{
-      float: right;
+    .rec_12{
+      position: absolute;
+      max-width: 120px;
+      width: 20.65%;
+      height: 103px;
+      background: $bgGreenGradient;
+      top: 47px;
+      left: 76%;
+    }
+    .rec_12_bot{
+      position: absolute;
+      right: 0;
+      bottom: 0;
       width: 51%;
-      height: 22px;
-      background-color: $bgColorTurquoise;
-      margin-right: 9%;
+      max-width: 256px;
+      max-height: 259px;
+      height: 58.46%;
+      background: linear-gradient(153.25deg, #B3DDC6 9.1%, #96DCB6 96.69%);
+
     }
   }
   .welcome_info {
@@ -70,7 +86,7 @@
     .welcome_menu {
       max-width: 502px;
       height: 17px;
-      font-family: Montserrat;
+      font-family: $myFont;
       font-size: 16px;
       line-height: 170%;
       margin-right: 40px;
@@ -111,6 +127,11 @@
           height: 124px;
           margin-bottom: 20px;
         }
+        img:hover{
+          transform: scale(1.1);
+          border: 6px solid $bgColorLilac;
+          margin: 6px;
+        }
       }
     }
   }
@@ -119,7 +140,7 @@
     min-width: 40px;
     margin-top: 150px;
     height: 228px;
-    background: $bgColorTurquoise;
+    background:  linear-gradient(238.34deg, #B3DDC6 0%, #7BD1A3 100%);
     mix-blend-mode: normal;
   }
 }
@@ -130,9 +151,10 @@
     .welcome_top{
       grid-column: 1/3;
     }
-    .doc_with_folder{
+    .group_docs{
       margin-top: 40px;
-
+      justify-self: center;
+      width: 100%;
       grid-column: 1/3;
       grid-row: 3;
     }
@@ -182,7 +204,6 @@
       }
     }
     .welcome_info{
-      //max-width: 200px;
       .welcome_text{
         padding-right: 0;
         font-size: 15px;
@@ -190,9 +211,6 @@
     }
     .rectangle_11{
       min-width: 10px;
-    }
-    .doc_with_folder{
-      max-width: 500px;
     }
   }
 }
@@ -211,9 +229,5 @@
         }
       }
     }
-      .doc_with_folder {
-        max-width: 433px;
-        margin-left: 0;
-      }
   }
 }

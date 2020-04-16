@@ -7,13 +7,13 @@ import Footer from '../components/Footer';
 import Bottom from '../assets/img/bottom.svg';
 import YouTube from '../assets/img/youtube.svg';
 import VK from '../assets/img/vk.svg';
-import DocWithFolder from '../assets/img/doc_with_folder.png';
-import DocHands from '../assets/img/doc_hands.png';
+import GroupPhoto from '../assets/img/group_photo.png';
+import GroupColonos from '../assets/img/group_photo_2.png';
 import Ellipse from '../assets/img/Ellipse.svg';
-import PhotoDoctor from '../assets/img/photo_doctor.png';
+import PhotoDoctor from '../assets/img/photo_pozdnikina.png';
 import Map from '../assets/img/map.svg';
 import {useState} from 'react';
-import Cert_1 from '../assets/img/certif_1.png';
+import Cert_1 from '../assets/img/Cert1.svg';
 import Cert_2 from '../assets/img/certif_2.png';
 import Cert_3 from '../assets/img/certif_3.png';
 import Cert_4 from '../assets/img/certif_4.png';
@@ -52,13 +52,15 @@ const IndexPage: NextPage = () => {
         </div>
 
         <div className="container_for_rec">
+          <div className="rec10"/>
+          <div className="rec9"/>
+          <div className="rec_light_blue"/>
+          <div className="rec30"/>
+          <div className="rec9_green"/>
+          <div className="rec7"/>
           <div className="photo_doctor">
-            <img src={PhotoDoctor} alt="pozdnikina" />
+              <img src={PhotoDoctor} alt="pozdnikina" />
           </div>
-          <div className="rectangle10"/>
-          <div className="rectangle9"/>
-          <div className="rectangle7"/>
-          <div className="rectangle5"/>
         </div>
       </header>
 
@@ -67,12 +69,14 @@ const IndexPage: NextPage = () => {
           <p>Добро пожаловать на мой сайт</p>
           <div className="rec_20" />
         </div>
-        <div className="doc_with_folder">
+        <div className="group_docs">
           <div className="rec_11"/>
+          <div className="rec_12_bot"/>
           <div className="rec_10">
-            <img src={DocWithFolder} alt="фото доктора"/>
+            <img src={GroupPhoto} alt="групповое фото врачей"/>
           </div>
-          <div className="rec_11_bot"/>
+          <div className="rec_12"/>
+
         </div>
         <div className="welcome_info">
           <div className="welcome_menu">
@@ -127,12 +131,13 @@ const IndexPage: NextPage = () => {
           <div className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcoonsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
           <Button text="получить консультацию" myStyle="button"/>
         </div>
-        <div className="doc_hands">
-          <div className="doc_hands_rec_11"/>
-          <div className="doc_hands_rec_10">
-            <img src={DocHands} alt="фото доктора"/>
+        <div className="docs_wrap">
+          <div className="rec_light_blue" />
+          <div className="rec_green"/>
+          <div className="rec_blue"/>
+          <div className="rec_img">
+              <img src={GroupColonos} alt="фото доктора"/>
           </div>
-          <div className="doc_hands_rec_10_1"/>
         </div>
       </section>
 
@@ -143,7 +148,7 @@ const IndexPage: NextPage = () => {
           <div className="text_container">
             <p>Контакты</p>
             <ul>
-              <li>Петрозаводск, Первомайский пр, 17</li>
+              <li>Петрозаводск,<br/> Первомайский пр, 17</li>
               <li>(8142) 71-44-48, <br/> 8 911 400-43-40</li>
               <li>будни с 08:00 до 19:00</li>
             </ul>

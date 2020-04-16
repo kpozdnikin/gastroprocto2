@@ -1,6 +1,6 @@
 @import "./styleVariables";
 .header {
-  min-width: 420px;
+  min-width: 400px;
   display: grid;
   grid-template-columns: 55% 45%;
   background-color: #FFFFFF;
@@ -11,7 +11,7 @@
   .doctorText {
     position: relative;
     margin-left: 19%;
-    z-index: 2;
+    z-index: 7;
     .doctorName {
       margin-top: 82px;
       padding-top: 10px;
@@ -61,67 +61,95 @@
   }
   .container_for_rec {
     position: relative;
-    max-width: 629px;
-    height: 614px;
-    margin-left: 20px;
+    max-width: 662px;
+    height: 700px;
+    //margin-left: 20px;
+    margin-top: -76px;
+    overflow: hidden;
 
-    .rectangle10 {
+    .rec10 {
       position: absolute;
-      top: -128px;
+      top: 0;
       right: 0;
-      width: 65.5%;
-      height: 571px;
-      background-color: $bgColorLilac;
+      bottom: 90px;
+      max-width: 333px;
+      height: 610px;
+      width: 52%;
+      background: linear-gradient(158.68deg, #87A0F2 1.8%, #5374E7 96.98%);
       z-index: 3;
-    }
-    .rectangle9 {
-      position: absolute;
-      right: 0;
-      bottom: 66px;
-      width: 49%;
-      height: 441px;
-      background: #B3DDC6;
       mix-blend-mode: normal;
-      z-index: 2;
     }
-    .rectangle7 {
+    .rec9 {
       position: absolute;
-      top: -39px;
-      right: 0;
-      width: 95%;
-      height: 146px;
-      background-color: $bgColorTurquoise;
-      mix-blend-mode: multiply;
-      z-index: 1;
+      width: 118px;
+      height: 117px;
+      right: 88px;
+      top: 80px;
+      //width: 19%;
+      z-index: 6;
+      background: linear-gradient(225.24deg, #B3DDC6 0%, #7BD1A3 100%);
+
     }
-    .rectangle5 {
+    .rec_light_blue {
       position: absolute;
-      overflow: hidden;
-      max-width: 827px;
-      width: 132%;
-      min-width: 236px;
-      height: 507px;
-      background: #CDD5F0;
-      //mix-blend-mode: multiply;
-      bottom: 0;
+      max-width: 401px;
+      height: 494px;
+      top: 100px;
+      left: 80px;
       right: 0;
+      bottom: 106px;
+      width: 60.57%;
+      z-index: 4;
+      background: linear-gradient(213deg, #CDD5F0 -2.03%, #ADC0FF 100%);
+    }
+    .rec30{
+      position: absolute;
+      max-width: 256px;
+      height: 318px;
+      width: 38.67%;
+      top: 100px;
+      left: 65px;
+      bottom: 282px;
+      background: linear-gradient(142.51deg, #B3DDC6 9.1%, #96DCB6 96.69%);
+      z-index: 5;
+    }
+    .rec9_green {
+      position: absolute;
+      width: 130px;
+      height: 398px;
+     // width: 22.63%;
+      left: 0;
+      top: 196px;
+      bottom: 106px;
+      background: linear-gradient(105.46deg, #B3DDC6 9.94%, #60CA91 95.39%);
+      z-index: 4;
+    }
+    .rec7{
+      position: absolute;
+      max-width: 481px;
+      width: 72.65%;
+      height: 135px;
+      bottom: 90px;
+      right: 0;
+      background: linear-gradient(195.93deg, #B3DDC6 0%, #7BD1A3 100%);
+      z-index: 5;
     }
     .photo_doctor {
       position: absolute;
-      overflow: hidden;
-      bottom: -26px;
-      right: 20%;
-      max-width: 511px;
-      min-width: 500px;
+      //overflow: hidden;
+      top: 117px;
+      left: 45px;
+      bottom: 0;
+      right: 36%;
+      max-width: 365px;
+      min-width: 350px;
       max-height: 650px;
-      min-height: auto;
+      z-index: 7;
       img{
+        position: absolute;
         width: 100%;
-        margin-bottom: -20px;
+        bottom: 0;
       }
-      // background: url("./img/photo_doctor.png");
-      //box-shadow: 16px -10px 33px rgba(16, 66, 24, 0.35);
-      z-index: 4;
     }
   }
 }
@@ -164,29 +192,36 @@
         font-size: 30px;
       }
     }
+    .container_for_rec{
+      .photo_doctor{
+        min-width: 320px;
+      }
+    }
   }
 }
 @media (max-width: 900px) {
   .header{
     .container_for_rec{
       .photo_doctor{
-        right: -10px;
-      }
-      .rectangle7{
-        width: 90%;
+         min-width: 300px;
       }
     }
   }
 }
-@media (max-width: 820px) {
+@media (max-width: 800px) {
   .header{
-    .container_for_rec {
-      .photo_doctor {
-        min-width: 143.5%;
-        //min-height: auto;
+    .container_for_rec{
+      .photo_doctor{
+        min-width: 270px;
       }
-      .rectangle10{
-        max-width: 50%;
+    }
+  }
+}
+@media (max-width: 715px) {
+  .header{
+    .container_for_rec{
+      .photo_doctor{
+        min-width: 240px;
       }
     }
   }
@@ -201,14 +236,14 @@
         margin-top: 36px;
         height: 120px;
       }
-      .rectangle8{
+      .rectangle8 {
         margin-top: 200px;
-        div{
+        div {
           margin-right: 0;
           font-size: 13px;
         }
-        a{
-          img{
+        a {
+          img {
             margin-left: 10px;
           }
         }
@@ -216,6 +251,17 @@
     }
   }
 }
+@media (max-width: 640px) {
+  .header{
+    .container_for_rec{
+      .photo_doctor{
+        min-width: 180px;
+        left: 5%;
+      }
+    }
+  }
+}
+
 @media (max-width: 500px) {
   .header {
     .doctorText {
@@ -225,9 +271,6 @@
       .yourDoctor{
         margin-top: 20px;
         margin-bottom: 40px;
-      }
-      .rectangle8{
-        margin-top: 240px;
       }
     }
   }
