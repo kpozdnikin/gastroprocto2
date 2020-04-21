@@ -15,3 +15,9 @@ export interface ZoneInterface {
   subTitle: string;
   zones: Array<number>;
 }
+
+export interface ZoneDiseases {
+    id: number;
+    title: string;
+    zones: Array<number>;
+}

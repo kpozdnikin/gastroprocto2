@@ -120,12 +120,12 @@
     mix-blend-mode: hard-light;
     margin-top: 30px;
   }
-  .illnesses_list{
+  .container{
+    margin-bottom: 100px;
     .active, .collapsible:hover{
       background: $bgColorTurquoise;
     }
     .collapsible{
-      height: 55px;
       width: 100%;
       background: $bgColorLilac;
       border: none;
@@ -137,24 +137,15 @@
       line-height: 170%;
       color: rgba(7, 7, 7, 0.8);
       text-align: left;
-      padding-left: 28px;
+      padding-left: 34px;
     }
     .content{
       margin-bottom: 27px;
-      max-height: 0;
       overflow: hidden;
-      //transition: max-height 0.2s ease-out;
-      opacity: 0;
-      visibility: hidden;
-      transition: 1.2s opacity, .95s visibility;
+      transition: max-height 0.2s ease-out;
       p{
-        margin: 56px 10% 70px 28px;
+        margin: 56px 10% 70px 34px;
       }
-    }
-    .show {
-      max-height: 100%;
-      opacity: 1;
-      visibility: visible;
     }
   }
 }
