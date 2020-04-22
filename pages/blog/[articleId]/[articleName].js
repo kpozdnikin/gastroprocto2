@@ -1,13 +1,13 @@
 import React from 'react';
-//import Vector from '../../../assets/img/blog_vector.svg';
-//import Sad from '../../../assets/img/sad.png';
 import Layout from "../../../components/Layout";
 import Nav from "../../../components/Nav"
 import Footer from '../../../components/Footer';
 import unfetch from 'isomorphic-unfetch';
 
 const Article = (props) =>{
-
+    function createMarkup(text) {
+        return {__html: text};
+    }
       return (
           <Layout>
               <div id='article'>
@@ -22,11 +22,9 @@ const Article = (props) =>{
                       <div className='rec12'/>
                       <img src={props.article.mainImg} alt="фото"/>
                   </div>
-                  <div className='article_text'>
-                      <p>
-                          {props.article.text}
-                      </p>
-                  </div>
+                  <div className='article_text'
+                       dangerouslySetInnerHTML={createMarkup(props.article.text)}
+                  />
                   <Footer/>
               </div>
           </Layout>
@@ -34,13 +32,10 @@ const Article = (props) =>{
   };
 
     Article.getInitialProps = async function(context) {
-
         const { articleId } = context.query;
         const res = await unfetch(`https://gastroprocto.ru/api/article?articleId=${articleId}`);
         const data = await res.json();
-
         return { article: data.data }
     };
-
 
 export default Article;

@@ -8,15 +8,18 @@ import Layout from '../components/Layout';
 import Nav from '../components/Nav';
 import DigestiveSvg from '../components/digestiveSvg';
 import diseases from '../utils/diseases';
-import {ZoneDiseases} from '../interfaces';
+import {PathStyleInterface, ZoneDiseases} from '../interfaces';
 
 const Illnesses = () => {
     const [openedAccordion, setOpenedAccordion] = useState<ZoneDiseases | null>(diseases[0]);
+    const selectedPathStyle: PathStyleInterface = {
+        stroke: '#CDD5F0',
+        fill: 'CDD5F0',
+    };
 
     const toggleAccordion = (disease: ZoneDiseases) => {
         if (openedAccordion?.id === disease.id) {
             setOpenedAccordion(null);
-            console.log(openedAccordion);
         } else {
             setOpenedAccordion(disease);
         }
@@ -54,7 +57,10 @@ const Illnesses = () => {
             </div>
 
             <div className="ill_text">
-                <DigestiveSvg />
+                <DigestiveSvg
+                    zones={openedAccordion ? openedAccordion.zones : []}
+                    selectedPathStyle={selectedPathStyle}
+                />
                 <div className="container">
                     { diseases.map(disease => (
                         <React.Fragment key={disease.id}>
