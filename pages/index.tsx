@@ -36,8 +36,8 @@ const IndexPage: NextPage = () => {
       <header className="header">
           <Nav/>
         <div className="doctorText">
-          <div className="doctorName">Поздникина Ольга</div>
-          <div className="yourDoctor">Ваш персональный доктор</div>
+          <h1 className="doctorName">Поздникина Ольга</h1>
+          <h2 className="yourDoctor">Ваш персональный доктор</h2>
           <Button text="получить консультацию" myStyle="button"/>
           <div className="rectangle8">
             <div>Следите за нами</div>
@@ -83,14 +83,20 @@ const IndexPage: NextPage = () => {
             <ul>
               <li onClick={() => setTabIndex(0)}><a>Обо мне</a></li>
               <li onClick={() => setTabIndex(1)}><a>Мои сертификаты</a></li>
-              <li onClick={() => setTabIndex(2)}><a>Отзывы</a></li>
+              {/* <li onClick={() => setTabIndex(2)}><a>Отзывы</a></li> */}
             </ul>
           </div>
           <div className="welcome_text">
               { tabIndex === 0 &&
-                <>  Меня зовут Поздникина Ольга Юрьевна. Я колопроктолог, врач-эндоскопист высшей квалификационной категории.
-                    Это мой личный сайт, где вы можете узнать о моих услугах и получить бесплатную квалифицированную консультациюLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                <>
+                  <p>Меня зовут Поздникина Ольга Юрьевна. Я колопроктолог,
+                    врач-эндоскопист высшей квалификационной категории,
+                    кандидат медицинских наук по специальности "Хирургия", колопроктолог.
+                    Заслуженный врач республики Карелия.</p>
+                  <br />
+                  <p>
+                    Это мой личный сайт, где вы можете узнать о моих услугах и получить бесплатную квалифицированную консультацию.
+                  </p>
                 </>
                 }
               {
@@ -128,7 +134,12 @@ const IndexPage: NextPage = () => {
         </div>
         <div className="tfm_text">
           <p>Главная задача для меня</p>
-          <div className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcoonsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
+          <div className="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamcoonsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          </div>
           <Button text="получить консультацию" myStyle="button"/>
         </div>
         <div className="docs_wrap">
@@ -167,7 +178,7 @@ const IndexPage: NextPage = () => {
 
     </div>
     </Layout>
-  )
+  );
 };
 
 export default IndexPage;

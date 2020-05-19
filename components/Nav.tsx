@@ -18,7 +18,7 @@ const Nav = () => {
   return (
     <div className="nav">
       <strong className="label-top">
-        Болит живот
+          Болитживот.рф
         <NavState>
           <MainMenu />
         </NavState>

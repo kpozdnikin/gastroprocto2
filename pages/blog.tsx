@@ -96,8 +96,9 @@ const Blog = (props: any) => {
 };
 
 Blog.getInitialProps = async function() {
-    const res = await unfetch('https://gastroprocto.ru/api/articles');
-    const data = await res.json();
+    const articles = await unfetch('https://gastroprocto.ru/api/articles');
+    // https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCp8-fpg-BqmVbzE6OV2TU2Q&maxResults=10&key=AIzaSyB2MGURXkbsML8SOPrjZxg7xTIPMlqfEHo
+    const data = await articles.json();
     return  { articles: data.data };
 };
 
