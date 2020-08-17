@@ -6,16 +6,17 @@ const Footer: React.FunctionComponent = () => {
   return (
       <footer className="footer">
         <div className="footer_container">
-          <div className="item1"><p>Болитживот.рф</p>
+          <div className="item1">
+            <a href="/">Болитживот.рф</a>
             <div className="social">
-              <a href="https://www.youtube.com/channel/UCp8-fpg-BqmVbzE6OV2TU2Q">
+              <a href="https://www.youtube.com/channel/UCp8-fpg-BqmVbzE6OV2TU2Q" target="_blank" rel="noopener noreferer">
                 <img src={FooterYoutube} alt="youtube" />
               </a>
-              <a href="https://vk.com/gastroprocto">
+              <a href="https://vk.com/gastroprocto" target="_blank" rel="noopener noreferer">
                 <img src={FooterVK} alt="vkontakte"/>
               </a>
             </div>
-            <p>Политика конфиденциальности</p>
+            {/* <p>Политика конфиденциальности</p> */}
           </div>
           <div className="item2">Контакты:
             <ul>

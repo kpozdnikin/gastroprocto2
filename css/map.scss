@@ -1,14 +1,15 @@
 @import "./styleVariables";
+
 .map{
   height: 876px;
   max-width: 100%;
   min-width: 420px;
   overflow: hidden;
+
   .contacts {
     position: relative;
     width: 366px;
     height: 342px;
-    //background: #496766;
     background: #393939;
     margin: 168px 0 0 230px;
 
@@ -22,6 +23,10 @@
       font-weight: normal;
       line-height: 170%;
       color: #FBF6F6;
+
+      a {
+        color: white;
+      }
 
       p {
         font-family: Playfair Display;

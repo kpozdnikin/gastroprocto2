@@ -1,5 +1,6 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import Layout from '../components/Layout';
+import Serts from '../components/Serts';
 import { NextPage } from 'next';
 import Nav from '../components/Nav';
 import Button from '../components/Button';
@@ -12,15 +13,6 @@ import GroupColonos from '../assets/img/group_photo_2.png';
 import Ellipse from '../assets/img/Ellipse.svg';
 import PhotoDoctor from '../assets/img/photo_pozdnikina.png';
 import Map from '../assets/img/map.svg';
-import {useState} from 'react';
-import Cert_1 from '../assets/img/Cert1.svg';
-import Cert_2 from '../assets/img/certif_2.png';
-import Cert_3 from '../assets/img/certif_3.png';
-import Cert_4 from '../assets/img/certif_4.png';
-import Cert_5 from '../assets/img/certif_5.png';
-import Cert_6 from '../assets/img/certif_6.png';
-import Cert_7 from '../assets/img/certif_6.png';
-import Cert_8 from '../assets/img/certif_6.png';
 
 const MapBackground = {
     backgroundImage: `url(${Map})`
@@ -38,14 +30,14 @@ const IndexPage: NextPage = () => {
         <div className="doctorText">
           <h1 className="doctorName">Поздникина Ольга</h1>
           <h2 className="yourDoctor">Ваш персональный доктор</h2>
-          <Button text="получить консультацию" myStyle="button"/>
+          <Button text="получить консультацию" myStyle="button" link="https://vk.com/gastroprocto" targetBlank />
           <div className="rectangle8">
             <div>Следите за нами</div>
             <img className="header_bottom" src={Bottom} alt="header_bottom" />
-            <a href="https://www.youtube.com/channel/UCp8-fpg-BqmVbzE6OV2TU2Q">
+            <a href="https://www.youtube.com/channel/UCp8-fpg-BqmVbzE6OV2TU2Q" target="_blank" rel="noopener noreferer">
               <img src={YouTube} alt="youtube" />
             </a>
-            <a href="https://vk.com/gastroprocto">
+            <a href="https://vk.com/gastroprocto" target="_blank" rel="noopener noreferer">
               <img src={VK} alt="vk" />
             </a>
           </div>
@@ -81,18 +73,37 @@ const IndexPage: NextPage = () => {
         <div className="welcome_info">
           <div className="welcome_menu">
             <ul>
-              <li onClick={() => setTabIndex(0)}><a>Обо мне</a></li>
-              <li onClick={() => setTabIndex(1)}><a>Мои сертификаты</a></li>
+              <li onClick={() => setTabIndex(0)}><a className={tabIndex === 0 ? 'active' : ''}>Обо мне</a></li>
+              <li onClick={() => setTabIndex(1)}><a className={tabIndex === 1 ? 'active' : ''}>Мои сертификаты</a></li>
               {/* <li onClick={() => setTabIndex(2)}><a>Отзывы</a></li> */}
             </ul>
           </div>
           <div className="welcome_text">
               { tabIndex === 0 &&
                 <>
-                  <p>Меня зовут Поздникина Ольга Юрьевна. Я колопроктолог,
-                    врач-эндоскопист высшей квалификационной категории,
-                    кандидат медицинских наук по специальности "Хирургия", колопроктолог.
-                    Заслуженный врач республики Карелия.</p>
+                    <p>Поздникина Ольга Юрьевна, 1967 г. рождения, в 1991году окончила медицинский факультет</p>
+                    <p>Петрозаводского государственного университета,получив диплом врача по специальности «Лечебное дело».</p>
+                    <p>По окончании учебы – 1991-1992г. проходила интернатуру по терапии</p>
+                    <p>в качестве врача-интерна на базе Больницы Скорой медицинской помощи города Петрозаводска.</p>
+                    <p> В 1993г. закончила курсы первичной специализации по эндоскопии на базе БСМП г. Петрозаводска.</p>
+                    <p>В последующем регулярно проходила сертификационные курсы повышения квалификации</p>
+                    <p>по «Эндоскопической диагностике и лечебно-оперативной эндоскопии».</p>
+                    <p>В 1994г. прошла курсы усовершенствования по </p>
+                    <p>«Методам диагностики и лечения злокачественных опухолей» – 1.5 месяца</p>
+                    <p>и «Паллиативному и симптоматическому лечению в онкологии» - 1 месяц</p>
+                    <p>при Академии постдипломного образования г. Санкт-Петербурга.</p>
+                    <p>С 1995г. по настоящее время работаю врачом - эндоскопистом –</p>
+                    <p>ЧУЗ «Клиническая Больница РЖД медицина» на ст. Петрозаводск.</p>
+                    <p>В 2007г. прошла специализацию по специальности «Колопроктология»</p>
+                    <p>и веду амбулаторный прием в Железнодорожной поликлинике в качестве врача-колопроктолога.</p>
+                    <p>Аттестована высшую квалификационную категорию по специальности «Эндоскопия».</p>
+                    <p>С 2004 года являюсь членом общества «Эндоскопическая хирургия».</p>
+                    <p>В 2001г поступила в заочную аспирантуру ПетрГУ по специальности «Хирургия»,</p>
+                    <p>которую закончила досрочно в 2004г. в связи с защитой диссертации</p>
+                    <p>на соискание ученой степени кандидата медицинских наук по теме:</p>
+                    <p>«Эндоскопия в диагностике состояния культи желудка в отдаленные сроки после резекций».</p>
+                    <p>В 2015г. награждена знаком «За безупречный труд на железнодорожном транспорте».</p>
+                    <p>В 2017г. – присвоено звание «Заслуженный врач республики Карелия».</p>
                   <br />
                   <p>
                     Это мой личный сайт, где вы можете узнать о моих услугах и получить бесплатную квалифицированную консультацию.
@@ -101,16 +112,7 @@ const IndexPage: NextPage = () => {
                 }
               {
                 tabIndex === 1 &&
-                <div className="certs">
-                    <img src={Cert_1} alt="doctor's certificate" />
-                    <img src={Cert_2} alt="doctor's certificate" />
-                    <img src={Cert_3} alt="doctor's certificate" />
-                    <img src={Cert_4} alt="doctor's certificate" />
-                    <img src={Cert_5} alt="doctor's certificate" />
-                    <img src={Cert_6} alt="doctor's certificate" />
-                    <img src={Cert_7} alt="doctor's certificate" />
-                    <img src={Cert_8} alt="doctor's certificate" />
-                </div>
+                <Serts />
               }
               {
                 tabIndex === 2 &&
@@ -135,12 +137,10 @@ const IndexPage: NextPage = () => {
         <div className="tfm_text">
           <p>Главная задача для меня</p>
           <div className="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamcoonsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            Когда-то, у одного умного доктора, я прочитала фразу, что главная задача врача:
+            “Помочь пациенту быть здоровым”. Я с ним полностью согласна.
           </div>
-          <Button text="получить консультацию" myStyle="button"/>
+          <Button text="получить консультацию" myStyle="button" link="https://vk.com/gastroprocto" targetBlank />
         </div>
         <div className="docs_wrap">
           <div className="rec_light_blue" />
@@ -160,7 +160,7 @@ const IndexPage: NextPage = () => {
             <p>Контакты</p>
             <ul>
               <li>Петрозаводск,<br/> Первомайский пр, 17</li>
-              <li>(8142) 71-44-48, <br/> 8 911 400-43-40</li>
+              <li><a href="tel: (8142) 71-44-48">(8142) 71-44-48</a>, <br/> <a href="tel: 8 911 400-43-40">8 911 400-43-40</a></li>
               <li>будни с 08:00 до 19:00</li>
             </ul>
           </div>
