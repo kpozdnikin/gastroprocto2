@@ -44,9 +44,7 @@ export const SideMenu = (props: any) => {
     const { children } = props;
     const { isMenuOpen } = useContext(MenuContext);
     return (
-        <Menu
-            open={isMenuOpen}
-        >
+        <Menu open={isMenuOpen}>
             {children}
         </Menu>
     );

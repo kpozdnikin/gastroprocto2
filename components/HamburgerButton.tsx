@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { MenuContext } from './NavState';
 
 const MenuButton = styled.button`
-  
   display: block;  
   transform-origin: 16px 11px;
   float: left;
