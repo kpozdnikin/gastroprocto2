@@ -1,5 +1,6 @@
 @import "./styleVariables";
 .welcome{
+  position: relative;
   display: grid;
   grid-template-columns: 6.5fr 7fr 7%;
   grid-column-gap: 60px;
@@ -125,15 +126,29 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        img {
-          width: 166px;
-          height: 124px;
+        overflow: hidden;
+        .tile{
+          overflow: hidden;
+          width: 168px;
+          max-width: 1400px;
           margin-bottom: 20px;
+          img {
+            width: 100%;
+            transition: transform 500ms ease;
+            &:hover {
+              transform: scale(1.1);
+              cursor: pointer;
+            }
+          }
         }
-        img:hover{
-          transform: scale(1.1);
-          border: 6px solid $bgColorLilac;
-          margin: 6px;
+        .open{
+          position: absolute;
+          width: 80%;
+          top: 15%;
+          left: 10%;
+          box-Shadow: 0 0 40px 5px rgba(0, 0, 0, 0.8);
+          border-radius: 5px;
+          z-index: 199;
         }
       }
     }

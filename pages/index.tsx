@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Layout from '../components/Layout';
-import Serts from '../components/Serts';
+import Certs from '../components/Certs';
 import { NextPage } from 'next';
 import Nav from '../components/Nav';
 import Button from '../components/Button';
@@ -112,7 +112,7 @@ const IndexPage: NextPage = () => {
                 }
               {
                 tabIndex === 1 &&
-                <Serts />
+                <Certs />
               }
               {
                 tabIndex === 2 &&
