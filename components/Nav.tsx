@@ -23,7 +23,6 @@ const Nav = () => {
           <MainMenu />
         </NavState>
       </strong>
-      <Link href="/"><a className={getClassName('/')}>Главная</a></Link>
       <Link href="/blog"><a className={getClassName('/blog')}>Мой блог</a></Link>
       <Link href="/stomachache"><a className={getClassName('/stomachache')}>О боли в животе</a></Link>
       <Link href="/illnesses"><a className={getClassName('/illnesses')}>Заболевания ЖКТ</a></Link>

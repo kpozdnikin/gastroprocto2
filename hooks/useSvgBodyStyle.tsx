@@ -11,7 +11,7 @@ function useSvgBodyStyle(ref: any): React.CSSProperties {
             return;
         }
         if (elem.getBoundingClientRect().top <= 0) {
-            if (elem.getBoundingClientRect().top > -600) {
+            if (elem.getBoundingClientRect().top > -570) {
                 setStyles((prevStyles) => {
                     return {
                         ...prevStyles,
@@ -36,6 +36,7 @@ function useSvgBodyStyle(ref: any): React.CSSProperties {
                 return {
                     ...prevStyles,
                     position: 'initial',
+                    width: elem.offsetWidth,
                 };
             });
         }

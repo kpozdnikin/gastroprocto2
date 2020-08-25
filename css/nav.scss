@@ -15,12 +15,19 @@
     color: $myColor;
     z-index: 100;
   }
+
   a:hover {
     border-bottom: 1px solid $myColor;
   }
-  a:active{
+
+  a:active {
     border-bottom: 1px solid $myColor;
   }
+
+  a.topNav.selected {
+    border-bottom: 1px solid $myColor;
+  }
+
   .label-top {
     z-index: 100;
   }

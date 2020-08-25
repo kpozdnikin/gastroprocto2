@@ -40,19 +40,19 @@ const Illnesses = () => {
                     <img src={Fgds} alt="ФГДС"/>
                     <h2>фгдс</h2>
                     <p>Осмотр пищевода, желудка и начального отдела (луковицы) двенадцатиперстной кишки</p>
-                    <Button text="записаться" myStyle="button"/>
+                    <Button text="записаться" myStyle="button" link="https://vk.com/gastroprocto" targetBlank />
                 </div>
                 <div className="rrs">
                     <img src={Rrc} alt="РРС"/>
                     <h2>ррс</h2>
                     <p>Осмотр прямой кишки и анального канала с помощью тонкой трубки с оптическим волокном.</p>
-                    <Button text="записаться" myStyle="button"/>
+                    <Button text="записаться" myStyle="button" link="https://vk.com/gastroprocto" targetBlank />
                 </div>
                 <div className="fks">
                     <img src={Fks} alt="ФКС"/>
                     <h2>фкс</h2>
                     <p>Осмотр толстой кишки с помощью длинной трубки с оптическим волокном.</p>
-                    <Button text="записаться" myStyle="button"/>
+                    <Button text="записаться" myStyle="button" link="https://vk.com/gastroprocto" targetBlank />
                 </div>
             </div>
 

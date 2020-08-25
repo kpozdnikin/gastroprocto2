@@ -43,7 +43,7 @@ const Stomachache = () => {
                     </ul>
 
                     <div className="more_details">
-                        <Button text="записаться" myStyle="button"/>
+                        <Button text="записаться" myStyle="button" link="https://vk.com/gastroprocto" targetBlank />
                         <a href="/stomachache">причины боли в животе</a>
                         <img src={Vector} alt="more details"/>
                     </div>
